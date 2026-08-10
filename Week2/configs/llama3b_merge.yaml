@@ -1,0 +1,13 @@
+# Day9：把 Llama LoRA adapter 合并进基座。
+# 运行：.venv/Scripts/python.exe -m llamafactory.cli export Week2/configs/llama3b_merge.yaml
+
+model_name_or_path: models/Llama-3.2-3B-Instruct
+adapter_name_or_path: saves/llama3.2-3b/lora/sft
+template: llama3                                      # Llama 用 llama3 模板
+finetuning_type: lora
+trust_remote_code: true
+
+export_dir: models/Llama-3.2-3B-week2-merged
+export_size: 5
+export_device: cpu
+export_legacy_format: false

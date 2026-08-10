@@ -1,0 +1,23 @@
+{
+  "week2_sft_alpaca": {
+    "file_name": "alpaca_clean.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "week2_sft_sharegpt": {
+    "file_name": "sharegpt_clean.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations"
+    },
+    "tags": {
+      "role_tag": "from",
+      "content_tag": "value",
+      "user_tag": "human",
+      "assistant_tag": "gpt"
+    }
+  }
+}

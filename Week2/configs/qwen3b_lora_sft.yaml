@@ -1,0 +1,90 @@
+# ============================================================================
+#  Week2 Day8：Qwen2.5-3B-Instruct  LoRA SFT 配置（逐行注释）
+#  运行：.venv/Scripts/llamafactory-cli.exe train Week2/configs/qwen3b_lora_sft.yaml
+#  说明：所有相对路径都以 SenceTime_Week1/ 根目录为基准，务必在根目录运行。
+# ============================================================================
+
+### ---------------- model（基座模型）----------------
+# 要微调的基座模型路径。用第一周的本地目录规范 ./models/。
+# LoRA 不改基座权重，只在其上加一层可训练的低秩旁路。
+model_name_or_path: models/Qwen2.5-3B-Instruct
+# 允许执行模型仓库自带的自定义代码（Qwen 的 tokenizer/建模文件需要）。
+trust_remote_code: true
+
+### ---------------- method（微调方法）----------------
+# stage=sft：监督微调（Supervised Fine-Tuning），用"指令→回答"成对数据教模型对话。
+# 其他可选：pt(继续预训练)/rm(奖励模型)/dpo/kto/ppo(偏好对齐)。本周做 sft。
+stage: sft
+do_train: true                 # 训练模式（推理/评估时置 false）
+# finetuning_type=lora：只训练 LoRA 低秩矩阵，冻结基座 99% 参数 → 显存省、速度快、产物小(几十MB)。
+# 其他：full(全参，24G 跑 3B 勉强)/freeze(冻结部分层)。
+finetuning_type: lora
+# LoRA 秩 r：低秩矩阵的维度。越大表达力越强也越易过拟合、显存越多。3B+几千条数据，8 够用。
+lora_rank: 8
+# LoRA 缩放 α：旁路输出会乘以 α/r 再加回主干。常取 α=2r。这里 16/8=2，等效放大系数 2。
+lora_alpha: 16
+# LoRA dropout：训练时随机丢弃旁路激活，抑制过拟合。小数据集可给 0.05~0.1。
+lora_dropout: 0.05
+# lora_target=all：对所有线性层(q/k/v/o + gate/up/down)都加 LoRA，效果最好。
+# 也可只写 "q_proj,v_proj" 更省显存。
+lora_target: all
+
+### ---------------- dataset（数据）----------------
+# dataset：用哪个数据集，名字来自 dataset_dir 下的 dataset_info.json。
+# week2_sft_alpaca = 我们 Day7 清洗后的 Alpaca 格式数据（alpaca_clean.json）。
+dataset: week2_sft_alpaca
+# dataset_dir：数据集注册表所在目录（内含 dataset_info.json + 数据文件）。
+dataset_dir: Week2/data/clean
+# template：对话模板，必须与基座匹配！Qwen 系列用 qwen（ChatML: <|im_start|>...<|im_end|>）。
+# 用错模板会让模型学不到正确的对话边界，效果明显变差。
+template: qwen
+# cutoff_len：单条样本最大 token 数，超出会被截断。与清洗时的 2048 对齐。
+cutoff_len: 2048
+# ★ packing：序列打包。把多条短样本拼接填满 cutoff_len，消除 padding 浪费。
+#   我们的数据大多 <500 token，不打包则每条单独成序列 → 步数多、算力浪费在 padding。
+#   打包后步数 ~837→~110，约 7 倍提速，是本周训练慢的主因修复。
+packing: true
+# neat_packing：块对角注意力，拼接的样本之间互不可见，避免污染，保证质量。
+neat_packing: true
+# max_samples：每个数据集最多取多少条。注释掉/设很大=用全部清洗数据。
+# 首次可先设小值(如 200)快速验证管线，确认无误后再放开跑全量。
+# max_samples: 200
+overwrite_cache: true          # 重新预处理数据（改了数据/模板后必须 true，否则读旧缓存）
+preprocessing_num_workers: 8   # 数据预处理并行进程数（一次性 tokenize，可并行）
+# ★ Windows 必须设 0：Win 用 spawn 起 DataLoader worker，跨进程共享 CUDA 张量会
+#   触发 IPC 失败并误报 "CUDA out of memory"。设 0=主进程加载数据，稳定无此坑。
+dataloader_num_workers: 0
+
+### ---------------- output（输出与日志）----------------
+# 训练产物（LoRA adapter + 日志 + loss 曲线）输出目录。saves/ 已 gitignore。
+output_dir: saves/qwen2.5-3b/lora/sft
+logging_steps: 5               # 每 5 步打印一次 loss（配合 TensorBoard 看曲线）
+save_steps: 200               # 每 200 步存一次 checkpoint
+plot_loss: true                # 训练结束自动画 loss 曲线图（training_loss.png）
+overwrite_output_dir: true     # 覆盖已有输出目录
+report_to: tensorboard         # 日志同时写 TensorBoard（Day9 监控用）；可选 none/wandb/swanlab
+
+### ---------------- train（训练超参）----------------
+# 单卡单次前向的样本数。开 packing 后每条序列都是满 2048 token，故设 1 更稳（避免逼近显存上限）。
+per_device_train_batch_size: 1
+# 梯度累积：累积 16 个 → 等效 batch = 1*16 = 16，保持与原设计一致。
+gradient_accumulation_steps: 16
+# 学习率。LoRA 通常比全参大，1e-4 是常用起点；loss 不降可调到 2e-4，震荡则调小。
+learning_rate: 1.0e-4
+# 训练轮数。几千条数据跑 3 轮较合适；过多会过拟合（loss 降但泛化差）。
+num_train_epochs: 3.0
+# 学习率调度：cosine=余弦退火，先升(warmup)后平滑下降到 0，收敛更稳。
+lr_scheduler_type: cosine
+# 预热比例：前 10% 步数把 lr 从 0 线性升到设定值，避免开局梯度爆炸。
+warmup_ratio: 0.1
+# bf16：4090(Ada) 原生支持 bfloat16，比 fp16 数值更稳、比 fp32 省一半显存且更快。
+# （第一周 Mac MPS 上 bf16 不稳用的 fp32；到了 4090 换 bf16 是关键升级。）
+bf16: true
+ddp_timeout: 180000000         # 多卡通信超时(秒)，单卡无影响，留默认大值即可
+
+### ---------------- eval（验证，可选）----------------
+# 从训练集切 5% 作验证集，观察是否过拟合（train loss 降但 eval loss 升=过拟合信号）。
+val_size: 0.05
+per_device_eval_batch_size: 2
+eval_strategy: steps           # 按步数评估
+eval_steps: 200               # 每 200 步在验证集上评一次

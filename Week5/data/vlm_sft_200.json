@@ -1,0 +1,3002 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261014-vlm-000\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：282/600\n- 当前loss：0.5518\n- 显存占用：18.5 GB\n- 状态：运行中\n- 进度百分比：47%\n- 剩余步数：318\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0000.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260609-sft-001\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：143/300\n- 当前loss：1.5159\n- 显存占用：8.7 GB\n- 状态：排队中\n- 进度百分比：48%\n- 剩余步数：157\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0001.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260910-dpo-002\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：471/600\n- 当前loss：0.3747\n- 显存占用：21.7 GB\n- 状态：运行中\n- 进度百分比：78%\n- 剩余步数：129\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0002.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261222-vlm-003\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：187/300\n- 当前loss：0.8163\n- 显存占用：9.6 GB\n- 状态：失败\n- 进度百分比：62%\n- 剩余步数：113\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0003.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260421-ocr-004\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：2.0e-4\n- 进度：9/180\n- 当前loss：0.8721\n- 显存占用：7.1 GB\n- 状态：失败\n- 进度百分比：5%\n- 剩余步数：171\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0004.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260205-sft-005\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：57/240\n- 当前loss：1.0671\n- 显存占用：7.5 GB\n- 状态：运行中\n- 进度百分比：24%\n- 剩余步数：183\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0005.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260706-ocr-006\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：2.0e-4\n- 进度：550/600\n- 当前loss：1.5335\n- 显存占用：11.8 GB\n- 状态：失败\n- 进度百分比：92%\n- 剩余步数：50\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0006.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260104-dpo-007\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：399/480\n- 当前loss：1.8033\n- 显存占用：16.2 GB\n- 状态：排队中\n- 进度百分比：83%\n- 剩余步数：81\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0007.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260418-sft-008\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：487/600\n- 当前loss：0.4472\n- 显存占用：15.0 GB\n- 状态：排队中\n- 进度百分比：81%\n- 剩余步数：113\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0008.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261221-vlm-009\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：76/120\n- 当前loss：0.5642\n- 显存占用：9.7 GB\n- 状态：运行中\n- 进度百分比：63%\n- 剩余步数：44\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0009.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260426-ocr-010\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：68/480\n- 当前loss：1.8339\n- 显存占用：15.7 GB\n- 状态：排队中\n- 进度百分比：14%\n- 剩余步数：412\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0010.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260407-sft-011\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：101/600\n- 当前loss：0.8747\n- 显存占用：11.8 GB\n- 状态：运行中\n- 进度百分比：17%\n- 剩余步数：499\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0011.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260314-ocr-012\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：84/120\n- 当前loss：1.6548\n- 显存占用：22.5 GB\n- 状态：已完成\n- 进度百分比：70%\n- 剩余步数：36\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0012.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260307-dpo-013\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：3.0e-4\n- 进度：109/240\n- 当前loss：1.8732\n- 显存占用：22.9 GB\n- 状态：排队中\n- 进度百分比：45%\n- 剩余步数：131\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0013.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260704-sft-014\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：42/480\n- 当前loss：0.2733\n- 显存占用：7.2 GB\n- 状态：已完成\n- 进度百分比：9%\n- 剩余步数：438\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0014.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260201-ocr-015\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：102/240\n- 当前loss：1.3590\n- 显存占用：11.1 GB\n- 状态：失败\n- 进度百分比：42%\n- 剩余步数：138\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0015.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261127-dpo-016\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：41/240\n- 当前loss：1.6507\n- 显存占用：18.0 GB\n- 状态：运行中\n- 进度百分比：17%\n- 剩余步数：199\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0016.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260528-vlm-017\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：352/600\n- 当前loss：1.3875\n- 显存占用：20.5 GB\n- 状态：排队中\n- 进度百分比：59%\n- 剩余步数：248\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0017.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260223-sft-018\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：453/600\n- 当前loss：1.4202\n- 显存占用：15.5 GB\n- 状态：运行中\n- 进度百分比：76%\n- 剩余步数：147\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0018.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261024-sft-019\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：175/180\n- 当前loss：1.3505\n- 显存占用：12.0 GB\n- 状态：排队中\n- 进度百分比：97%\n- 剩余步数：5\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0019.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260407-ocr-020\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：5.0e-5\n- 进度：180/180\n- 当前loss：0.8386\n- 显存占用：6.7 GB\n- 状态：排队中\n- 进度百分比：100%\n- 剩余步数：0\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0020.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260104-dpo-021\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：90/240\n- 当前loss：1.0669\n- 显存占用：17.6 GB\n- 状态：失败\n- 进度百分比：38%\n- 剩余步数：150\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0021.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260614-vlm-022\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：98/480\n- 当前loss：0.2299\n- 显存占用：13.4 GB\n- 状态：已完成\n- 进度百分比：20%\n- 剩余步数：382\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0022.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261019-dpo-023\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：108/180\n- 当前loss：1.8427\n- 显存占用：17.5 GB\n- 状态：已完成\n- 进度百分比：60%\n- 剩余步数：72\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0023.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261103-dpo-024\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：219/600\n- 当前loss：1.0017\n- 显存占用：21.3 GB\n- 状态：已完成\n- 进度百分比：36%\n- 剩余步数：381\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0024.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261223-ocr-025\n- 基座模型：gemma-4-E2B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：38/300\n- 当前loss：0.8960\n- 显存占用：16.7 GB\n- 状态：已完成\n- 进度百分比：13%\n- 剩余步数：262\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0025.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260822-dpo-026\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：72/120\n- 当前loss：1.8014\n- 显存占用：8.1 GB\n- 状态：已完成\n- 进度百分比：60%\n- 剩余步数：48\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0026.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260511-dpo-027\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：245/600\n- 当前loss：0.9418\n- 显存占用：18.1 GB\n- 状态：已完成\n- 进度百分比：41%\n- 剩余步数：355\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0027.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260725-vlm-028\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：139/240\n- 当前loss：0.8984\n- 显存占用：9.5 GB\n- 状态：排队中\n- 进度百分比：58%\n- 剩余步数：101\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0028.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261206-ocr-029\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：5.0e-6\n- 进度：70/180\n- 当前loss：1.0242\n- 显存占用：12.6 GB\n- 状态：排队中\n- 进度百分比：39%\n- 剩余步数：110\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0029.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260709-ocr-030\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：34/120\n- 当前loss：0.7392\n- 显存占用：13.7 GB\n- 状态：失败\n- 进度百分比：28%\n- 剩余步数：86\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0030.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260316-vlm-031\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：32/120\n- 当前loss：1.6606\n- 显存占用：16.6 GB\n- 状态：已完成\n- 进度百分比：27%\n- 剩余步数：88\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0031.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260723-sft-032\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：2.0e-4\n- 进度：14/480\n- 当前loss：1.1864\n- 显存占用：21.4 GB\n- 状态：排队中\n- 进度百分比：3%\n- 剩余步数：466\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0032.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260214-dpo-033\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：65/120\n- 当前loss：0.7642\n- 显存占用：20.4 GB\n- 状态：排队中\n- 进度百分比：54%\n- 剩余步数：55\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0033.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260425-ocr-034\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：219/240\n- 当前loss：1.6453\n- 显存占用：7.5 GB\n- 状态：排队中\n- 进度百分比：91%\n- 剩余步数：21\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0034.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260907-vlm-035\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：72/240\n- 当前loss：1.4121\n- 显存占用：10.7 GB\n- 状态：运行中\n- 进度百分比：30%\n- 剩余步数：168\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0035.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260818-dpo-036\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：5.0e-6\n- 进度：57/240\n- 当前loss：1.3952\n- 显存占用：11.2 GB\n- 状态：失败\n- 进度百分比：24%\n- 剩余步数：183\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0036.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260407-ocr-037\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：31/240\n- 当前loss：1.1146\n- 显存占用：19.0 GB\n- 状态：已完成\n- 进度百分比：13%\n- 剩余步数：209\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0037.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261205-ocr-038\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：547/600\n- 当前loss：0.6438\n- 显存占用：22.6 GB\n- 状态：失败\n- 进度百分比：91%\n- 剩余步数：53\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0038.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260305-dpo-039\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：5.0e-5\n- 进度：59/300\n- 当前loss：0.8713\n- 显存占用：7.3 GB\n- 状态：运行中\n- 进度百分比：20%\n- 剩余步数：241\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0039.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261024-vlm-040\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：153/300\n- 当前loss：1.9321\n- 显存占用：11.2 GB\n- 状态：运行中\n- 进度百分比：51%\n- 剩余步数：147\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0040.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260410-dpo-041\n- 基座模型：gemma-4-E2B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：53/120\n- 当前loss：1.3909\n- 显存占用：14.0 GB\n- 状态：运行中\n- 进度百分比：44%\n- 剩余步数：67\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0041.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261024-dpo-042\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：212/240\n- 当前loss：0.2785\n- 显存占用：8.8 GB\n- 状态：失败\n- 进度百分比：88%\n- 剩余步数：28\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0042.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261127-dpo-043\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：166/300\n- 当前loss：0.6007\n- 显存占用：7.6 GB\n- 状态：运行中\n- 进度百分比：55%\n- 剩余步数：134\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0043.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260311-ocr-044\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：61/120\n- 当前loss：0.8850\n- 显存占用：11.5 GB\n- 状态：运行中\n- 进度百分比：51%\n- 剩余步数：59\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0044.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261128-ocr-045\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：99/120\n- 当前loss：1.7068\n- 显存占用：20.0 GB\n- 状态：运行中\n- 进度百分比：82%\n- 剩余步数：21\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0045.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260201-sft-046\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：69/180\n- 当前loss：0.3858\n- 显存占用：10.9 GB\n- 状态：排队中\n- 进度百分比：38%\n- 剩余步数：111\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0046.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260727-ocr-047\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：158/600\n- 当前loss：1.8288\n- 显存占用：11.0 GB\n- 状态：失败\n- 进度百分比：26%\n- 剩余步数：442\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0047.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260110-dpo-048\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：5.0e-6\n- 进度：198/240\n- 当前loss：0.7618\n- 显存占用：19.4 GB\n- 状态：失败\n- 进度百分比：82%\n- 剩余步数：42\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0048.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260428-ocr-049\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：223/240\n- 当前loss：1.9154\n- 显存占用：10.1 GB\n- 状态：排队中\n- 进度百分比：93%\n- 剩余步数：17\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0049.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261205-ocr-050\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：112/120\n- 当前loss：0.3295\n- 显存占用：21.5 GB\n- 状态：运行中\n- 进度百分比：93%\n- 剩余步数：8\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0050.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260902-vlm-051\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：547/600\n- 当前loss：1.8675\n- 显存占用：16.7 GB\n- 状态：排队中\n- 进度百分比：91%\n- 剩余步数：53\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0051.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260705-sft-052\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：6/120\n- 当前loss：1.5831\n- 显存占用：11.0 GB\n- 状态：失败\n- 进度百分比：5%\n- 剩余步数：114\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0052.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261101-ocr-053\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：74/480\n- 当前loss：0.9801\n- 显存占用：10.3 GB\n- 状态：失败\n- 进度百分比：15%\n- 剩余步数：406\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0053.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260413-dpo-054\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：155/300\n- 当前loss：1.9489\n- 显存占用：20.5 GB\n- 状态：运行中\n- 进度百分比：52%\n- 剩余步数：145\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0054.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261125-sft-055\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：156/180\n- 当前loss：0.5442\n- 显存占用：9.2 GB\n- 状态：失败\n- 进度百分比：87%\n- 剩余步数：24\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0055.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260917-dpo-056\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：84/240\n- 当前loss：0.8979\n- 显存占用：9.4 GB\n- 状态：失败\n- 进度百分比：35%\n- 剩余步数：156\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0056.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260518-vlm-057\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：407/600\n- 当前loss：0.8084\n- 显存占用：19.4 GB\n- 状态：运行中\n- 进度百分比：68%\n- 剩余步数：193\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0057.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261127-ocr-058\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：80/120\n- 当前loss：0.7404\n- 显存占用：16.4 GB\n- 状态：运行中\n- 进度百分比：67%\n- 剩余步数：40\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0058.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261024-sft-059\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：138/180\n- 当前loss：0.8496\n- 显存占用：12.3 GB\n- 状态：排队中\n- 进度百分比：77%\n- 剩余步数：42\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0059.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260921-dpo-060\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：228/300\n- 当前loss：1.6898\n- 显存占用：7.7 GB\n- 状态：失败\n- 进度百分比：76%\n- 剩余步数：72\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0060.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260227-sft-061\n- 基座模型：gemma-4-E4B-it\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：2.0e-4\n- 进度：101/120\n- 当前loss：0.5884\n- 显存占用：8.1 GB\n- 状态：已完成\n- 进度百分比：84%\n- 剩余步数：19\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0061.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261011-vlm-062\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：85/120\n- 当前loss：0.3872\n- 显存占用：12.1 GB\n- 状态：已完成\n- 进度百分比：71%\n- 剩余步数：35\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0062.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261002-dpo-063\n- 基座模型：gemma-4-E2B-it\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：186/300\n- 当前loss：1.2186\n- 显存占用：13.7 GB\n- 状态：已完成\n- 进度百分比：62%\n- 剩余步数：114\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0063.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260720-dpo-064\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：42/120\n- 当前loss：0.4170\n- 显存占用：8.1 GB\n- 状态：失败\n- 进度百分比：35%\n- 剩余步数：78\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0064.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261109-dpo-065\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：205/300\n- 当前loss：1.4633\n- 显存占用：11.3 GB\n- 状态：失败\n- 进度百分比：68%\n- 剩余步数：95\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0065.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260712-ocr-066\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：31/480\n- 当前loss：1.8719\n- 显存占用：15.5 GB\n- 状态：运行中\n- 进度百分比：6%\n- 剩余步数：449\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0066.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260728-vlm-067\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：45/120\n- 当前loss：0.8116\n- 显存占用：19.0 GB\n- 状态：已完成\n- 进度百分比：38%\n- 剩余步数：75\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0067.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260224-sft-068\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：337/480\n- 当前loss：0.2753\n- 显存占用：18.6 GB\n- 状态：运行中\n- 进度百分比：70%\n- 剩余步数：143\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0068.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260515-ocr-069\n- 基座模型：gemma-4-E2B-it\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-4\n- 进度：20/120\n- 当前loss：1.5080\n- 显存占用：6.8 GB\n- 状态：运行中\n- 进度百分比：17%\n- 剩余步数：100\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0069.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260108-ocr-070\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：174/240\n- 当前loss：1.2176\n- 显存占用：15.0 GB\n- 状态：失败\n- 进度百分比：72%\n- 剩余步数：66\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0070.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260918-dpo-071\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：64/120\n- 当前loss：0.9252\n- 显存占用：8.2 GB\n- 状态：已完成\n- 进度百分比：53%\n- 剩余步数：56\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0071.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260326-ocr-072\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：428/600\n- 当前loss：0.3573\n- 显存占用：6.4 GB\n- 状态：失败\n- 进度百分比：71%\n- 剩余步数：172\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0072.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260921-vlm-073\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：191/240\n- 当前loss：0.5488\n- 显存占用：19.2 GB\n- 状态：运行中\n- 进度百分比：80%\n- 剩余步数：49\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0073.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260825-ocr-074\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：79/480\n- 当前loss：0.2856\n- 显存占用：22.2 GB\n- 状态：排队中\n- 进度百分比：16%\n- 剩余步数：401\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0074.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260102-dpo-075\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：29/480\n- 当前loss：1.0632\n- 显存占用：11.3 GB\n- 状态：排队中\n- 进度百分比：6%\n- 剩余步数：451\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0075.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260623-vlm-076\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：244/480\n- 当前loss：0.4215\n- 显存占用：7.1 GB\n- 状态：运行中\n- 进度百分比：51%\n- 剩余步数：236\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0076.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260211-vlm-077\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：210/300\n- 当前loss：1.3720\n- 显存占用：6.9 GB\n- 状态：失败\n- 进度百分比：70%\n- 剩余步数：90\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0077.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260518-ocr-078\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：3.0e-4\n- 进度：168/240\n- 当前loss：1.3418\n- 显存占用：8.2 GB\n- 状态：运行中\n- 进度百分比：70%\n- 剩余步数：72\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0078.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260210-vlm-079\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：197/240\n- 当前loss：0.4956\n- 显存占用：23.0 GB\n- 状态：已完成\n- 进度百分比：82%\n- 剩余步数：43\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0079.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261010-ocr-080\n- 基座模型：gemma-4-E4B-it\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：53/120\n- 当前loss：1.3675\n- 显存占用：10.0 GB\n- 状态：排队中\n- 进度百分比：44%\n- 剩余步数：67\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0080.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260502-ocr-081\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：5.0e-6\n- 进度：271/480\n- 当前loss：1.8893\n- 显存占用：19.9 GB\n- 状态：已完成\n- 进度百分比：56%\n- 剩余步数：209\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0081.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260702-ocr-082\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：117/120\n- 当前loss：1.6201\n- 显存占用：21.0 GB\n- 状态：运行中\n- 进度百分比：98%\n- 剩余步数：3\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0082.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261216-ocr-083\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：5.0e-5\n- 进度：36/180\n- 当前loss：0.6664\n- 显存占用：20.1 GB\n- 状态：已完成\n- 进度百分比：20%\n- 剩余步数：144\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0083.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260204-ocr-084\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：32/240\n- 当前loss：0.5792\n- 显存占用：16.9 GB\n- 状态：排队中\n- 进度百分比：13%\n- 剩余步数：208\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0084.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260728-ocr-085\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：88/600\n- 当前loss：1.9044\n- 显存占用：7.2 GB\n- 状态：运行中\n- 进度百分比：15%\n- 剩余步数：512\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0085.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261106-ocr-086\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：2.0e-4\n- 进度：377/480\n- 当前loss：0.3901\n- 显存占用：12.0 GB\n- 状态：失败\n- 进度百分比：79%\n- 剩余步数：103\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0086.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260502-sft-087\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：2.0e-4\n- 进度：41/120\n- 当前loss：1.0777\n- 显存占用：22.8 GB\n- 状态：排队中\n- 进度百分比：34%\n- 剩余步数：79\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0087.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260224-ocr-088\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：174/300\n- 当前loss：1.0432\n- 显存占用：14.5 GB\n- 状态：失败\n- 进度百分比：58%\n- 剩余步数：126\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0088.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260615-vlm-089\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：115/240\n- 当前loss：1.4418\n- 显存占用：8.8 GB\n- 状态：排队中\n- 进度百分比：48%\n- 剩余步数：125\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0089.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260425-dpo-090\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：156/180\n- 当前loss：1.5564\n- 显存占用：6.6 GB\n- 状态：运行中\n- 进度百分比：87%\n- 剩余步数：24\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0090.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260404-vlm-091\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：71/480\n- 当前loss：0.8105\n- 显存占用：11.3 GB\n- 状态：失败\n- 进度百分比：15%\n- 剩余步数：409\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0091.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260328-vlm-092\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：147/480\n- 当前loss：1.7997\n- 显存占用：14.4 GB\n- 状态：运行中\n- 进度百分比：31%\n- 剩余步数：333\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0092.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260207-sft-093\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：3.0e-4\n- 进度：180/180\n- 当前loss：0.4634\n- 显存占用：12.1 GB\n- 状态：已完成\n- 进度百分比：100%\n- 剩余步数：0\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0093.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261003-sft-094\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：102/240\n- 当前loss：1.4440\n- 显存占用：14.9 GB\n- 状态：排队中\n- 进度百分比：42%\n- 剩余步数：138\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0094.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260617-dpo-095\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：67/120\n- 当前loss：0.6974\n- 显存占用：8.8 GB\n- 状态：已完成\n- 进度百分比：56%\n- 剩余步数：53\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0095.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261002-vlm-096\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：298/480\n- 当前loss：0.4582\n- 显存占用：16.6 GB\n- 状态：失败\n- 进度百分比：62%\n- 剩余步数：182\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0096.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260315-ocr-097\n- 基座模型：gemma-4-E2B-it\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：3.0e-4\n- 进度：126/300\n- 当前loss：0.8810\n- 显存占用：13.7 GB\n- 状态：运行中\n- 进度百分比：42%\n- 剩余步数：174\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0097.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260209-ocr-098\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：95/180\n- 当前loss：1.1610\n- 显存占用：11.4 GB\n- 状态：排队中\n- 进度百分比：53%\n- 剩余步数：85\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0098.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260810-ocr-099\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：370/480\n- 当前loss：0.4917\n- 显存占用：8.7 GB\n- 状态：排队中\n- 进度百分比：77%\n- 剩余步数：110\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0099.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260518-vlm-100\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：5.0e-6\n- 进度：37/120\n- 当前loss：1.2255\n- 显存占用：20.3 GB\n- 状态：排队中\n- 进度百分比：31%\n- 剩余步数：83\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0100.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260915-dpo-101\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：288/480\n- 当前loss：0.8025\n- 显存占用：10.9 GB\n- 状态：排队中\n- 进度百分比：60%\n- 剩余步数：192\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0101.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260915-sft-102\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：5.0e-5\n- 进度：21/480\n- 当前loss：0.2200\n- 显存占用：18.1 GB\n- 状态：排队中\n- 进度百分比：4%\n- 剩余步数：459\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0102.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261104-ocr-103\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：577/600\n- 当前loss：1.0048\n- 显存占用：6.3 GB\n- 状态：失败\n- 进度百分比：96%\n- 剩余步数：23\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0103.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260115-dpo-104\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：249/600\n- 当前loss：1.1806\n- 显存占用：17.9 GB\n- 状态：已完成\n- 进度百分比：42%\n- 剩余步数：351\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0104.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260606-ocr-105\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：107/480\n- 当前loss：0.7351\n- 显存占用：17.3 GB\n- 状态：排队中\n- 进度百分比：22%\n- 剩余步数：373\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0105.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260616-dpo-106\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：2.0e-4\n- 进度：198/240\n- 当前loss：1.4188\n- 显存占用：17.7 GB\n- 状态：排队中\n- 进度百分比：82%\n- 剩余步数：42\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0106.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261216-sft-107\n- 基座模型：gemma-4-E4B-it\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：5.0e-5\n- 进度：183/240\n- 当前loss：0.7735\n- 显存占用：13.5 GB\n- 状态：失败\n- 进度百分比：76%\n- 剩余步数：57\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0107.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260222-sft-108\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：239/600\n- 当前loss：0.3304\n- 显存占用：11.6 GB\n- 状态：排队中\n- 进度百分比：40%\n- 剩余步数：361\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0108.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260314-sft-109\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：84/120\n- 当前loss：0.5680\n- 显存占用：18.6 GB\n- 状态：运行中\n- 进度百分比：70%\n- 剩余步数：36\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0109.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260915-dpo-110\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：3.0e-4\n- 进度：117/240\n- 当前loss：1.1279\n- 显存占用：14.4 GB\n- 状态：已完成\n- 进度百分比：49%\n- 剩余步数：123\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0110.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260717-dpo-111\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：346/480\n- 当前loss：0.4659\n- 显存占用：20.6 GB\n- 状态：排队中\n- 进度百分比：72%\n- 剩余步数：134\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0111.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261024-vlm-112\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：121/300\n- 当前loss：1.5068\n- 显存占用：22.2 GB\n- 状态：失败\n- 进度百分比：40%\n- 剩余步数：179\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0112.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260405-ocr-113\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：121/600\n- 当前loss：1.7990\n- 显存占用：11.0 GB\n- 状态：已完成\n- 进度百分比：20%\n- 剩余步数：479\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0113.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260917-sft-114\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：361/480\n- 当前loss：0.2906\n- 显存占用：15.6 GB\n- 状态：运行中\n- 进度百分比：75%\n- 剩余步数：119\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0114.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261002-ocr-115\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：229/480\n- 当前loss：0.9662\n- 显存占用：14.7 GB\n- 状态：排队中\n- 进度百分比：48%\n- 剩余步数：251\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0115.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260802-dpo-116\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：66/600\n- 当前loss：1.9394\n- 显存占用：21.9 GB\n- 状态：运行中\n- 进度百分比：11%\n- 剩余步数：534\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0116.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260913-sft-117\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：553/600\n- 当前loss：1.3264\n- 显存占用：11.9 GB\n- 状态：已完成\n- 进度百分比：92%\n- 剩余步数：47\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0117.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260126-ocr-118\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：118/180\n- 当前loss：0.4292\n- 显存占用：9.2 GB\n- 状态：运行中\n- 进度百分比：66%\n- 剩余步数：62\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0118.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260317-dpo-119\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：46/600\n- 当前loss：0.9401\n- 显存占用：15.2 GB\n- 状态：运行中\n- 进度百分比：8%\n- 剩余步数：554\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0119.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260916-vlm-120\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：72/120\n- 当前loss：1.7335\n- 显存占用：21.5 GB\n- 状态：排队中\n- 进度百分比：60%\n- 剩余步数：48\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0120.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260118-ocr-121\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：58/180\n- 当前loss：1.6936\n- 显存占用：8.5 GB\n- 状态：排队中\n- 进度百分比：32%\n- 剩余步数：122\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0121.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260722-vlm-122\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：24/240\n- 当前loss：1.4543\n- 显存占用：9.2 GB\n- 状态：失败\n- 进度百分比：10%\n- 剩余步数：216\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0122.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261220-sft-123\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：121/600\n- 当前loss：1.9492\n- 显存占用：14.1 GB\n- 状态：已完成\n- 进度百分比：20%\n- 剩余步数：479\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0123.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260607-dpo-124\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：452/480\n- 当前loss：0.9888\n- 显存占用：19.6 GB\n- 状态：排队中\n- 进度百分比：94%\n- 剩余步数：28\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0124.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260818-dpo-125\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：51/180\n- 当前loss：0.5640\n- 显存占用：15.7 GB\n- 状态：已完成\n- 进度百分比：28%\n- 剩余步数：129\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0125.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261102-vlm-126\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：329/480\n- 当前loss：1.0931\n- 显存占用：20.3 GB\n- 状态：运行中\n- 进度百分比：69%\n- 剩余步数：151\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0126.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261116-vlm-127\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：80/120\n- 当前loss：1.3502\n- 显存占用：16.5 GB\n- 状态：排队中\n- 进度百分比：67%\n- 剩余步数：40\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0127.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260609-ocr-128\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：118/120\n- 当前loss：1.0939\n- 显存占用：10.1 GB\n- 状态：失败\n- 进度百分比：98%\n- 剩余步数：2\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0128.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261206-vlm-129\n- 基座模型：gemma-4-E2B-it\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：5.0e-6\n- 进度：52/120\n- 当前loss：0.8289\n- 显存占用：14.1 GB\n- 状态：运行中\n- 进度百分比：43%\n- 剩余步数：68\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0129.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260328-dpo-130\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：5.0e-5\n- 进度：12/240\n- 当前loss：1.3820\n- 显存占用：10.8 GB\n- 状态：运行中\n- 进度百分比：5%\n- 剩余步数：228\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0130.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260924-dpo-131\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：2.0e-4\n- 进度：554/600\n- 当前loss：0.8409\n- 显存占用：18.6 GB\n- 状态：运行中\n- 进度百分比：92%\n- 剩余步数：46\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0131.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260322-ocr-132\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：252/300\n- 当前loss：0.7905\n- 显存占用：22.0 GB\n- 状态：排队中\n- 进度百分比：84%\n- 剩余步数：48\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0132.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260625-dpo-133\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：5.0e-5\n- 进度：93/240\n- 当前loss：0.3147\n- 显存占用：22.0 GB\n- 状态：排队中\n- 进度百分比：39%\n- 剩余步数：147\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0133.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260110-ocr-134\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=8, alpha=16)\n- 学习率：5.0e-5\n- 进度：142/240\n- 当前loss：1.2245\n- 显存占用：19.3 GB\n- 状态：排队中\n- 进度百分比：59%\n- 剩余步数：98\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0134.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260516-vlm-135\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：127/240\n- 当前loss：0.2639\n- 显存占用：13.4 GB\n- 状态：排队中\n- 进度百分比：53%\n- 剩余步数：113\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0135.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260614-sft-136\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：171/300\n- 当前loss：0.8338\n- 显存占用：20.7 GB\n- 状态：排队中\n- 进度百分比：57%\n- 剩余步数：129\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0136.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260604-sft-137\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：401/480\n- 当前loss：0.7366\n- 显存占用：10.8 GB\n- 状态：排队中\n- 进度百分比：84%\n- 剩余步数：79\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0137.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260703-ocr-138\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：311/600\n- 当前loss：0.6048\n- 显存占用：8.6 GB\n- 状态：排队中\n- 进度百分比：52%\n- 剩余步数：289\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0138.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260626-ocr-139\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：1.0e-5\n- 进度：166/180\n- 当前loss：0.2297\n- 显存占用：22.7 GB\n- 状态：排队中\n- 进度百分比：92%\n- 剩余步数：14\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0139.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260514-vlm-140\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：257/300\n- 当前loss：0.7709\n- 显存占用：6.4 GB\n- 状态：运行中\n- 进度百分比：86%\n- 剩余步数：43\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0140.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260502-vlm-141\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：50/300\n- 当前loss：1.4496\n- 显存占用：13.7 GB\n- 状态：运行中\n- 进度百分比：17%\n- 剩余步数：250\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0141.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260321-ocr-142\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：5.0e-6\n- 进度：219/480\n- 当前loss：0.5673\n- 显存占用：12.9 GB\n- 状态：已完成\n- 进度百分比：46%\n- 剩余步数：261\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0142.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260906-dpo-143\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：193/240\n- 当前loss：1.6057\n- 显存占用：7.1 GB\n- 状态：运行中\n- 进度百分比：80%\n- 剩余步数：47\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0143.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261123-dpo-144\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：59/480\n- 当前loss：0.7836\n- 显存占用：13.8 GB\n- 状态：已完成\n- 进度百分比：12%\n- 剩余步数：421\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0144.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260316-sft-145\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：199/480\n- 当前loss：1.2236\n- 显存占用：15.8 GB\n- 状态：排队中\n- 进度百分比：41%\n- 剩余步数：281\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0145.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260722-ocr-146\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：63/120\n- 当前loss：0.5012\n- 显存占用：12.5 GB\n- 状态：排队中\n- 进度百分比：52%\n- 剩余步数：57\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0146.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260917-vlm-147\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：58/240\n- 当前loss：0.6696\n- 显存占用：19.3 GB\n- 状态：排队中\n- 进度百分比：24%\n- 剩余步数：182\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0147.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260828-vlm-148\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：224/240\n- 当前loss：0.9595\n- 显存占用：11.9 GB\n- 状态：运行中\n- 进度百分比：93%\n- 剩余步数：16\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0148.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261210-dpo-149\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：1.0e-5\n- 进度：180/480\n- 当前loss：0.6560\n- 显存占用：15.2 GB\n- 状态：失败\n- 进度百分比：38%\n- 剩余步数：300\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0149.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260319-dpo-150\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：83/180\n- 当前loss：1.5207\n- 显存占用：17.5 GB\n- 状态：排队中\n- 进度百分比：46%\n- 剩余步数：97\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0150.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261215-dpo-151\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：168/300\n- 当前loss：0.1545\n- 显存占用：19.2 GB\n- 状态：运行中\n- 进度百分比：56%\n- 剩余步数：132\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0151.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261125-vlm-152\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：296/480\n- 当前loss：1.1691\n- 显存占用：14.3 GB\n- 状态：失败\n- 进度百分比：62%\n- 剩余步数：184\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0152.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260221-dpo-153\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：1.0e-4\n- 进度：177/180\n- 当前loss：1.7379\n- 显存占用：11.1 GB\n- 状态：失败\n- 进度百分比：98%\n- 剩余步数：3\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0153.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260319-sft-154\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：3.0e-4\n- 进度：94/600\n- 当前loss：0.3213\n- 显存占用：9.6 GB\n- 状态：运行中\n- 进度百分比：16%\n- 剩余步数：506\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0154.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260505-ocr-155\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：46/300\n- 当前loss：1.6007\n- 显存占用：7.8 GB\n- 状态：失败\n- 进度百分比：15%\n- 剩余步数：254\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0155.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260204-sft-156\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：156/600\n- 当前loss：1.2589\n- 显存占用：13.5 GB\n- 状态：已完成\n- 进度百分比：26%\n- 剩余步数：444\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0156.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261110-sft-157\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：308/480\n- 当前loss：1.4481\n- 显存占用：10.8 GB\n- 状态：运行中\n- 进度百分比：64%\n- 剩余步数：172\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0157.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260605-ocr-158\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：QLoRA (r=64, alpha=128)\n- 学习率：1.0e-5\n- 进度：73/600\n- 当前loss：1.7497\n- 显存占用：6.2 GB\n- 状态：失败\n- 进度百分比：12%\n- 剩余步数：527\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0158.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261123-ocr-159\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：119/120\n- 当前loss：1.8576\n- 显存占用：12.8 GB\n- 状态：失败\n- 进度百分比：99%\n- 剩余步数：1\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0159.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260523-ocr-160\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：2.0e-4\n- 进度：138/180\n- 当前loss：0.8533\n- 显存占用：16.8 GB\n- 状态：运行中\n- 进度百分比：77%\n- 剩余步数：42\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0160.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260316-dpo-161\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：5.0e-5\n- 进度：180/600\n- 当前loss：0.1728\n- 显存占用：8.3 GB\n- 状态：运行中\n- 进度百分比：30%\n- 剩余步数：420\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0161.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260815-dpo-162\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：33/480\n- 当前loss：1.4322\n- 显存占用：15.8 GB\n- 状态：运行中\n- 进度百分比：7%\n- 剩余步数：447\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0162.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260116-dpo-163\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：522/600\n- 当前loss：0.2293\n- 显存占用：20.7 GB\n- 状态：已完成\n- 进度百分比：87%\n- 剩余步数：78\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0163.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260308-vlm-164\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：212/240\n- 当前loss：1.1788\n- 显存占用：8.0 GB\n- 状态：运行中\n- 进度百分比：88%\n- 剩余步数：28\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0164.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260812-ocr-165\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：2.0e-4\n- 进度：52/240\n- 当前loss：1.1649\n- 显存占用：11.2 GB\n- 状态：已完成\n- 进度百分比：22%\n- 剩余步数：188\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0165.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260207-sft-166\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=8, alpha=16)\n- 学习率：3.0e-4\n- 进度：1/240\n- 当前loss：0.8273\n- 显存占用：18.5 GB\n- 状态：失败\n- 进度百分比：0%\n- 剩余步数：239\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0166.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260219-vlm-167\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：44/300\n- 当前loss：0.3220\n- 显存占用：8.3 GB\n- 状态：排队中\n- 进度百分比：15%\n- 剩余步数：256\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0167.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260304-sft-168\n- 基座模型：gemma-4-E2B-it\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：140/300\n- 当前loss：0.2844\n- 显存占用：9.4 GB\n- 状态：运行中\n- 进度百分比：47%\n- 剩余步数：160\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0168.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261223-vlm-169\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：136/300\n- 当前loss：0.3128\n- 显存占用：19.7 GB\n- 状态：失败\n- 进度百分比：45%\n- 剩余步数：164\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0169.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260924-sft-170\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：210/240\n- 当前loss：0.2059\n- 显存占用：12.9 GB\n- 状态：排队中\n- 进度百分比：88%\n- 剩余步数：30\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0170.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260201-vlm-171\n- 基座模型：gemma-4-E4B-it\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：191/300\n- 当前loss：1.2845\n- 显存占用：17.0 GB\n- 状态：失败\n- 进度百分比：64%\n- 剩余步数：109\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0171.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260312-sft-172\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：3.0e-4\n- 进度：222/480\n- 当前loss：0.8610\n- 显存占用：6.5 GB\n- 状态：排队中\n- 进度百分比：46%\n- 剩余步数：258\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0172.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260707-sft-173\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：DoRA (r=64, alpha=128)\n- 学习率：5.0e-6\n- 进度：282/300\n- 当前loss：0.2598\n- 显存占用：10.8 GB\n- 状态：已完成\n- 进度百分比：94%\n- 剩余步数：18\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0173.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260126-ocr-174\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：41/120\n- 当前loss：0.5442\n- 显存占用：21.2 GB\n- 状态：失败\n- 进度百分比：34%\n- 剩余步数：79\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0174.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260308-dpo-175\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-6\n- 进度：434/480\n- 当前loss：0.7886\n- 显存占用：20.3 GB\n- 状态：已完成\n- 进度百分比：90%\n- 剩余步数：46\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0175.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260916-vlm-176\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：20/300\n- 当前loss：0.2511\n- 显存占用：16.2 GB\n- 状态：运行中\n- 进度百分比：7%\n- 剩余步数：280\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0176.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261222-ocr-177\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：109/120\n- 当前loss：1.6992\n- 显存占用：22.3 GB\n- 状态：失败\n- 进度百分比：91%\n- 剩余步数：11\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0177.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260422-sft-178\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：144/180\n- 当前loss：1.7513\n- 显存占用：16.4 GB\n- 状态：失败\n- 进度百分比：80%\n- 剩余步数：36\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0178.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260311-vlm-179\n- 基座模型：gemma-4-E4B-it\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：1.0e-5\n- 进度：163/480\n- 当前loss：0.5476\n- 显存占用：15.6 GB\n- 状态：排队中\n- 进度百分比：34%\n- 剩余步数：317\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0179.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260113-ocr-180\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：DoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：178/180\n- 当前loss：0.7809\n- 显存占用：19.4 GB\n- 状态：运行中\n- 进度百分比：99%\n- 剩余步数：2\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0180.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260609-vlm-181\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：116/180\n- 当前loss：1.5886\n- 显存占用：6.6 GB\n- 状态：运行中\n- 进度百分比：64%\n- 剩余步数：64\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0181.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260607-sft-182\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：85/300\n- 当前loss：1.7516\n- 显存占用：8.7 GB\n- 状态：运行中\n- 进度百分比：28%\n- 剩余步数：215\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0182.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260404-vlm-183\n- 基座模型：gemma-4-E4B-it\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：47/120\n- 当前loss：0.9197\n- 显存占用：11.0 GB\n- 状态：排队中\n- 进度百分比：39%\n- 剩余步数：73\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0183.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260712-sft-184\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：5.0e-5\n- 进度：272/600\n- 当前loss：1.3054\n- 显存占用：12.6 GB\n- 状态：失败\n- 进度百分比：45%\n- 剩余步数：328\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0184.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261008-vlm-185\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=16, alpha=32)\n- 学习率：5.0e-5\n- 进度：100/600\n- 当前loss：1.3527\n- 显存占用：19.7 GB\n- 状态：排队中\n- 进度百分比：17%\n- 剩余步数：500\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0185.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260225-ocr-186\n- 基座模型：Llama-3.2-3B-Instruct\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：293/480\n- 当前loss：1.5908\n- 显存占用：17.5 GB\n- 状态：已完成\n- 进度百分比：61%\n- 剩余步数：187\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0186.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260213-ocr-187\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：152/600\n- 当前loss：0.6142\n- 显存占用：21.5 GB\n- 状态：运行中\n- 进度百分比：25%\n- 剩余步数：448\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0187.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260709-ocr-188\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=8, alpha=16)\n- 学习率：5.0e-5\n- 进度：73/120\n- 当前loss：1.5643\n- 显存占用：20.7 GB\n- 状态：失败\n- 进度百分比：61%\n- 剩余步数：47\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0188.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260601-dpo-189\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：170/300\n- 当前loss：0.5776\n- 显存占用：18.7 GB\n- 状态：失败\n- 进度百分比：57%\n- 剩余步数：130\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0189.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260427-ocr-190\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：5.0e-6\n- 进度：187/240\n- 当前loss：1.2390\n- 显存占用：7.5 GB\n- 状态：排队中\n- 进度百分比：78%\n- 剩余步数：53\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0190.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260108-vlm-191\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：451/480\n- 当前loss：0.2021\n- 显存占用：9.3 GB\n- 状态：已完成\n- 进度百分比：94%\n- 剩余步数：29\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0191.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260819-dpo-192\n- 基座模型：Llama-3.2-11B-Vision\n- 训练方式：Full\n- 学习率：1.0e-4\n- 进度：32/600\n- 当前loss：0.8204\n- 显存占用：16.1 GB\n- 状态：已完成\n- 进度百分比：5%\n- 剩余步数：568\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0192.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260901-vlm-193\n- 基座模型：gemma-4-E2B-it\n- 训练方式：QLoRA (r=16, alpha=32)\n- 学习率：1.0e-4\n- 进度：166/180\n- 当前loss：1.3699\n- 显存占用：10.6 GB\n- 状态：排队中\n- 进度百分比：92%\n- 剩余步数：14\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0193.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261117-ocr-194\n- 基座模型：Qwen2.5-3B-Instruct\n- 训练方式：DoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：193/300\n- 当前loss：0.9762\n- 显存占用：9.7 GB\n- 状态：失败\n- 进度百分比：64%\n- 剩余步数：107\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0194.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260405-sft-195\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：LoRA (r=32, alpha=64)\n- 学习率：2.0e-4\n- 进度：164/240\n- 当前loss：1.7007\n- 显存占用：10.4 GB\n- 状态：失败\n- 进度百分比：68%\n- 剩余步数：76\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0195.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260624-sft-196\n- 基座模型：gemma-4-E2B-it\n- 训练方式：Full\n- 学习率：1.0e-5\n- 进度：19/300\n- 当前loss：1.4245\n- 显存占用：15.7 GB\n- 状态：已完成\n- 进度百分比：6%\n- 剩余步数：281\n- 健康状态：正常"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0196.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260412-sft-197\n- 基座模型：Qwen2.5-7B-Instruct\n- 训练方式：QLoRA (r=32, alpha=64)\n- 学习率：1.0e-4\n- 进度：573/600\n- 当前loss：1.8545\n- 显存占用：21.3 GB\n- 状态：运行中\n- 进度百分比：96%\n- 剩余步数：27\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0197.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20260807-vlm-198\n- 基座模型：Qwen2-VL-2B-Instruct\n- 训练方式：LoRA (r=64, alpha=128)\n- 学习率：3.0e-4\n- 进度：111/120\n- 当前loss：1.2004\n- 显存占用：22.1 GB\n- 状态：运行中\n- 进度百分比：92%\n- 剩余步数：9\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0198.png"
+    ]
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "<image>请把这张训练平台截图转换成我们团队规范的实验记录卡。严格按以下字段顺序输出，每行一个字段，格式为「- 字段名：值」，不要输出任何额外说明：\n- 任务ID：\n- 基座模型：\n- 训练方式：\n- 学习率：\n- 进度：\n- 当前loss：\n- 显存占用：\n- 状态：\n- 进度百分比：\n- 剩余步数：\n- 健康状态："
+      },
+      {
+        "role": "assistant",
+        "content": "- 任务ID：job-20261106-dpo-199\n- 基座模型：Qwen2.5-VL-7B-Instruct\n- 训练方式：Full\n- 学习率：3.0e-4\n- 进度：81/180\n- 当前loss：0.4746\n- 显存占用：7.4 GB\n- 状态：失败\n- 进度百分比：45%\n- 剩余步数：99\n- 健康状态：需关注"
+      }
+    ],
+    "images": [
+      "Week5/data/train_images/train_0199.png"
+    ]
+  }
+]

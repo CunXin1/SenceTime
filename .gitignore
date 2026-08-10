@@ -8,9 +8,39 @@ models/
 saves/
 
 # 临时生成的合并配置
-code/finetune/_merge_tmp.yaml
+week1/code/finetune/_merge_tmp.yaml
 
 # Python 缓存
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# 虚拟环境（Week2 在 4090 上新建，勿提交）
+.venv/
+venv/
+
+# 克隆的 LLaMA-Factory 源码（体积大，按需 clone）
+LLaMA-Factory/
+
+# Week2 原始数据下载缓存（大，不进 git；清洗后的样本放 deliverables/）
+Week2/data/raw/
+Week2/data/hf_cache/
+
+# Week3 OpenCompass 评测数据包（CEval/CMMLU 等，~1GB，按 run_opencompass.md 重新下载）
+/data/
+# OpenCompass 独立虚拟环境与评测输出
+.venv-oc/
+/outputs/
+Week4/data/hf_cache/
+
+# Week5 VLM 独立环境(Gemma-4 需要 transformers>=5.5,与主环境冲突,故隔离)
+.venv-vlm/
+Week5/data/hf_cache/
+
+# 打包快照(与各 WeekN/ 目录内容重复,且 Week2.zip 超 GitHub 100MB 上限)
+*.zip
+
+# 本地缓存与临时目录
+.cache/
+tmp/
+.DS_Store

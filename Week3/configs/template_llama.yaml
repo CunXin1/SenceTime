@@ -1,0 +1,66 @@
+# ============================================================================
+${gen_header}
+# ============================================================================
+#!TPL ★ 本文件是模板（含 ${...} 占位符），不能直接训练！
+#!TPL ★ This file is a TEMPLATE with ${...} placeholders — NOT directly runnable!
+#!TPL   由 Week3/code/gen_configs.py 填充占位符，生成 Week3/configs/exp/ 下的可运行配置。
+#!TPL   与 template_qwen.yaml 的差异仅两处：model_name_or_path 与 template（llama3）。
+#!TPL   Only two differences vs template_qwen.yaml: model_name_or_path and
+#!TPL   template (llama3) — same cross-architecture pattern as Week2.
+
+### ---------------- model（基座模型 / base model）----------------
+model_name_or_path: models/Llama-3.2-3B-Instruct
+trust_remote_code: true
+
+### ---------------- method（与 Qwen 模板一致 / identical to the Qwen template）----------------
+stage: sft
+do_train: true
+finetuning_type: lora
+# ★ 变量组A / group A —— LoRA 秩（8/32/64），详见 template_qwen.yaml 注释。
+# ★ Group A — LoRA rank (8/32/64); see template_qwen.yaml for full notes.
+lora_rank: ${lora_rank}
+lora_alpha: ${lora_alpha}      # α=2r 恒定 / α=2r kept constant
+lora_dropout: 0.05
+lora_target: all
+
+### ---------------- dataset（固定 / FIXED）----------------
+dataset: week2_sft_alpaca
+dataset_dir: Week2/data/clean
+# 关键差异：Llama-3 系列必须用 llama3 模板，与 Qwen 的 ChatML 完全不同。
+# Key difference: Llama-3 requires the llama3 template (not ChatML).
+template: llama3
+cutoff_len: 2048
+packing: true
+neat_packing: true
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0      # ★ Windows 必须 0 / must be 0 on Windows
+
+### ---------------- reproducibility（可复现性）----------------
+seed: 42                       # 固定种子 / fixed seed
+
+### ---------------- output ----------------
+output_dir: ${output_dir}
+logging_steps: 5
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train ----------------
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+# ★ 变量组B / group B —— 学习率 / learning rate（5e-5 / 1e-4 / 2e-4）
+learning_rate: ${learning_rate}
+# ★ 变量组C / group C —— 训练轮数 / epochs（2 / 3 / 5）
+num_train_epochs: ${num_train_epochs}
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### ---------------- eval ----------------
+val_size: 0.05
+per_device_eval_batch_size: 2
+eval_strategy: steps
+eval_steps: 50                 # 保证每次训练 2~3 个 eval 点 / 2-3 eval points per run

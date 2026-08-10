@@ -1,0 +1,145 @@
+{
+  "run_id": "qwen_r8_lr1e-4_ep3",
+  "records": [
+    {
+      "question_id": "math-01",
+      "category": "math",
+      "answer": "设鸡有 x 只，兔有 y 只。\n根据题意，可以列出以下两个方程：\nx + y = 35 （头的数量）\n2x + 4y = 94 （脚的数量）\n将第一个方程变形为 y = 35 - x，代入第二个方程中，得到：\n2x + 4(35 - x) = 94\n化简得：2x + 140 - 4x = 94\n整理得：-2x = -46\n解得：x = 23\n将 x = 23 代入 y = 35 - x 得到：y = 12\n因此，鸡有 23 只，兔有 12 只。",
+      "gen_seconds": 10.1,
+      "new_tokens": 173
+    },
+    {
+      "question_id": "math-02",
+      "category": "math",
+      "answer": "首先，我们来计算乘法部分：\n37 × 43 = 1591\n然后，我们来计算平方部分：\n15² = 225\n最后，我们来计算减法部分：\n1591 - 225 = 1366\n因此，37 × 43 - 15² 的值为 1366。",
+      "gen_seconds": 4.4,
+      "new_tokens": 87
+    },
+    {
+      "question_id": "math-03",
+      "category": "math",
+      "answer": "设水池的容积为 V 升。\n甲管每小时注水 V/6 升，乙管每小时注水 V/4 升。\n两管同时打开时，每小时注水 V/6 + V/4 = 5V/12 升。\n因此，注满水池需要的时间为 V / (5V/12) = 12/5 = 2.4 小时。",
+      "gen_seconds": 5.8,
+      "new_tokens": 96
+    },
+    {
+      "question_id": "math-04",
+      "category": "math",
+      "answer": "等差数列的通项公式为：an = a1 + (n-1)d，其中a1是首项，d是公差，n是项数。\n对于这个等差数列，a1=3，d=4，n=50。\n将这些值代入通项公式中，得到：\na50 = 3 + (50-1)×4 = 203\n因此，这个等差数列的第50项是203。\n通项公式为：an = 3 + (n-1)×4 = 4n - 1。",
+      "gen_seconds": 7.7,
+      "new_tokens": 135
+    },
+    {
+      "question_id": "math-05",
+      "category": "math",
+      "answer": "当同时掷两枚公平的骰子时，点数之和恰好为 8 的情况有以下几种：\n\n1. 第一枚骰子为 2，第二枚骰子为 6；\n2. 第一枚骰子为 3，第二枚骰子为 5；\n3. 第一枚骰子为 4，第二枚骰子为 4；\n4. 第一枚骰子为 5，第二枚骰子为 3；\n5. 第一枚骰子为 6，第二枚骰子为 2。\n\n因此，点数之和恰好为 8 的概率是 5/36。",
+      "gen_seconds": 5.9,
+      "new_tokens": 135
+    },
+    {
+      "question_id": "math-06",
+      "category": "math",
+      "answer": "要解一元二次方程 2x² − 5x − 3 = 0，我们可以使用求根公式：\nx = [-b ± √(b² - 4ac)] / 2a\n其中，a、b、c 分别是方程中的系数，即 a = 2，b = -5，c = -3。\n将这些值代入求根公式中，我们得到：\nx = [5 ± √((-5)² - 4*2*(-3))] / (2*2)\nx = [5 ± √(25 + 24)] / 4\nx = [5 ± √49] / 4\nx = [5 ± 7] / 4\n因此，方程的两个解为：\nx1 = (5 + 7) / 4 = 3\nx2 = (5 - 7) / 4 = -1/2\n所以，一元二次方程 2x² − 5x − 3 = 0 的解为 x1 = 3 和 x2 = -1/2。",
+      "gen_seconds": 11.5,
+      "new_tokens": 244
+    },
+    {
+      "question_id": "math-07",
+      "category": "math",
+      "answer": "根据复利公式，本息合计为：\nA = P(1 + r/n)^(nt)\n其中，A 为本息合计，P 为本金，r 为年利率，n 为每年计息次数，t 为投资年限。\n将题目中的数据代入公式中，得到：\nA = 10000(1 + 0.05/1)^(1*3)\nA = 10000(1.05)^3\nA = 11576.25\n因此，3 年后本息合计为 11576.25 元。",
+      "gen_seconds": 6.3,
+      "new_tokens": 142
+    },
+    {
+      "question_id": "reason-01",
+      "category": "reasoning",
+      "answer": "假设甲说的是真话，那么乙在说谎，丙也在说谎。但是这与题意矛盾，因为只有一个人说真话。\n假设乙说的是真话，那么丙在说谎，甲也在说谎。这与题意矛盾，因为只有一个人说真话。\n因此，丙说的是真话。",
+      "gen_seconds": 3.2,
+      "new_tokens": 69
+    },
+    {
+      "question_id": "reason-02",
+      "category": "reasoning",
+      "answer": "根据这句话，我们可以推断出以下信息：\n1. 说话者没有兄弟姐妹。\n2. 照片里的人是说话者的父亲的儿子。\n\n因此，照片里的人和说话者的关系是：照片里的人是说话者的叔叔。",
+      "gen_seconds": 2.3,
+      "new_tokens": 52
+    },
+    {
+      "question_id": "reason-03",
+      "category": "reasoning",
+      "answer": "这个数列的规律是：每一项都是前一项加上一个连续的自然数，即：\n2 + 4 = 6\n6 + 6 = 12\n12 + 8 = 20\n20 + 10 = 30\n因此，下一个数应该是：\n30 + 12 = 42\n所以，数列的下一项是42。",
+      "gen_seconds": 3.9,
+      "new_tokens": 88
+    },
+    {
+      "question_id": "reason-04",
+      "category": "reasoning",
+      "answer": "要计算100天之后是星期几，我们可以使用模运算（取余数）来解决这个问题。\n首先，我们需要知道一周有7天，因此我们可以将100除以7，得到商和余数。\n100 ÷ 7 = 14...2\n这意味着100天之后，我们会在星期三的基础上加上14周和2天。\n接下来，我们需要确定这2天是星期几。由于今天是星期三，我们可以从星期三开始数2天：\n星期三 + 1天 = 星期四\n星期四 + 1天 = 星期五\n因此，100天之后是星期五。",
+      "gen_seconds": 7.8,
+      "new_tokens": 145
+    },
+    {
+      "question_id": "reason-05",
+      "category": "reasoning",
+      "answer": "1. 农夫带着羊过河。\n2. 农夫返回原地。\n3. 农夫带着狼过河。\n4. 农夫带着羊返回原地。\n5. 农夫带着白菜过河。\n6. 农夫返回原地。\n7. 农夫带着羊过河。\n8. 农夫返回原地。\n9. 农夫带着狼过河。\n10. 农夫返回原地。\n11. 农夫带着羊过河。\n12. 农夫返回原地。\n13. 农夫带着狼过河。\n14. 农夫返回原地。\n15. 农夫带着羊过河。\n16. 农夫返回原地。\n17. 农夫带着狼过河。\n18. 农夫返回原地。\n19. 农夫带着羊过河。\n20. 农夫返回原地。\n21. 农夫带着狼过河。\n22. 农夫返回原地。\n23. 农夫带着羊过河。\n24. 农夫返回原地。\n25. 农夫带着狼过河。\n26. 农夫返回原地。\n27. 农夫带着羊过河。\n28. 农夫返回原地。\n29. 农夫带着狼过河。\n30. 农夫返回原地。\n31. 农夫带着羊过河。\n32. 农夫返回原地。\n33. 农夫带着狼过河。\n34. 农夫返回原地。\n35. 农夫带着羊过河。\n36. 农夫返回原地。\n37. 农夫带着狼过河。\n38. 农夫返回原地。\n39. 农夫带着羊过河。\n40. 农夫返回原地。\n41. 农夫带着狼过河。\n42. 农夫返回原地。\n43. 农夫带着羊过河。\n44. 农夫返回原地。\n45. 农夫带着狼过河。\n46. 农夫返回原地。\n47. 农夫带着羊过河。\n48. 农夫返回原地。\n49. 农夫带着狼过河。\n50. �",
+      "gen_seconds": 22.8,
+      "new_tokens": 512
+    },
+    {
+      "question_id": "reason-06",
+      "category": "reasoning",
+      "answer": "根据题目中的信息，5 台机器在 5 分钟内可以生产 5 个零件。因此，每台机器每分钟可以生产 1/5 个零件。\n\n如果要生产 100 个零件，那么需要 100 / (1/5) = 500 台机器工作 1 分钟。因此，100 台机器需要 500 分钟才能生产 100 个零件。",
+      "gen_seconds": 5.2,
+      "new_tokens": 103
+    },
+    {
+      "question_id": "reason-07",
+      "category": "reasoning",
+      "answer": "根据题目中的信息，我们可以得出以下结论：\n1. 小明 > 小红\n2. 小红 > 小刚\n3. 小刚 > 小李\n因此，小明 > 小红 > 小刚 > 小李。\n所以，小刚是第二矮的。",
+      "gen_seconds": 3.0,
+      "new_tokens": 67
+    },
+    {
+      "question_id": "code-01",
+      "category": "code",
+      "answer": "这是一个使用 Python 编写的函数，用于检查给定的字符串是否为回文：\n```python\ndef is_palindrome(s):\n    # 将字符串转换为小写，并删除所有非字母数字字符\n    s = ''.join(c.lower() for c in s if c.isalnum())\n    # 检查字符串是否与其反转相等\n    return s == s[::-1]\n```\n以下是两个测试用例：\n```python\n# 测试用例 1\ns = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(s)) # 输出：True\n# 测试用例 2\ns = \"race a car\"\nprint(is_palindrome(s)) # 输出：False\n```\n在测试用例 1 中，字符串 \"A man, a plan, a canal: Panama\" 被转换为 \"amanaplanacanalpanama\"，然后与它的反转 \"amanaconalpamana\" 相等，因此函数返回 True。\n在测试用例 2 中，字符串 \"race a car\" 被转换为 \"raceacar\"，然后与它的反转 \"raceacar\" 相等，因此函数返回 True。",
+      "gen_seconds": 13.0,
+      "new_tokens": 257
+    },
+    {
+      "question_id": "code-02",
+      "category": "code",
+      "answer": "以下是一个使用迭代实现的 Python 函数，用于计算斐波那契数列的第 n 项：\n\n```python\ndef fib(n):\n    if n == 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a = 0\n        b = 1\n        for i in range(2, n+1):\n            c = a + b\n            a = b\n            b = c\n        return b\n```\n\n这个函数使用了迭代的方法来计算斐波那契数列的第 n 项。它首先检查 n 是否为 0 或 1，如果是，则直接返回相应的值。否则，它初始化两个变量 a 和 b，分别表示斐波那契数列的前两项。然后，它使用一个 for 循环来计算斐波那契数列的第 n 项。在循环中，它将当前项存储在变量 c 中，然后更新 a 和 b 的值。最后，它返回 b 的值，即斐波那契数列的第 n 项。\n\n朴素递归实现斐波那契数列的第 n 项的时间复杂度是指数级的。这是因为每次调用递归函数时，都会生成一个新的子问题，而每个子问题又会生成更多的子问题。例如，当 n = 5 时，递归函数将生成以下递归树：\n\n```\nfib(5)\n|\nv\nfib(4) fib(3)\n|\nv v\nfib(3) fib(2) fib(2) fib(1)\n|\nv v v v\nfib(2) fib(1) fib(1) fib(0)\n|\nv v v v v v\nfib(1) fib(0) fib(0) fib(1) fib(1) fib(0)\n```\n\n可以看到，递归树中共有 15 个节点，其中每个节点都代表了一个子问题。因此，递归函数需要进行 15 次递归调用才能计算出斐波那契数列的第 5 项。随着 n 的增大，递归树中的节点数量也会迅速增加，导致递归函数的时间复杂度呈指数增长。",
+      "gen_seconds": 24.4,
+      "new_tokens": 477
+    },
+    {
+      "question_id": "code-03",
+      "category": "code",
+      "answer": "这个函数的 bug 是在返回结果时，它并没有返回一个新列表，而是返回了原始列表。这会导致在调用函数时，每次调用都会修改同一个列表，而不是创建一个新的列表。\n\n例如，如果我们在调用函数时传入一个空列表作为参数，那么每次调用函数都会将新的元素添加到这个列表中，最终导致列表中的元素重复。\n\n修复这个 bug 的方法是使用 `copy()` 方法来复制列表，这样每次调用函数都会创建一个新的列表，而不是修改原始列表。\n\n修复后的代码如下：\n\n```python\ndef add_item(item, result=None):\n    if result is None:\n        result = []\n    result.append(item)\n    return result\n```\n\n现在，每次调用函数都会创建一个新的列表，并将新的元素添加到这个列表中，不会影响到原始列表。",
+      "gen_seconds": 8.3,
+      "new_tokens": 176
+    },
+    {
+      "question_id": "code-04",
+      "category": "code",
+      "answer": "```sql\nSELECT user_id, SUM(amount) AS total_amount\nFROM orders\nGROUP BY user_id\nHAVING total_amount > 1000\nORDER BY total_amount DESC\nLIMIT 10;\n```\n这条 SQL 语句首先使用 `SUM` 函数计算每个用户的订单总金额，并将结果与 `user_id` 进行分组。然后使用 `HAVING` 子句筛选出总金额大于 1000 的用户。最后使用 `ORDER BY` 子句按总金额从高到低排序，并使用 `LIMIT` 子句限制结果只返回前 10 条记录。",
+      "gen_seconds": 6.0,
+      "new_tokens": 138
+    },
+    {
+      "question_id": "code-05",
+      "category": "code",
+      "answer": "这段代码的输出是 `[0, 1, 2]`。\n\n让我们逐步分析代码：\n1. `funcs` 是一个列表，其中包含三个 lambda 函数。每个 lambda 函数都接受一个参数 `i` 并返回它。\n2. `for f in funcs` 循环遍历 `funcs` 列表中的每个 lambda 函数，并将它们存储在变量 `f` 中。\n3. `[f() for f in funcs]` 使用列表推导式生成一个新的列表，其中包含每个 lambda 函数调用的结果。\n4. 每个 lambda 函数都返回它所接收的参数 `i` 的值。因此，当循环遍历 `funcs` 列表时，它会依次调用每个 lambda 函数并返回它们的值。\n5. 最终，列表推导式生成的列表是 `[0, 1, 2]`，因为每个 lambda 函数都返回它所接收的参数 `i` 的值，从 0 到 2。",
+      "gen_seconds": 9.5,
+      "new_tokens": 220
+    },
+    {
+      "question_id": "code-06",
+      "category": "code",
+      "answer": "这是一个使用 Python 编写的 top_k_words 函数，它接受一个字符串参数 text 和一个整数参数 k，并返回一个字典，其中键是出现频率最高的前 k 个单词，值是它们的出现次数。\n```python\ndef top_k_words(text, k):\n # 将文本转换为小写并分割成单词列表\n words = text.lower().split()\n # 创建一个空字典来存储单词及其出现次数\n word_counts = {}\n # 遍历单词列表\n for word in words:\n # 如果单词已经在字典中，则增加其计数\n if word in word_counts:\n word_counts[word] += 1\n # 否则，在字典中添加该单词并将其计数设置为 1\n else:\n word_counts[word] = 1\n # 返回出现频率最高的前 k 个单词及其出现次数\n return dict(sorted(word_counts.items(), key=lambda x: x[1], reverse=True)[:k])\n```\n例如，如果我们将这段文本传递给 top_k_words 函数：\n```python\ntext = \"The quick brown fox jumps over the lazy dog.\"\nprint(top_k_words(text, 3))\n```\n输出将是：\n```\n{'the': 2, 'quick': 1, 'brown': 1}\n```\n这表示在给定的文本中，“the”、“quick”和“brown”是最常见的单词，它们的出现次数分别为 2、1 和 1。",
+      "gen_seconds": 13.6,
+      "new_tokens": 306
+    }
+  ]
+}

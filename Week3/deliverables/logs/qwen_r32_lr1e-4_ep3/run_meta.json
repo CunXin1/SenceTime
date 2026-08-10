@@ -1,0 +1,16 @@
+{
+  "run_id": "qwen_r32_lr1e-4_ep3",
+  "config": "Week3/configs/exp/qwen_r32_lr1e-4_ep3.yaml",
+  "smoke": false,
+  "started_at": "2026-07-17T14:57:24",
+  "finished_at": "2026-07-17T15:16:23",
+  "wall_seconds": 1138.7,
+  "wall_pretty": "18m58s",
+  "peak_vram_mib": 17639,
+  "exit_code": 0,
+  "lora_rank": 32,
+  "learning_rate": "1.0e-4",
+  "num_train_epochs": 3,
+  "groups": "A",
+  "model": "qwen"
+}

@@ -1,0 +1,126 @@
+{
+  "_comment": "Week3 Day14 固定评测题集：20 道高难度题（数学7 / 推理7 / 代码6）。所有模型用完全相同的题目与顺序，贪心解码保证可复现。reference 是人工打分时的参考要点，不喂给模型。 / Fixed eval set: 20 hard questions (7 math, 7 reasoning, 6 code). Same questions & order for every model, greedy decoding for reproducibility. `reference` is for human graders only, never shown to the model.",
+  "version": "week3-v1",
+  "questions": [
+    {
+      "id": "math-01",
+      "category": "math",
+      "question": "鸡兔同笼：笼子里共有 35 个头、94 只脚，问鸡和兔各有多少只？请给出完整推理过程。",
+      "reference": "鸡 23 只、兔 12 只。设方程 x+y=35, 2x+4y=94，或假设法：全鸡 70 脚，多 24 脚 ÷2 = 12 兔。"
+    },
+    {
+      "id": "math-02",
+      "category": "math",
+      "question": "计算 37 × 43 − 15² 的值，要求分步骤给出计算过程。",
+      "reference": "37×43=1591（可用 (40−3)(40+3)=1600−9），15²=225，结果 1366。"
+    },
+    {
+      "id": "math-03",
+      "category": "math",
+      "question": "一个水池，甲管单独注水 6 小时注满，乙管单独注水 4 小时注满。两管同时打开，需要多少小时注满水池？",
+      "reference": "1/(1/6+1/4) = 1/(5/12) = 2.4 小时（2 小时 24 分钟）。"
+    },
+    {
+      "id": "math-04",
+      "category": "math",
+      "question": "等差数列 3, 7, 11, 15, … 的第 50 项是多少？并给出通项公式。",
+      "reference": "通项 a_n = 3 + 4(n−1) = 4n−1，第 50 项 = 199。"
+    },
+    {
+      "id": "math-05",
+      "category": "math",
+      "question": "同时掷两枚公平的骰子，点数之和恰好为 8 的概率是多少？请列出所有满足条件的组合。",
+      "reference": "组合 (2,6)(3,5)(4,4)(5,3)(6,2) 共 5 种，总 36 种，概率 5/36。"
+    },
+    {
+      "id": "math-06",
+      "category": "math",
+      "question": "解一元二次方程 2x² − 5x − 3 = 0，要求写出求解步骤。",
+      "reference": "因式分解 (2x+1)(x−3)=0 或求根公式，x = 3 或 x = −1/2。"
+    },
+    {
+      "id": "math-07",
+      "category": "math",
+      "question": "本金 10000 元，年利率 5%，按复利计算，3 年后本息合计多少元？（结果保留两位小数）",
+      "reference": "10000 × 1.05³ = 11576.25 元。若按单利算 11500 是错误答案。"
+    },
+    {
+      "id": "reason-01",
+      "category": "reasoning",
+      "question": "甲、乙、丙三人中只有一人说真话。甲说：\"乙在说谎。\"乙说：\"丙在说谎。\"丙说：\"甲和乙都在说谎。\"请问谁说的是真话？给出推理过程。",
+      "reference": "乙说真话。假设甲真→乙假→丙真，与只有一人真矛盾；假设丙真→甲乙皆假，但甲假意味着乙真，矛盾；假设乙真→丙假（成立），甲假（即乙没说谎，一致），唯一自洽。"
+    },
+    {
+      "id": "reason-02",
+      "category": "reasoning",
+      "question": "一个人指着一张照片说：\"我没有兄弟姐妹，照片里这个人的父亲，是我父亲的儿子。\"照片里的人和说话者是什么关系？",
+      "reference": "\"我父亲的儿子\"（无兄弟）= 说话者本人 → 照片中人的父亲是说话者 → 照片里是说话者的儿子。"
+    },
+    {
+      "id": "reason-03",
+      "category": "reasoning",
+      "question": "数列 2, 6, 12, 20, 30, ? 的下一项是多少？请说明规律。",
+      "reference": "42。规律 n(n+1)：1×2, 2×3, 3×4, 4×5, 5×6, 6×7；或相邻差 4,6,8,10,12 递增。"
+    },
+    {
+      "id": "reason-04",
+      "category": "reasoning",
+      "question": "如果今天是星期三，那么 100 天之后是星期几？请给出计算方法。",
+      "reference": "100 mod 7 = 2，星期三 + 2 = 星期五。"
+    },
+    {
+      "id": "reason-05",
+      "category": "reasoning",
+      "question": "农夫要带一只狼、一只羊和一棵白菜过河。船每次只能载农夫和其中一样东西；农夫不在场时，狼会吃羊、羊会吃白菜。请给出完整的过河方案。",
+      "reference": "①带羊过 ②空手回 ③带狼（或菜）过 ④带羊回 ⑤带菜（或狼）过 ⑥空手回 ⑦带羊过。核心：羊不能与狼或菜单独同岸，需要把羊带回来一次，共 7 步。"
+    },
+    {
+      "id": "reason-06",
+      "category": "reasoning",
+      "question": "5 台机器 5 分钟可以生产 5 个零件。照这样计算，100 台机器生产 100 个零件需要多少分钟？",
+      "reference": "5 分钟。每台机器 5 分钟产 1 个零件，100 台并行 5 分钟产 100 个。常见错误答案是 100 分钟。"
+    },
+    {
+      "id": "reason-07",
+      "category": "reasoning",
+      "question": "小明比小红高，小红比小刚高，小刚比小李高。请按身高从高到低排序，并回答：谁是第二矮的？",
+      "reference": "小明 > 小红 > 小刚 > 小李；第二矮是小刚。"
+    },
+    {
+      "id": "code-01",
+      "category": "code",
+      "question": "用 Python 写一个函数 is_palindrome(s)，判断字符串是否为回文。要求：忽略大小写，忽略所有非字母数字字符（例如 \"A man, a plan, a canal: Panama\" 应返回 True），并给出至少 2 个测试用例。",
+      "reference": "过滤 c.isalnum() 并 lower() 后比较正反序（t == t[::-1] 或双指针）。测试用例覆盖 True/False 两种。"
+    },
+    {
+      "id": "code-02",
+      "category": "code",
+      "question": "用 Python 实现函数 fib(n) 返回斐波那契数列第 n 项（fib(0)=0, fib(1)=1）。要求：必须使用 O(n) 时间的迭代实现，禁止朴素递归，并说明为什么朴素递归的时间复杂度是指数级的。",
+      "reference": "迭代 a,b=0,1 循环 n 次；朴素递归因重复子问题呈 O(φ^n) 指数增长（fib(k) 被重复计算多次）。"
+    },
+    {
+      "id": "code-03",
+      "category": "code",
+      "question": "下面的 Python 函数有一个隐蔽的 bug：\n\ndef add_item(item, result=[]):\n    result.append(item)\n    return result\n\n请指出 bug 是什么、为什么会发生、如何修复。",
+      "reference": "可变默认参数陷阱：默认列表在函数定义时创建一次，多次调用共享同一列表。修复：默认值用 None，函数体内 if result is None: result = []。"
+    },
+    {
+      "id": "code-04",
+      "category": "code",
+      "question": "有一张订单表 orders(id, user_id, amount, created_at)。写一条 SQL：统计每个用户的订单总金额，只保留总金额大于 1000 的用户，按总金额从高到低取前 10 名。",
+      "reference": "SELECT user_id, SUM(amount) AS total FROM orders GROUP BY user_id HAVING SUM(amount) > 1000 ORDER BY total DESC LIMIT 10; 关键点：HAVING 而非 WHERE 过滤聚合值。"
+    },
+    {
+      "id": "code-05",
+      "category": "code",
+      "question": "以下 Python 代码的输出是什么？请解释原因：\n\nfuncs = [lambda: i for i in range(3)]\nprint([f() for f in funcs])",
+      "reference": "输出 [2, 2, 2]。闭包晚绑定：lambda 捕获的是变量 i 本身而非其值，循环结束后 i=2。修复：lambda i=i: i。"
+    },
+    {
+      "id": "code-06",
+      "category": "code",
+      "question": "用 Python 写一个函数 top_k_words(text, k)，统计一段英文文本中每个单词的出现次数（忽略大小写和标点），返回出现频率最高的前 k 个单词及其次数。",
+      "reference": "lower() + 正则 re.findall(r\"[a-z']+\") 或 strip 标点分词，collections.Counter(...).most_common(k)。需处理大小写与标点两个要求。"
+    }
+  ]
+}

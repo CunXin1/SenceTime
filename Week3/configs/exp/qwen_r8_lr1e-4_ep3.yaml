@@ -1,0 +1,89 @@
+# ============================================================================
+#  Week3 实验配置（gen_configs.py 自动生成，勿手改 / GENERATED — do not edit）
+#  实验 / Experiment : qwen_r8_lr1e-4_ep3   [组/group A+B+C] baseline 基线
+#  变量 / Variables  : lora_rank=8 (alpha=16), lr=1.0e-4, epochs=3
+#  运行 / Run        : .venv/Scripts/llamafactory-cli.exe train Week3/configs/exp/qwen_r8_lr1e-4_ep3.yaml
+# ============================================================================
+
+### ---------------- model（基座模型 / base model）----------------
+# 全部实验固定同一基座，保证变量唯一。
+# Same base model for all runs — single-variable principle.
+model_name_or_path: models/Qwen2.5-3B-Instruct
+trust_remote_code: true
+
+### ---------------- method（微调方法 / finetuning method）----------------
+stage: sft                     # 监督微调 / supervised fine-tuning
+do_train: true
+finetuning_type: lora          # 只训低秩旁路，冻结基座 / train LoRA adapters only
+# ★ 变量组A / Variable group A —— LoRA 秩（8 / 32 / 64）。
+#   秩越大低秩旁路表达力越强、可训练参数和显存越多，小数据集上更易过拟合。
+#   LoRA rank (8 / 32 / 64). Higher rank = more capacity, more trainable
+#   params & VRAM, and higher overfitting risk on a small dataset.
+lora_rank: 8
+# α 随秩同步取 α=2r，保持等效缩放 α/r=2 恒定——否则秩实验会被缩放系数干扰（混淆变量）。
+# Alpha follows rank (α=2r) to keep the effective scale α/r=2 constant —
+# otherwise the rank sweep would be confounded by a changing scale factor.
+lora_alpha: 16
+lora_dropout: 0.05             # 固定 / fixed
+lora_target: all               # 所有线性层加 LoRA / LoRA on all linear layers
+
+### ---------------- dataset（数据，全部固定 / dataset, all FIXED）----------------
+# 复用 Week2 Day7 清洗后的 4684 条数据；所有实验共用同一份数据与同一注册表。
+# Reuse the Week2 Day7 cleaned dataset (4684 samples); identical for every run.
+dataset: week2_sft_alpaca
+dataset_dir: Week2/data/clean
+template: qwen                 # Qwen 用 ChatML 模板 / Qwen uses the ChatML template
+cutoff_len: 2048
+packing: true                  # 序列打包提速（Week2 结论：步数 837→108）/ sequence packing
+neat_packing: true             # 块对角注意力，拼接样本互不可见 / block-diagonal attention
+overwrite_cache: true
+preprocessing_num_workers: 8
+# ★ Windows 必须 0：spawn 起 DataLoader worker 会触发 CUDA IPC 误报 OOM（Week2 结论）。
+# ★ Must be 0 on Windows: spawned DataLoader workers cause CUDA IPC false-OOM.
+dataloader_num_workers: 0
+
+### ---------------- reproducibility（可复现性）----------------
+# 固定随机种子：数据切分、shuffle、LoRA 初始化全部可复现，是对比实验的前提。
+# Fixed random seed: reproducible data split, shuffling and LoRA init —
+# the precondition for any controlled comparison.
+seed: 42
+
+### ---------------- output（输出 / output）----------------
+# 输出目录按命名规范 saves/week3/{model}/{exp_name}，由生成器填充。
+# Output dir follows saves/week3/{model}/{exp_name}, filled by the generator.
+output_dir: saves/week3/qwen/r8_lr1e-4_ep3
+logging_steps: 5
+save_steps: 200
+plot_loss: true                # 训练结束自动出 loss 曲线 / auto loss curve on finish
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train（训练超参 / training hyperparameters）----------------
+per_device_train_batch_size: 1   # packing 后每序列满 2048，固定 1 / fixed with packing
+gradient_accumulation_steps: 16  # 等效 batch = 16，全实验固定 / effective batch = 16, fixed
+# ★ 变量组B / Variable group B —— 学习率（5e-5 / 1e-4 / 2e-4）。
+#   过小收敛慢欠拟合，过大震荡甚至破坏预训练知识。
+#   Learning rate (5e-5 / 1e-4 / 2e-4). Too low = slow convergence /
+#   underfitting; too high = oscillation or catastrophic forgetting.
+learning_rate: 1.0e-4
+# ★ 变量组C / Variable group C —— 训练轮数（2 / 3 / 5）。
+#   轮数多 train loss 更低，但 eval loss 回升即过拟合信号。
+#   Epochs (2 / 3 / 5). More epochs lower train loss, but rising eval loss
+#   signals overfitting.
+num_train_epochs: 3.0
+lr_scheduler_type: cosine      # 余弦退火，固定 / cosine schedule, fixed
+warmup_ratio: 0.1              # 前 10% 步预热，固定 / 10% warmup, fixed
+bf16: true                     # 4090 原生 bf16 / native bf16 on Ada
+ddp_timeout: 180000000
+
+### ---------------- eval（验证 / validation）----------------
+# 5% 验证集：eval loss 是三组实验判断过拟合的核心指标。
+# 5% held-out split: eval loss is the key overfitting signal across all groups.
+val_size: 0.05
+per_device_eval_batch_size: 2
+eval_strategy: steps
+# Week2 用 200，但总步数才 ~108 从未触发中途评估；改 50 保证每次训练至少 2~3 个
+# eval 点，能看到 eval loss 的走势（对组C 轮数实验尤其重要）。
+# Week2 used 200 but total steps were only ~108, so mid-run eval never fired;
+# 50 gives 2-3 eval points per run — essential for the epoch sweep (group C).
+eval_steps: 50

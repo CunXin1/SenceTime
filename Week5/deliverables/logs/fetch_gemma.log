@@ -1,0 +1,119 @@
+﻿[缺失] gemma-4-E4B-it: ['model.safetensors']
+[清理] 删除 ModelScope 残留 model.safetensors.incomplete (2.03 GB)
+[下载] model.safetensors <- https://hf-mirror.com
+  总大小 14.89 GB
+   0.22/14.89 GB ( 1.5%)   14.8 MB/s  ETA 16.9 min
+   0.48/14.89 GB ( 3.2%)   16.2 MB/s  ETA 15.2 min
+   0.75/14.89 GB ( 5.0%)   16.9 MB/s  ETA 14.3 min
+   1.03/14.89 GB ( 6.9%)   17.4 MB/s  ETA 13.6 min
+   1.30/14.89 GB ( 8.7%)   17.5 MB/s  ETA 13.3 min
+python.exe : Traceback (most recent call last):
+At line:1 char:302
++ ... tch {} } }; & "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 905, in 
+_error_catcher
+    yield
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 1043, in 
+_raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(1562008527 bytes read, 14430587357 more expected)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\requests\models.py", line 937, in 
+generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 1267, in 
+stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 1155, in 
+read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 1021, in 
+_raw_read
+    with self._error_catcher():
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ruibo's Desktop\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\urllib3\response.py", line 925, in 
+_error_catcher
+    raise ProtocolError(arg, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(1562008527 bytes read, 14430587357 more 
+expected)', IncompleteRead(1562008527 bytes read, 14430587357 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\Week5\code\fetch_missing_shard.py", line 120, in <module>
+    main()
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\Week5\code\fetch_missing_shard.py", line 109, in main
+    download(REPO[args.model_dir], name, local / name)
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\Week5\code\fetch_missing_shard.py", line 69, in download
+    for chunk in r.iter_content(CHUNK):
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Lib\site-packages\requests\models.py", line 939, in 
+generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(1562008527 bytes read, 14430587357 
+more expected)', IncompleteRead(1562008527 bytes read, 14430587357 more expected))
+[缺失] gemma-4-E4B-it: ['model.safetensors']
+[下载] model.safetensors <- https://hf-mirror.com
+  续传:已有 1.45 GB / 共 14.89 GB
+   1.71/14.89 GB (11.5%)  114.4 MB/s  ETA  2.0 min
+   1.98/14.89 GB (13.3%)   66.7 MB/s  ETA  3.3 min
+   2.27/14.89 GB (15.2%)   50.3 MB/s  ETA  4.3 min
+   2.55/14.89 GB (17.2%)   42.6 MB/s  ETA  4.9 min
+   2.83/14.89 GB (19.0%)   37.9 MB/s  ETA  5.4 min
+   3.10/14.89 GB (20.8%)   34.7 MB/s  ETA  5.8 min
+   3.39/14.89 GB (22.8%)   32.5 MB/s  ETA  6.0 min
+   3.67/14.89 GB (24.7%)   30.9 MB/s  ETA  6.2 min
+   3.95/14.89 GB (26.5%)   29.5 MB/s  ETA  6.3 min
+   4.22/14.89 GB (28.3%)   28.4 MB/s  ETA  6.4 min
+   4.50/14.89 GB (30.2%)   27.5 MB/s  ETA  6.4 min
+   4.78/14.89 GB (32.1%)   26.8 MB/s  ETA  6.4 min
+   5.05/14.89 GB (33.9%)   26.2 MB/s  ETA  6.4 min
+   5.33/14.89 GB (35.8%)   25.6 MB/s  ETA  6.4 min
+   5.60/14.89 GB (37.6%)   25.2 MB/s  ETA  6.3 min
+   5.88/14.89 GB (39.4%)   24.7 MB/s  ETA  6.2 min
+   6.16/14.89 GB (41.3%)   24.4 MB/s  ETA  6.1 min
+   6.41/14.89 GB (43.1%)   23.9 MB/s  ETA  6.0 min
+   6.70/14.89 GB (45.0%)   23.7 MB/s  ETA  5.9 min
+   6.98/14.89 GB (46.9%)   23.5 MB/s  ETA  5.8 min
+   7.26/14.89 GB (48.7%)   23.2 MB/s  ETA  5.6 min
+   7.53/14.89 GB (50.6%)   23.0 MB/s  ETA  5.5 min
+   7.82/14.89 GB (52.5%)   22.8 MB/s  ETA  5.3 min
+   8.11/14.89 GB (54.4%)   22.7 MB/s  ETA  5.1 min
+   8.39/14.89 GB (56.3%)   22.5 MB/s  ETA  4.9 min
+   8.67/14.89 GB (58.2%)   22.4 MB/s  ETA  4.7 min
+   8.97/14.89 GB (60.2%)   22.3 MB/s  ETA  4.5 min
+   9.18/14.89 GB (61.6%)   21.7 MB/s  ETA  4.5 min
+   9.46/14.89 GB (63.5%)   21.7 MB/s  ETA  4.3 min
+   9.74/14.89 GB (65.4%)   21.6 MB/s  ETA  4.1 min
+  10.05/14.89 GB (67.5%)   21.5 MB/s  ETA  3.8 min
+  10.34/14.89 GB (69.4%)   21.5 MB/s  ETA  3.6 min
+  10.60/14.89 GB (71.2%)   21.4 MB/s  ETA  3.4 min
+  10.89/14.89 GB (73.1%)   21.3 MB/s  ETA  3.2 min
+  11.19/14.89 GB (75.1%)   21.3 MB/s  ETA  3.0 min
+  11.48/14.89 GB (77.1%)   21.2 MB/s  ETA  2.8 min
+  11.76/14.89 GB (78.9%)   21.1 MB/s  ETA  2.5 min
+  12.05/14.89 GB (80.9%)   21.1 MB/s  ETA  2.3 min
+  12.34/14.89 GB (82.8%)   21.1 MB/s  ETA  2.1 min
+  12.62/14.89 GB (84.8%)   21.0 MB/s  ETA  1.8 min
+  12.90/14.89 GB (86.6%)   20.9 MB/s  ETA  1.6 min
+  13.18/14.89 GB (88.5%)   20.9 MB/s  ETA  1.4 min
+  13.42/14.89 GB (90.1%)   20.8 MB/s  ETA  1.2 min
+  13.68/14.89 GB (91.8%)   20.7 MB/s  ETA  1.0 min
+  13.95/14.89 GB (93.6%)   20.7 MB/s  ETA  0.8 min
+  14.22/14.89 GB (95.5%)   20.6 MB/s  ETA  0.6 min
+  14.48/14.89 GB (97.2%)   20.6 MB/s  ETA  0.3 min
+  14.76/14.89 GB (99.1%)   20.5 MB/s  ETA  0.1 min
+[完成] model.safetensors  14.89 GB  12.4 分钟 (20.4 MB/s)
+
+[全部齐全] 

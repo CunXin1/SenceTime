@@ -1,0 +1,94 @@
+# ============================================================================
+#  Week4 DPO 实验配置（gen_dpo_configs.py 自动生成，勿手改 / GENERATED — do not edit）
+#  实验 / Experiment : qwen_dpo_beta0.1_lr5e-6   [组/group A+B] baseline 基线（任务书指定组）
+#  变量 / Variables  : pref_beta=0.1, lr=5.0e-6, epochs=2
+#  运行 / Run        : .venv/Scripts/python.exe Week4/code/run_dpo.py --only beta0.1_lr5e-6
+# ============================================================================
+
+### ---------------- model（policy 起点 / policy start）----------------
+# ★ DPO 的 policy 起点 = 第 3 周归档的最优 SFT 合并模型（不是原始基座）。
+# ★ DPO policy = Week3's best merged SFT model (NOT the raw base).
+model_name_or_path: models/Qwen2.5-3B-week3-best-merged
+trust_remote_code: true
+
+### ---------------- ref_model（参考模型 / reference model）----------------
+# 任务书要求 ref_model 指向上周最优 SFT。在 finetuning_type=lora 下，LLaMA-Factory 的
+# create_ref_model()（src/llamafactory/train/trainer_utils.py）在未显式指定 ref_model 时，
+# 以"禁用 LoRA 旁路的同一个 policy 模型"作参考——而这里的 policy 正是最优 SFT 合并模型，
+# 语义上已满足要求，且省下约 6GB 显存（不必再加载第二份完整模型）。
+# With LoRA, an unset ref_model makes LLaMA-Factory use the adapter-disabled base
+# (= the merged SFT model here) as reference — semantically identical, saving ~6GB.
+# 如需显式加载独立参考模型，取消下一行注释即可（本周为省显存不启用）：
+# ref_model: models/Qwen2.5-3B-week3-best-merged
+
+### ---------------- method（DPO 偏好对齐 / DPO preference alignment）----------------
+stage: dpo                        # 直接偏好优化 / Direct Preference Optimization
+do_train: true
+finetuning_type: lora             # 只训低秩旁路，冻结 policy 主干 / LoRA only
+# ★ 变量组A / Variable group A —— pref_beta（KL 约束强度 0.1 / 0.5）。
+#   β 小=约束松、学得快、偏好强但易遗忘通用能力；β 大=约束紧、更稳但偏好信号弱。
+#   Smaller β = looser KL, faster/stronger preference but more forgetting;
+#   larger β = tighter KL, more stable but weaker preference signal.
+pref_beta: 0.1
+pref_loss: sigmoid                # 标准 DPO 损失 / vanilla DPO loss
+pref_ftx: 0.0                     # 不混 SFT 辅助 loss，保持纯 DPO 对比 / no SFT mix
+# LoRA 秩沿用 Week3 最优（r=32, α=64），全实验固定，只让 β 和 lr 变化。
+# LoRA rank reuses Week3's winner (r=32, α=64); fixed across runs.
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target: all
+
+### ---------------- dataset（偏好数据 / preference data）----------------
+# week4_dpo_pairs 在 Week4/data/dpo/dataset_info.json 注册，ranking: true（DPO 必需）。
+# Registered in Week4/data/dpo/dataset_info.json with ranking: true (required for DPO).
+dataset: week4_dpo_pairs
+dataset_dir: Week4/data/dpo
+template: qwen                    # 与 policy 训练时一致 / ChatML, must match policy
+# ★ cutoff_len 768（非 SFT 的 2048）：DPO 单步要跑 policy+ref × chosen+rejected 共 4 遍
+#   前向，序列越长显存和耗时翻倍增长。实测 cutoff=1024 时峰值显存逼近 24GB 上限（≈23.4GB）
+#   且单步 ~17s，3 组训练近 4h；降到 768 同时压低显存风险与耗时，仍覆盖绝大多数中文偏好对
+#   （较长的英文 UltraFeedback 回答会被多截一些，中文为本周优先）。
+#   768 (not 2048): DPO does 4 forwards/step; measured peak VRAM ~23.4GB at 1024
+#   (near the 24GB ceiling) with ~17s/step. 768 cuts both VRAM and time while
+#   still covering most Chinese pairs; long English UF answers are trimmed more.
+cutoff_len: 768
+# ★ packing 必须关：序列打包是 SFT 专用，会破坏 chosen/rejected 的成对结构，DPO 不能用。
+# ★ packing MUST be off: it is SFT-only and would break the chosen/rejected pairing.
+packing: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0         # ★ Windows 必须 0（Week2 结论：spawn+CUDA IPC 误报 OOM）
+
+### ---------------- reproducibility（可复现性）----------------
+seed: 42
+
+### ---------------- output（输出 / output）----------------
+output_dir: saves/week4/qwen/qwen_dpo_beta0.1_lr5e-6
+logging_steps: 5
+save_steps: 500
+plot_loss: true                   # 训练结束自动出 loss 曲线 / auto loss curve
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train（训练超参 / training hyperparameters）----------------
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8    # 等效 batch = 8，全实验固定 / effective batch 8, fixed
+# ★ 变量组B / Variable group B —— 学习率（5e-6 / 1e-5）。
+#   DPO 学习率比 SFT 低一个量级：policy 已是对齐良好的 SFT 模型，大 lr 会破坏已学能力。
+#   DPO lr is an order lower than SFT: the policy is already well-aligned;
+#   a large lr would damage existing capabilities.
+learning_rate: 5.0e-6
+num_train_epochs: 2.0             # 偏好数据 2 轮足够，多了易过拟合 / 2 epochs suffice
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true                        # 4090 原生 bf16 / native bf16 on Ada
+ddp_timeout: 180000000
+
+### ---------------- eval（验证 / validation）----------------
+# 5% 验证集：DPO 主要看 rewards/* 曲线，eval loss 作辅助过拟合信号。
+# 5% held-out split: DPO watches rewards/* curves; eval loss is a secondary signal.
+val_size: 0.05
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 50

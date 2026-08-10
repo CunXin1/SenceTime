@@ -1,0 +1,150 @@
+[
+  {
+    "key": "qwen",
+    "display": "Qwen2.5-VL-7B-Instruct",
+    "origin": "中国 / 阿里",
+    "path": "C:\\Users\\Ruibo's Desktop\\SenceTime_Week1\\models\\Qwen2.5-VL-7B-Instruct",
+    "size_gb": 15.46,
+    "arch": "Qwen2_5_VLForConditionalGeneration",
+    "dtype": "torch.bfloat16",
+    "load_seconds": 7.4,
+    "weight_mem_gb": 15.45,
+    "params": {
+      "vision_encoder": 631975680,
+      "projector": 44574464,
+      "language_model": 7615616512,
+      "other": 0,
+      "total": 8292166656
+    },
+    "runs": [
+      {
+        "image": "01_table.png",
+        "image_tokens": 532,
+        "prompt_tokens": 560,
+        "new_tokens": 21,
+        "latency_s": 2.12,
+        "peak_mem_gb": 15.62,
+        "answer": "这张图片展示了Week4 DPO实验中不同配置下的末次评估与训练成本结果。"
+      },
+      {
+        "image": "02_landscape.jpg",
+        "image_tokens": 1247,
+        "prompt_tokens": 1275,
+        "new_tokens": 19,
+        "latency_s": 2.39,
+        "peak_mem_gb": 16.06,
+        "answer": "两个人在海滩上散步，背景是宁静的海面和远处的山丘。"
+      },
+      {
+        "image": "03_logo.jpg",
+        "image_tokens": 1218,
+        "prompt_tokens": 1246,
+        "new_tokens": 26,
+        "latency_s": 2.67,
+        "peak_mem_gb": 16.03,
+        "answer": "这张图片展示了纳斯达克的标志和背景中的城市景观，突出了EVgo在纳斯达克上市的信息。"
+      },
+      {
+        "image": "04_signboard_jp.jpg",
+        "image_tokens": 1271,
+        "prompt_tokens": 1299,
+        "new_tokens": 29,
+        "latency_s": 1.57,
+        "peak_mem_gb": 16.07,
+        "answer": "这张图片展示了一块写有日文的白色告示牌，背景是郁郁葱葱的树木和灌木丛。"
+      },
+      {
+        "image": "05_ui.png",
+        "image_tokens": 1092,
+        "prompt_tokens": 1120,
+        "new_tokens": 24,
+        "latency_s": 1.22,
+        "peak_mem_gb": 15.94,
+        "answer": "一张显示LoRA训练任务状态的界面，包括超参数配置、运行状态和训练日志信息。"
+      },
+      {
+        "image": "06_chart.png",
+        "image_tokens": 819,
+        "prompt_tokens": 847,
+        "new_tokens": 23,
+        "latency_s": 1.02,
+        "peak_mem_gb": 15.76,
+        "answer": "这张图片展示了三组DPO模型在不同参数设置下的margin值随训练步数的变化情况。"
+      }
+    ]
+  },
+  {
+    "key": "gemma",
+    "display": "gemma-4-E4B-it",
+    "origin": "美国 / Google",
+    "path": "C:\\Users\\Ruibo's Desktop\\SenceTime_Week1\\models\\gemma-4-E4B-it",
+    "size_gb": 14.92,
+    "arch": "Gemma4ForConditionalGeneration",
+    "dtype": "torch.bfloat16",
+    "load_seconds": 8.4,
+    "weight_mem_gb": 14.8,
+    "params": {
+      "vision_encoder": 169330688,
+      "projector": 0,
+      "language_model": 7463013376,
+      "other": 308756768,
+      "total": 7941100832
+    },
+    "runs": [
+      {
+        "image": "01_table.png",
+        "image_tokens": 546,
+        "prompt_tokens": 565,
+        "new_tokens": 72,
+        "latency_s": 4.48,
+        "peak_mem_gb": 14.97,
+        "answer": "这张图片展示了“Week4 DPO 实验：本次评估与训练成本”的实验结果表格，记录了不同配置（如 `qwen_dpo_beta` 和学习率）下的评估准确率（eval acc）、评估边距（eval margin）、训练损失（train loss）、耗时和存储大小等指标。"
+      },
+      {
+        "image": "02_landscape.jpg",
+        "image_tokens": 532,
+        "prompt_tokens": 551,
+        "new_tokens": 29,
+        "latency_s": 1.86,
+        "peak_mem_gb": 14.97,
+        "answer": "在青山环绕的海边沙滩上，一对情侣在海边散步，前景停放着几艘船只。"
+      },
+      {
+        "image": "03_logo.jpg",
+        "image_tokens": 532,
+        "prompt_tokens": 551,
+        "new_tokens": 37,
+        "latency_s": 2.53,
+        "peak_mem_gb": 14.97,
+        "answer": "这张图片展示了在城市背景下，一个巨大的广告牌上印有“Nasdaq”和“EVgo”的标志，突显了这两家公司的品牌形象。"
+      },
+      {
+        "image": "04_signboard_jp.jpg",
+        "image_tokens": 540,
+        "prompt_tokens": 559,
+        "new_tokens": 29,
+        "latency_s": 2.09,
+        "peak_mem_gb": 14.97,
+        "answer": "这张图片展示了一个户外信息牌，牌子上用日文写着一些文字，背景是茂密的树林和草地。"
+      },
+      {
+        "image": "05_ui.png",
+        "image_tokens": 540,
+        "prompt_tokens": 559,
+        "new_tokens": 74,
+        "latency_s": 4.83,
+        "peak_mem_gb": 14.97,
+        "answer": "这张图片展示了一个名为“LoRA 训练台”的界面，显示了一个名为“job-20260805-vlm-sft”的训练任务的详细信息，包括**超参数配置**、**运行状态**（如已完成步数、当前损失、剩余时间）以及**训练日志**。"
+      },
+      {
+        "image": "06_chart.png",
+        "image_tokens": 527,
+        "prompt_tokens": 546,
+        "new_tokens": 61,
+        "latency_s": 5.66,
+        "peak_mem_gb": 14.97,
+        "answer": "这张图展示了三种不同超参数设置的 DPO 模型在训练过程中奖励（rewards/margins）随训练步数的变化趋势，其中绿色线（qwen\\_dpo\\_beta0.5\\_lr5e-6）的奖励值最高，表明其性能最优。"
+      }
+    ]
+  }
+]

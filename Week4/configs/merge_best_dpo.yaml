@@ -1,0 +1,26 @@
+# ============================================================================
+#  Week4 Day20：把最优 DPO LoRA adapter 合并进 policy（Week3 最优 SFT 模型），
+#  归档为本周最终交付模型。
+#  Week4 Day20: merge the best DPO LoRA adapter into the policy (Week3's best SFT
+#  model) and archive it as this week's final deliverable.
+#  运行 / Run（Windows 必须用 python -m，勿用 llamafactory-cli.exe——Week2 Day10 FAQ 段错误坑）:
+#    .venv/Scripts/python.exe -m llamafactory.cli export Week4/configs/merge_best_dpo.yaml
+# ============================================================================
+
+### 被合并的 policy + adapter / policy + adapter to merge
+# policy = 第 3 周归档的最优 SFT 合并模型（DPO 的起点）。
+model_name_or_path: models/Qwen2.5-3B-week3-best-merged
+# 最优 DPO 组 = β=0.5/lr=5e-6：Day20 红线测试实测拒答率 100%（β=0.1 基线只有 85%，
+# 未过 90% 硬指标）。数据配比以"有用性"为主，β=0.1 约束太松使有用性压过安全性；
+# β=0.5 约束更紧，守住了 SFT 的拒答能力。详见《安全测试记录表.md》与周报 §五。
+# Best DPO run = β=0.5: 100% refusal in Day20 test (β=0.1 baseline only 85%, fails 90%).
+adapter_name_or_path: saves/week4/qwen/qwen_dpo_beta0.5_lr5e-6
+template: qwen                     # 必须与训练一致 / must match training
+finetuning_type: lora
+trust_remote_code: true
+
+### 导出 / export
+export_dir: models/Qwen2.5-3B-week4-dpo-merged
+export_size: 5                     # 每个 safetensors 分片 ≤5GB / shard size (GB)
+export_device: cpu                 # CPU 合并更稳且不占训练显存 / merge on CPU
+export_legacy_format: false        # safetensors 格式 / use safetensors

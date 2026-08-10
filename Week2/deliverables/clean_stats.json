@@ -1,0 +1,23 @@
+{
+  "backend": "HF:Qwen2.5-3B-Instruct",
+  "max_tokens": 2048,
+  "funnel": {
+    "0_原始": 4975,
+    "1_去空值": 4975,
+    "2_长度处理": 4973,
+    "3_去重后": 4684
+  },
+  "truncated": 2,
+  "dropped_too_long": 2,
+  "dropped_dup": 289,
+  "len_before": {
+    "min": 7,
+    "max": 3939,
+    "mean": 245.5
+  },
+  "len_after": {
+    "min": 7,
+    "max": 2040,
+    "mean": 224.5
+  }
+}

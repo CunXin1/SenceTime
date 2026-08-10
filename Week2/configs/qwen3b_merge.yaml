@@ -1,0 +1,16 @@
+# Day9：把 Qwen LoRA adapter 合并进基座，导出成可独立加载的完整模型。
+# 运行：.venv/Scripts/python.exe -m llamafactory.cli export Week2/configs/qwen3b_merge.yaml
+#（Windows 用 python -m，勿用 llamafactory-cli.exe，见 Day10 FAQ 段错误坑）
+
+### 被合并的基座 + adapter
+model_name_or_path: models/Qwen2.5-3B-Instruct       # 原始基座
+adapter_name_or_path: saves/qwen2.5-3b/lora/sft      # 训练产出的 LoRA 权重
+template: qwen                                        # 必须与训练时一致
+finetuning_type: lora
+trust_remote_code: true
+
+### 导出
+export_dir: models/Qwen2.5-3B-week2-merged           # 合并后完整模型输出目录
+export_size: 5                                        # 分片大小(GB)，每个 safetensors ≤5GB
+export_device: cpu                                    # 用 CPU 合并，避免占训练显存/更稳
+export_legacy_format: false                           # 用 safetensors（非老式 bin）

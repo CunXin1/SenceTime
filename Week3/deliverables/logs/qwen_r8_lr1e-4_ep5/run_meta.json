@@ -1,0 +1,16 @@
+{
+  "run_id": "qwen_r8_lr1e-4_ep5",
+  "config": "Week3/configs/exp/qwen_r8_lr1e-4_ep5.yaml",
+  "smoke": false,
+  "started_at": "2026-07-17T15:41:12",
+  "finished_at": "2026-07-17T16:11:55",
+  "wall_seconds": 1843.0,
+  "wall_pretty": "30m43s",
+  "peak_vram_mib": 17616,
+  "exit_code": 0,
+  "lora_rank": 8,
+  "learning_rate": "1.0e-4",
+  "num_train_epochs": 5,
+  "groups": "C",
+  "model": "qwen"
+}

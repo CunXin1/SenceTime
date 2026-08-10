@@ -1,0 +1,32 @@
+[
+  {
+    "name": "alpaca_gpt4_zh",
+    "repo": "llamafactory/alpaca_gpt4_zh",
+    "status": "OK",
+    "requested": 2000,
+    "downloaded": 2000,
+    "valid": 2000,
+    "license": "Apache-2.0 (data: GPT-4 generated)",
+    "note": "GPT-4 生成的中文指令-回答对，LLaMA-Factory 官方镜像"
+  },
+  {
+    "name": "coig_pc",
+    "repo": "BAAI/COIG-PC-Lite",
+    "status": "OK",
+    "requested": 2000,
+    "downloaded": 2000,
+    "valid": 1976,
+    "license": "见 BAAI/COIG-PC 数据卡（各子任务不同）",
+    "note": "BAAI 中文开放指令通用语料（Lite 精选子集）"
+  },
+  {
+    "name": "sharegpt_zh",
+    "repo": "shareAI/ShareGPT-Chinese-English-90k",
+    "status": "OK",
+    "requested": 1000,
+    "downloaded": 1000,
+    "valid": 999,
+    "license": "Apache-2.0",
+    "note": "多轮中文对话（ShareGPT 90k 的中文子集）"
+  }
+]

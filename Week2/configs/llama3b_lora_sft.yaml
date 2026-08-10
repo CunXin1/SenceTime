@@ -1,0 +1,57 @@
+# ============================================================================
+#  Week2 Day8：Llama-3.2-3B-Instruct  LoRA SFT 配置（逐行注释）
+#  运行：.venv/Scripts/llamafactory-cli.exe train Week2/configs/llama3b_lora_sft.yaml
+#  与 qwen3b_lora_sft.yaml 的差异只有两处：model_name_or_path 与 template。
+#  同一份清洗数据喂两个不同架构的基座，正好做跨架构微调对比（呼应第一周 4 模型横评）。
+# ============================================================================
+
+### ---------------- model ----------------
+model_name_or_path: models/Llama-3.2-3B-Instruct   # 换成 Llama 基座
+trust_remote_code: true
+
+### ---------------- method（与 Qwen 版一致，便于对比）----------------
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8                   # 秩：低秩矩阵维度
+lora_alpha: 16                 # 缩放：等效放大 α/r = 2
+lora_dropout: 0.05             # 抑制过拟合
+lora_target: all               # 所有线性层加 LoRA
+
+### ---------------- dataset ----------------
+dataset: week2_sft_alpaca
+dataset_dir: Week2/data/clean
+# 关键差异：Llama-3 系列用 llama3 模板（<|start_header_id|>user<|end_header_id|>...<|eot_id|>），
+# 与 Qwen 的 ChatML 完全不同。模板必须跟基座匹配。
+template: llama3
+cutoff_len: 2048
+packing: true          # 序列打包，消除 padding 浪费，大幅提速（详见 qwen 配置注释）
+neat_packing: true     # 块对角注意力，拼接样本互不可见
+# max_samples: 200             # 首次验证可先取小样本
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0      # ★ Windows 必须为 0（见 qwen 配置注释：避免 CUDA IPC 误报 OOM）
+
+### ---------------- output ----------------
+output_dir: saves/llama3.2-3b/lora/sft
+logging_steps: 5
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train ----------------
+per_device_train_batch_size: 1   # 配合 packing（每序列满 2048）设 1 更稳
+gradient_accumulation_steps: 16  # 等效 batch = 16
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true                       # 4090 用 bf16
+ddp_timeout: 180000000
+
+### ---------------- eval（可选）----------------
+val_size: 0.05
+per_device_eval_batch_size: 2
+eval_strategy: steps
+eval_steps: 200

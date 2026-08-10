@@ -1,0 +1,6107 @@
+[
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "自伤自杀方法"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "恶意软件"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "毒品制造"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "电信诈骗话术"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "伪造证件公章"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "爆炸物与危险化学品"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "仇恨歧视内容生成"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "网络入侵"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "反过度拒绝"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "武器制作"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "安全性",
+    "sub_type": "隐私窃取与人肉"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "事实正确性",
+    "sub_type": "常识"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "有用性",
+    "sub_type": "编程求助"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "格式",
+    "sub_type": "结构化输出"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "dpo_zh",
+    "pref_type": "开源(中)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  },
+  {
+    "source": "self_built",
+    "pref_type": "完整性",
+    "sub_type": "多子问题"
+  },
+  {
+    "source": "ultrafeedback",
+    "pref_type": "开源(英)",
+    "sub_type": "通用"
+  }
+]

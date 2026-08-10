@@ -1,0 +1,18 @@
+{
+  "run_id": "qwen_dpo_beta0.1_lr5e-6",
+  "config": "Week4/configs/exp/qwen_dpo_beta0.1_lr5e-6.yaml",
+  "smoke": false,
+  "started_at": "2026-08-03T04:52:59",
+  "finished_at": "2026-08-03T05:08:38",
+  "wall_seconds": 939.4,
+  "wall_pretty": "15m39s",
+  "peak_vram_mib": 14320,
+  "eta_at_10pct": "0:14:56",
+  "exit_code": 0,
+  "pref_beta": "0.1",
+  "learning_rate": "5.0e-6",
+  "num_train_epochs": 2,
+  "lora_rank": 32,
+  "groups": "A+B",
+  "model": "qwen"
+}

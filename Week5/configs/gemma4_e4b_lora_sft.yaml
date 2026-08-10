@@ -1,0 +1,60 @@
+# Day26(对照组):gemma-4-E4B-it LoRA 微调,同样冻结 ViT。
+# 和 Qwen 组唯一的差别是 model_name_or_path 和 template,其余超参完全一致 ——
+# 这样微调前后的对比才是在比模型,不是在比调参。
+# 运行:
+#   .\.venv-vlm\Scripts\python.exe -m llamafactory.cli train Week5/configs/gemma4_e4b_lora_sft.yaml
+
+### model
+model_name_or_path: models/gemma-4-E4B-it
+trust_remote_code: true
+# Gemma4 的视觉 token 数由 image_processor.max_soft_tokens(70/140/280/560/1120)决定,
+# 不随图片尺寸变化;image_max_pixels 只影响送进 processor 前的预缩放。
+image_max_pixels: 589824
+image_min_pixels: 65536
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: all
+freeze_vision_tower: true          # LF 会同时排除 vision_tower / audio_tower
+freeze_multi_modal_projector: true # 排除 model.embed_vision / model.embed_audio
+
+### dataset
+dataset: week5_vlm_sft
+dataset_dir: Week5/data
+template: gemma4
+cutoff_len: 1536
+overwrite_cache: true
+preprocessing_num_workers: 4
+dataloader_num_workers: 0
+
+### output
+output_dir: saves/gemma4-e4b-week5-lora
+logging_steps: 5
+save_steps: 100
+save_total_limit: 2
+plot_loss: true
+overwrite_output_dir: true
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+gradient_checkpointing: true
+seed: 42
+ddp_timeout: 180000000
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 25

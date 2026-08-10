@@ -1,0 +1,50 @@
+﻿python.exe : 
+At line:1 char:302
++ ... tch {} } }; & "C:\Users\Ruibo's Desktop\SenceTime_Week1\.venv-vlm\Scr ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/729 [00:00<07:07,  1.70it/s]
+Loading weights:   0%|          | 2/729 [00:00<05:09,  2.35it/s]
+Loading weights:   1%|          | 6/729 [00:01<01:26,  8.35it/s]
+Loading weights:   2%|▏         | 18/729 [00:01<00:25, 27.35it/s]
+Loading weights:   4%|▍         | 30/729 [00:01<00:16, 42.90it/s]
+Loading weights:   6%|▌         | 42/729 [00:01<00:12, 55.46it/s]
+Loading weights:   7%|▋         | 54/729 [00:01<00:10, 65.00it/s]
+Loading weights:   9%|▉         | 66/729 [00:01<00:09, 72.63it/s]
+Loading weights:  11%|█         | 78/729 [00:01<00:08, 78.51it/s]
+Loading weights:  12%|█▏        | 90/729 [00:01<00:07, 82.28it/s]
+Loading weights:  14%|█▍        | 102/729 [00:02<00:07, 85.42it/s]
+Loading weights:  16%|█▌        | 114/729 [00:02<00:06, 87.89it/s]
+Loading weights:  17%|█▋        | 126/729 [00:02<00:06, 87.52it/s]
+Loading weights:  19%|█▊        | 136/729 [00:02<00:06, 90.30it/s]
+Loading weights:  20%|██        | 149/729 [00:02<00:06, 92.08it/s]
+Loading weights:  22%|██▏       | 160/729 [00:02<00:06, 89.34it/s]
+Loading weights:  24%|██▎       | 173/729 [00:02<00:05, 93.15it/s]
+Loading weights:  25%|██▌       | 185/729 [00:02<00:05, 92.60it/s]
+Loading weights:  27%|██▋       | 197/729 [00:03<00:05, 92.31it/s]
+Loading weights:  29%|██▊       | 209/729 [00:03<00:05, 92.51it/s]
+Loading weights:  30%|███       | 221/729 [00:03<00:05, 91.98it/s]
+Loading weights:  32%|███▏      | 232/729 [00:03<00:05, 89.78it/s]
+Loading weights:  34%|███▎      | 245/729 [00:03<00:05, 92.28it/s]
+Loading weights:  35%|███▌      | 257/729 [00:03<00:05, 92.00it/s]
+Loading weights:  37%|███▋      | 268/729 [00:03<00:05, 89.81it/s]
+Loading weights:  39%|███▊      | 281/729 [00:04<00:04, 93.30it/s]
+Loading weights:  40%|████      | 293/729 [00:04<00:04, 93.71it/s]
+Loading weights:  42%|████▏     | 304/729 [00:04<00:04, 91.18it/s]
+Loading weights:  43%|████▎     | 316/729 [00:04<00:04, 91.83it/s]
+Loading weights:  45%|████▌     | 329/729 [00:04<00:04, 95.20it/s]
+Loading weights:  53%|█████▎    | 385/729 [00:04<00:01, 210.52it/s]
+Loading weights:  67%|██████▋   | 489/729 [00:04<00:00, 426.42it/s]
+Loading weights:  81%|████████  | 589/729 [00:04<00:00, 581.39it/s]
+Loading weights:  95%|█████████▌| 693/729 [00:04<00:00, 709.29it/s]
+Loading weights: 100%|██████████| 729/729 [00:04<00:00, 146.57it/s]
+[qwen] 解码层共 28 层,本次抓取 [5, 14, 20, 27]
+[qwen] 提示 1277 token;图像 token 区间 [15,1262) 共 1247 个,还原成 29×43=1247 网格
+[qwen] 生成 31 token:这张照片里有两个人。他们站在沙滩上，似乎在交谈或查看手中的东西。背景是一片宁静的海滩和远处的山脉。
+
+[写出] C:\Users\Ruibo's Desktop\SenceTime_Week1\Week5\data\attn_npz\qwen_02_landscape.npz  (6.7 MB)
+
+下一步:python Week5/code/plot_attn.py --npz Week5/data/attn_npz/qwen_02_landscape.npz --anchor <某个词>

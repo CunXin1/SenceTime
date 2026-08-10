@@ -1,0 +1,46 @@
+[
+  {
+    "run_id": "qwen_r8_lr1e-4_ep3",
+    "model": "qwen",
+    "groups": "A+B+C",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": "1.0e-4",
+    "num_train_epochs": 3,
+    "config": "Week3/configs/exp/qwen_r8_lr1e-4_ep3.yaml",
+    "output_dir": "saves/week3/qwen/r8_lr1e-4_ep3"
+  },
+  {
+    "run_id": "qwen_r32_lr1e-4_ep3",
+    "model": "qwen",
+    "groups": "A",
+    "lora_rank": 32,
+    "lora_alpha": 64,
+    "learning_rate": "1.0e-4",
+    "num_train_epochs": 3,
+    "config": "Week3/configs/exp/qwen_r32_lr1e-4_ep3.yaml",
+    "output_dir": "saves/week3/qwen/r32_lr1e-4_ep3"
+  },
+  {
+    "run_id": "qwen_r8_lr2e-4_ep3",
+    "model": "qwen",
+    "groups": "B",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": "2.0e-4",
+    "num_train_epochs": 3,
+    "config": "Week3/configs/exp/qwen_r8_lr2e-4_ep3.yaml",
+    "output_dir": "saves/week3/qwen/r8_lr2e-4_ep3"
+  },
+  {
+    "run_id": "qwen_r8_lr1e-4_ep5",
+    "model": "qwen",
+    "groups": "C",
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": "1.0e-4",
+    "num_train_epochs": 5,
+    "config": "Week3/configs/exp/qwen_r8_lr1e-4_ep5.yaml",
+    "output_dir": "saves/week3/qwen/r8_lr1e-4_ep5"
+  }
+]

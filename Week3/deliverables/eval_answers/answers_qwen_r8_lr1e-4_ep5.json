@@ -1,0 +1,145 @@
+{
+  "run_id": "qwen_r8_lr1e-4_ep5",
+  "records": [
+    {
+      "question_id": "math-01",
+      "category": "math",
+      "answer": "设鸡有 x 只，兔有 y 只。\n根据题意，可以列出以下两个方程：\nx + y = 35 （头的数量）\n2x + 4y = 94 （脚的数量）\n接下来，我们可以使用代数方法解这个方程组。\n首先，我们可以将第一个方程变形为 y = 35 - x，然后将其代入第二个方程中：\n2x + 4(35 - x) = 94\n化简得：\n2x + 140 - 4x = 94\n整理得：\n-2x = -46\n解得：\nx = 23\n将 x 的值代入 y = 35 - x 中，得到：\ny = 35 - 23 = 12\n因此，鸡有 23 只，兔有 12 只。",
+      "gen_seconds": 8.4,
+      "new_tokens": 194
+    },
+    {
+      "question_id": "math-02",
+      "category": "math",
+      "answer": "首先，我们来计算乘法部分：37 × 43 = 1591。\n然后，我们来计算平方部分：15² = 225。\n最后，我们用乘法结果减去平方结果：1591 - 225 = 1366。\n\n所以，37 × 43 - 15² 的值为 1366。",
+      "gen_seconds": 3.9,
+      "new_tokens": 90
+    },
+    {
+      "question_id": "math-03",
+      "category": "math",
+      "answer": "设水池的容积为 V 升。\n\n甲管单独注水的速度为 V/6 升/小时，乙管单独注水的速度为 V/4 升/小时。\n\n当两管同时打开时，它们的注水速度之和为 (V/6 + V/4) 升/小时。\n\n化简得：(2V + 3V)/12 = 5V/12 升/小时。\n\n所以，两管同时打开时，注满水池需要的时间为 V/(5V/12) = 12/5 = 2.4 小时。\n\n因此，两管同时打开需要 2.4 小时注满水池。",
+      "gen_seconds": 6.7,
+      "new_tokens": 154
+    },
+    {
+      "question_id": "math-04",
+      "category": "math",
+      "answer": "这是一个等差数列，其中首项 a1 = 3，公差 d = 4。\n\n根据等差数列的通项公式，第 n 项 an 可以表示为：\nan = a1 + (n - 1)d\n\n将 a1 = 3，d = 4 和 n = 50 代入上式，可得：\na50 = 3 + (50 - 1) × 4 = 203\n\n因此，等差数列 3, 7, 11, 15, … 的第 50 项是 203。\n\n通项公式为：an = 3 + (n - 1) × 4 = 4n - 1。",
+      "gen_seconds": 7.2,
+      "new_tokens": 166
+    },
+    {
+      "question_id": "math-05",
+      "category": "math",
+      "answer": "当同时掷两枚公平的骰子时，点数之和恰好为 8 的情况有以下几种：\n\n1. 第一枚骰子为 2，第二枚骰子为 6\n2. 第一枚骰子为 3，第二枚骰子为 5\n3. 第一枚骰子为 4，第二枚骰子为 4\n4. 第一枚骰子为 5，第二枚骰子为 3\n5. 第一枚骰子为 6，第二枚骰子为 2\n\n因此，点数之和恰好为 8 的概率是 5/36，因为总共有 36 种可能的结果（每枚骰子有 6 种可能的结果，所以两枚骰子共有 6 x 6 = 36 种结果），而其中只有 5 种结果满足条件。",
+      "gen_seconds": 8.2,
+      "new_tokens": 188
+    },
+    {
+      "question_id": "math-06",
+      "category": "math",
+      "answer": "要解一元二次方程 2x² − 5x − 3 = 0，我们可以使用求根公式：\nx = [-b ± √(b² - 4ac)] / (2a)\n其中，a、b 和 c 分别是方程中的系数。在这个例子中，a = 2，b = -5，c = -3。\n首先，我们需要计算判别式 Δ = b² - 4ac：\nΔ = (-5)² - 4 × 2 × (-3) = 25 + 24 = 49\n因为 Δ > 0，所以方程有两个不同的实数解。\n接下来，我们代入求根公式：\nx = [5 ± √49] / (2 × 2) = [5 ± 7] / 4\n因此，方程的两个解为：\nx1 = (5 + 7) / 4 = 3\nx2 = (5 - 7) / 4 = -1/2\n所以，一元二次方程 2x² − 5x − 3 = 0 的解为 x1 = 3 和 x2 = -1/2。",
+      "gen_seconds": 12.0,
+      "new_tokens": 261
+    },
+    {
+      "question_id": "math-07",
+      "category": "math",
+      "answer": "根据复利公式，本息合计为：\nA = P(1 + r/n)^(nt)\n其中，A 为本息合计，P 为本金，r 为年利率，n 为每年计息次数，t 为时间（年）。\n在这个问题中，P=10000 元，r=5%=0.05，n=1（按年计息），t=3 年。\n代入公式得：\nA = 10000(1 + 0.05/1)^(1*3)\n= 10000(1.05)^3\n≈ 11576.25 元\n因此，3 年后本息合计约为 11576.25 元。",
+      "gen_seconds": 7.7,
+      "new_tokens": 176
+    },
+    {
+      "question_id": "reason-01",
+      "category": "reasoning",
+      "answer": "根据题目，我们有以下信息：\n1. 甲说：\"乙在说谎。\"\n2. 乙说：\"丙在说谎。\"\n3. 丙说：\"甲和乙都在说谎。\"\n我们可以将这些信息整理成表格形式：\n| 甲 | 乙 | 丙 |\n| --- | --- | --- |\n| 真 | 假 | 假 |\n| 假 | 真 | 真 |\n| 假 | 假 | 真 |\n现在我们来分析每个选项：\n1. 如果甲说的是真话，那么乙在说谎，丙也在说谎。这与题目中只有一人说真话的条件矛盾。\n2. 如果乙说的是真话，那么丙在说谎。这与题目中只有一人说真话的条件矛盾。\n3. 如果丙说的是真话，那么甲和乙都在说谎。这与题目中只有一人说真话的条件矛盾。\n因此，只有当甲说的是假话时，乙和丙的话才符合题目中的条件。所以，甲说的是真话。",
+      "gen_seconds": 11.0,
+      "new_tokens": 237
+    },
+    {
+      "question_id": "reason-02",
+      "category": "reasoning",
+      "answer": "根据您提供的信息，照片里的人是说话者的叔叔。因为说话者没有兄弟姐妹，所以照片里的人的父亲是说话者的父亲的儿子，也就是说，照片里的人是说话者的堂兄或堂姐。",
+      "gen_seconds": 2.1,
+      "new_tokens": 46
+    },
+    {
+      "question_id": "reason-03",
+      "category": "reasoning",
+      "answer": "这个数列的规律是：每一项都是前一项加上一个连续的自然数，即：\n2 + 4 = 6\n6 + 6 = 12\n12 + 8 = 20\n20 + 10 = 30\n因此，下一个数应该是 30 + 12 = 42。所以，数列的下一项是 42。",
+      "gen_seconds": 4.2,
+      "new_tokens": 89
+    },
+    {
+      "question_id": "reason-04",
+      "category": "reasoning",
+      "answer": "要计算100天后是星期几，我们可以使用模运算（mod）来解决这个问题。\n\n首先，我们知道一周有7天，所以我们可以将100除以7，得到商和余数。\n100 ÷ 7 = 14...2\n\n这意味着100天等于14周加2天。因此，100天后是星期三加上2天。\n\n从星期三开始，我们向前数2天：\n星期三 + 1天 = 星期四\n星期四 + 1天 = 星期五\n\n所以，100天后是星期五。",
+      "gen_seconds": 5.8,
+      "new_tokens": 134
+    },
+    {
+      "question_id": "reason-05",
+      "category": "reasoning",
+      "answer": "这是一个经典的逻辑谜题，可以使用以下步骤来解决：\n\n1. 农夫先带着羊过河。\n2. 农夫返回原地。\n3. 农夫带着狼过河。\n4. 农夫把羊带回原地。\n5. 农夫带着白菜过河。\n6. 农夫返回原地。\n7. 农夫带着羊过河。\n\n这样，农夫就成功地将狼、羊和白菜都安全地带过了河。",
+      "gen_seconds": 4.5,
+      "new_tokens": 103
+    },
+    {
+      "question_id": "reason-06",
+      "category": "reasoning",
+      "answer": "如果 5 台机器在 5 分钟内可以生产 5 个零件，那么每台机器每分钟可以生产 1/5 个零件。\n\n因此，100 台机器每分钟可以生产 100 * (1/5) = 20 个零件。\n\n要生产 100 个零件，100 台机器需要 100 / 20 = 5 分钟。",
+      "gen_seconds": 4.5,
+      "new_tokens": 98
+    },
+    {
+      "question_id": "reason-07",
+      "category": "reasoning",
+      "answer": "根据题目中的信息，我们可以得出以下结论：\n1. 小明 > 小红\n2. 小红 > 小刚\n3. 小刚 > 小李\n因此，小明 > 小红 > 小刚 > 小李。\n所以，小刚是第二矮的。",
+      "gen_seconds": 3.3,
+      "new_tokens": 67
+    },
+    {
+      "question_id": "code-01",
+      "category": "code",
+      "answer": "这是一个使用 Python 编写的 `is_palindrome` 函数的示例：\n```python\ndef is_palindrome(s):\n # 将字符串转换为小写\n s = s.lower()\n # 删除所有非字母数字字符\n s = ''.join(c for c in s if c.isalnum())\n # 检查字符串是否与其反转相等\n return s == s[::-1]\n```\n以下是两个测试用例：\n```python\n# 测试用例 1\ns = \"A man, a plan, a canal: Panama\"\nprint(is_palindrome(s)) # 输出 True\n# 测试用例 2\ns = \"race a car\"\nprint(is_palindrome(s)) # 输出 False\n```\n在这个例子中，`is_palindrome` 函数首先将输入字符串转换为小写，然后删除所有非字母数字字符。然后，它检查字符串是否与其反转相等。如果相等，则字符串是回文，函数返回 True；否则，函数返回 False。",
+      "gen_seconds": 9.1,
+      "new_tokens": 210
+    },
+    {
+      "question_id": "code-02",
+      "category": "code",
+      "answer": "下面是一个使用迭代方法计算斐波那契数列第 n 项的 Python 函数：\n\n```python\ndef fib(n):\n if n == 0:\n return 0\n elif n == 1:\n return 1\n else:\n a = 0\n b = 1\n for i in range(2, n+1):\n c = a + b\n a = b\n b = c\n return b\n```\n\n这个函数使用了迭代的方法来计算斐波那契数列的第 n 项。它首先检查输入值是否为 0 或 1，如果是，则直接返回相应的值。否则，它初始化两个变量 `a` 和 `b` 分别为 0 和 1，然后使用一个循环从 2 到 n 迭代地计算斐波那契数列的第 n 项。在每次迭代中，它将当前项存储在变量 `c` 中，然后更新 `a` 和 `b` 的值以计算下一个项。\n\n朴素递归的实现如下所示：\n\n```python\ndef fib(n):\n if n == 0:\n return 0\n elif n == 1:\n return 1\n else:\n return fib(n-1) + fib(n-2)\n```\n\n这个函数使用了递归的方法来计算斐波那契数列的第 n 项。它首先检查输入值是否为 0 或 1，如果是，则直接返回相应的值。否则，它调用自身两次，分别计算斐波那契数列的第 n-1 项和第 n-2 项，并将它们相加以得到第 n 项。由于每次递归调用都会再次调用自身，因此这个函数的时间复杂度是指数级的。当 n 较大时，这个函数会非常慢，因为它需要进行大量的重复计算。",
+      "gen_seconds": 17.8,
+      "new_tokens": 390
+    },
+    {
+      "question_id": "code-03",
+      "category": "code",
+      "answer": "这个函数的 bug 是在返回结果时，它并没有返回 `result` 列表的副本，而是返回了列表本身。这意味着如果在调用函数时传递了一个列表作为参数，那么在函数内部修改该列表也会改变外部列表的内容。\n\n例如：\n```python\nmy_list = [1, 2, 3]\nprint(add_item(4, my_list)) # 输出：[1, 2, 3, 4]\nprint(my_list) # 输出：[1, 2, 3, 4]\n```\n要修复这个问题，可以使用浅拷贝（shallow copy）来创建一个新的列表副本，而不是直接引用原始列表。可以使用 `copy()` 方法或切片操作来实现这一点。\n修复后的代码如下：\n```python\ndef add_item(item, result=None):\n if result is None:\n result = []\n result.append(item)\n return result\n```\n现在，当调用 `add_item()` 函数时，它会创建一个新的列表副本，并将新元素添加到副本中。这样，外部列表不会被修改。",
+      "gen_seconds": 9.8,
+      "new_tokens": 226
+    },
+    {
+      "question_id": "code-04",
+      "category": "code",
+      "answer": "```sql\nSELECT user_id, SUM(amount) AS total_amount\nFROM orders\nGROUP BY user_id\nHAVING total_amount > 1000\nORDER BY total_amount DESC\nLIMIT 10;\n```\n这条 SQL 语句首先使用 `SUM()` 函数计算每个用户的订单总金额，并将结果与 `user_id` 进行分组。然后使用 `HAVING` 子句筛选出总金额大于 1000 的用户。最后使用 `ORDER BY` 子句按总金额从高到低排序，并使用 `LIMIT` 子句限制结果为前 10 名。",
+      "gen_seconds": 6.1,
+      "new_tokens": 135
+    },
+    {
+      "question_id": "code-05",
+      "category": "code",
+      "answer": "这段代码的输出是 `[0, 1, 2]`。\n\n让我们逐步分析代码：\n1. `funcs` 是一个列表，其中包含三个 lambda 函数。每个 lambda 函数都接受一个参数 `i` 并返回它。\n2. `for f in funcs` 循环遍历 `funcs` 列表中的每个 lambda 函数，并将它们存储在变量 `f` 中。\n3. `print([f() for f in funcs])` 打印一个列表，其中包含 `funcs` 列表中每个 lambda 函数的结果。\n4. 每个 lambda 函数都被调用一次，返回它所绑定的 `i` 的值。因此，第一个 lambda 函数返回 0，第二个 lambda 函数返回 1，第三个 lambda 函数返回 2。\n5. 最终，打印出 `[0, 1, 2]`。",
+      "gen_seconds": 8.7,
+      "new_tokens": 192
+    },
+    {
+      "question_id": "code-06",
+      "category": "code",
+      "answer": "这是一个使用 Python 的 `collections` 模块来实现的函数：\n```python\nimport re\nfrom collections import Counter\ndef top_k_words(text, k):\n # 将文本转换为小写并删除标点符号\n text = re.sub(r'[^\\w\\s]', '', text.lower())\n # 使用空格分割文本并计算每个单词的出现次数\n words = text.split()\n word_counts = Counter(words)\n # 返回出现频率最高的前 k 个单词及其次数\n return word_counts.most_common(k)\n```\n这个函数首先使用正则表达式将文本转换为小写并删除所有标点符号。然后，它使用空格将文本分割成单词，并使用 `Counter` 类来计算每个单词的出现次数。最后，它返回出现频率最高的前 k 个单词及其次数。\n例如，如果我们将这段文本传递给 `top_k_words` 函数：\n```python\ntext = \"The quick brown fox jumps over the lazy dog.\"\nk = 3\nresult = top_k_words(text, k)\nprint(result)\n```\n输出将是：\n```\n[('the', 2), ('quick', 1), ('brown', 1)]\n```\n这表示在给定的文本中，“the” 是出现频率最高的单词，出现了两次；“quick” 和 “brown” 分别出现了一次。",
+      "gen_seconds": 12.7,
+      "new_tokens": 283
+    }
+  ]
+}

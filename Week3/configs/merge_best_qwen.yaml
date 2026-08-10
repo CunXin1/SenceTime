@@ -1,0 +1,22 @@
+# ============================================================================
+#  Week3 Day16：把最优 Qwen LoRA adapter 合并进基座，归档为下周 DPO 的输入模型。
+#  Week3 Day16: merge the best Qwen LoRA adapter into the base model and
+#  archive it as next week's DPO input.
+#  运行 / Run（Windows 用 python -m，勿用 llamafactory-cli.exe——Week2 Day10 FAQ 段错误坑）:
+#    .venv/Scripts/python.exe -m llamafactory.cli export Week3/configs/merge_best_qwen.yaml
+# ============================================================================
+
+### 被合并的基座 + adapter / base + adapter to merge
+model_name_or_path: models/Qwen2.5-3B-Instruct
+# 最优组 = r32_lr1e-4_ep3（final eval loss 1.2630，见《实验结果汇总.md》）。
+# Winning run = r32_lr1e-4_ep3 (final eval loss 1.2630, per 实验结果汇总.md).
+adapter_name_or_path: saves/week3/qwen/r32_lr1e-4_ep3
+template: qwen                     # 必须与训练一致 / must match training
+finetuning_type: lora
+trust_remote_code: true
+
+### 导出 / export
+export_dir: models/Qwen2.5-3B-week3-best-merged
+export_size: 5                     # 每个 safetensors 分片 ≤5GB / shard size (GB)
+export_device: cpu                 # CPU 合并更稳且不占训练显存 / merge on CPU
+export_legacy_format: false        # safetensors 格式 / use safetensors

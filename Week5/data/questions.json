@@ -1,0 +1,272 @@
+[
+  {
+    "qid": "01-describe",
+    "image": "01_table.png",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": true,
+    "question": "详细描述这张图片的内容，包括你看到的所有主要元素及其位置关系。"
+  },
+  {
+    "qid": "01-ocr",
+    "image": "01_table.png",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": true,
+    "question": "逐字提取这张表格中的所有文字和数字，用 Markdown 表格的形式输出，保持原有的行列结构。"
+  },
+  {
+    "qid": "01-chart",
+    "image": "01_table.png",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": true,
+    "question": "这张表里 eval acc 最高的是哪一行？它的 eval margin 和峰值显存分别是多少？请给出具体数值。"
+  },
+  {
+    "qid": "01-aesthetic",
+    "image": "01_table.png",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": true,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "01-infer",
+    "image": "01_table.png",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": true,
+    "question": "这张表最可能来自什么工作场景？表里的 β 和 lr 两个变量说明作者在做什么实验？逐条给依据。"
+  },
+  {
+    "qid": "02-describe",
+    "image": "02_landscape.jpg",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": true,
+    "question": "详细描述这张照片的内容。请明确说出画面中可数物体的数量（例如有几个人、几棵树、几栋建筑）。"
+  },
+  {
+    "qid": "02-ocr",
+    "image": "02_landscape.jpg",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": true,
+    "question": "逐字提取图中所有可见文字，尽量保持原有的排列布局。如果没有文字，请直接说明「图中没有文字」。"
+  },
+  {
+    "qid": "02-chart",
+    "image": "02_landscape.jpg",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": true,
+    "question": "这张图里是否有图表或数据？如果没有，请直接说明「图中没有图表或数据」，不要编造。"
+  },
+  {
+    "qid": "02-aesthetic",
+    "image": "02_landscape.jpg",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": true,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "02-infer",
+    "image": "02_landscape.jpg",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": true,
+    "question": "推断这张照片的拍摄季节、大致时间（上午/正午/傍晚）和地理环境类型，并逐条给出你的视觉依据。"
+  },
+  {
+    "qid": "03-describe",
+    "image": "03_logo.jpg",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": true,
+    "question": "描述这张图的构成：前景的标识长什么样（图形和文字分别是什么、什么颜色），背景是什么。"
+  },
+  {
+    "qid": "03-ocr",
+    "image": "03_logo.jpg",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": true,
+    "question": "提取图中所有可见文字，包括前景的主标识和背景屏幕上的文字。背景文字如果看不清，请说明「看不清」，不要猜。"
+  },
+  {
+    "qid": "03-chart",
+    "image": "03_logo.jpg",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": true,
+    "question": "这张图里是否有图表或数据？如果没有，请直接说明「图中没有图表或数据」，不要编造。"
+  },
+  {
+    "qid": "03-aesthetic",
+    "image": "03_logo.jpg",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": true,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "03-infer",
+    "image": "03_logo.jpg",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": true,
+    "question": "这是哪个品牌或组织的标识？它属于什么行业？背景拍的是什么地方？说明你的识别依据。如果不确定，请明确说「不确定」。"
+  },
+  {
+    "qid": "04-describe",
+    "image": "04_signboard_jp.jpg",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": true,
+    "question": "描述这张照片：画面里有什么物体、告示板长什么样、周围环境是什么。"
+  },
+  {
+    "qid": "04-ocr",
+    "image": "04_signboard_jp.jpg",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": true,
+    "question": "这块告示板上的文字是竖排、从右往左书写的。请按正确的阅读顺序逐字提取全部文字，并标出哪几行是标题（作者署名）、哪几行是正文。看不清的字用 [?] 标注，不要猜。"
+  },
+  {
+    "qid": "04-chart",
+    "image": "04_signboard_jp.jpg",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": true,
+    "question": "这张图里是否有图表或数据？如果没有，请直接说明「图中没有图表或数据」，不要编造。"
+  },
+  {
+    "qid": "04-aesthetic",
+    "image": "04_signboard_jp.jpg",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": true,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "04-infer",
+    "image": "04_signboard_jp.jpg",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": true,
+    "question": "这块牌子最可能立在什么场所？上面写的是什么体裁的文字？分别出自谁？逐条给出依据。"
+  },
+  {
+    "qid": "05-describe",
+    "image": "05_ui.png",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": true,
+    "question": "详细描述这个界面的布局结构：有哪些区域、每个区域放了什么、左侧菜单共有几项、当前选中哪一项。"
+  },
+  {
+    "qid": "05-ocr",
+    "image": "05_ui.png",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": true,
+    "question": "逐字提取界面上的所有文字，按「侧边栏 / 顶栏 / 左卡片 / 右卡片 / 日志区 / 按钮」分区列出。"
+  },
+  {
+    "qid": "05-chart",
+    "image": "05_ui.png",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": true,
+    "question": "界面上的进度是多少？当前 loss 和显存占用分别是多少？可训练参数占比是多少？请给出具体数值。"
+  },
+  {
+    "qid": "05-aesthetic",
+    "image": "05_ui.png",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": true,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "05-infer",
+    "image": "05_ui.png",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": true,
+    "question": "这是什么类型的产品界面？使用者正在做什么任务？从日志里能推断出哪些训练配置？逐条给依据。"
+  },
+  {
+    "qid": "06-describe",
+    "image": "06_chart.png",
+    "image_exists": true,
+    "category": "describe",
+    "category_cn": "描述内容",
+    "is_core": false,
+    "question": "详细描述这张图片的内容，包括你看到的所有主要元素及其位置关系。"
+  },
+  {
+    "qid": "06-ocr",
+    "image": "06_chart.png",
+    "image_exists": true,
+    "category": "ocr",
+    "category_cn": "提取文字",
+    "is_core": false,
+    "question": "提取图中所有文字，包括标题、坐标轴标签和图例。"
+  },
+  {
+    "qid": "06-chart",
+    "image": "06_chart.png",
+    "image_exists": true,
+    "category": "chart",
+    "category_cn": "解释图表",
+    "is_core": false,
+    "question": "这张图对比了几组实验？各条曲线的走势分别是什么？哪一组的 margins 末端值最大？给出具体数值。"
+  },
+  {
+    "qid": "06-aesthetic",
+    "image": "06_chart.png",
+    "image_exists": true,
+    "category": "aesthetic",
+    "category_cn": "评价美学",
+    "is_core": false,
+    "question": "从构图、色彩、信息层次三个角度评价这张图，并指出一个具体可改进的地方。"
+  },
+  {
+    "qid": "06-infer",
+    "image": "06_chart.png",
+    "image_exists": true,
+    "category": "infer",
+    "category_cn": "推理隐含信息",
+    "is_core": false,
+    "question": "这张图想证明什么结论？作者做这组实验的目的是什么？逐条给依据。"
+  }
+]

@@ -1,0 +1,69 @@
+# Day26:Qwen2.5-VL-7B LoRA 微调(冻结 ViT,只训 LLM 侧低秩适配)
+# 运行(在 SenceTime_Week1/ 根目录,用 .venv-vlm):
+#   .\.venv-vlm\Scripts\python.exe -m llamafactory.cli train Week5/configs/qwen2_5vl_lora_sft.yaml
+# 注意:Windows 上必须用 `python -m llamafactory.cli`,.exe 入口在含撇号的路径下会段错误
+#      (Week2 Day10 已踩过这个坑)。
+
+### model
+model_name_or_path: models/Qwen2.5-VL-7B-Instruct
+trust_remote_code: true
+# 训练侧的显存命门。训练图 940×560 = 526,400 像素。
+# 第一次跑用 589824(768²,不降采样,视觉 token≈680),结果 step21 起从 5.4s/step 掉到 205s/step
+# ——8.3B bf16 权重(16.6GB)+优化器+激活已经贴着 24GB,碎片一涨就走 Windows 的共享内存回退,
+# 不 OOM 而是静默劣化 38 倍。这里下调到 672²:图被缩到 ≈870×518,视觉 token≈580,
+# 界面文字仍然清晰可读(实测 base 照抄型字段 91.9% 是在同等分辨率下拿到的),换回稳定速度。
+image_max_pixels: 451584      # 672×672
+image_min_pixels: 65536       # 256×256
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target: all
+# 冻结视觉塔和跨模态投影:ViT 是在几十亿图文对上预训练的通用特征提取器,
+# 200 条数据去动它只会破坏表征(灾难性遗忘)。要教的是"看到这类图用什么格式说话",
+# 那是 LLM 侧的事。LF 的 find_all_linear_modules 会在 freeze_vision_tower=true 时
+# 自动把 visual.patch_embed / visual.blocks / visual.merger 排除出 lora_target。
+freeze_vision_tower: true
+freeze_multi_modal_projector: true
+
+### dataset
+dataset: week5_vlm_sft
+dataset_dir: Week5/data
+template: qwen2_vl                # Qwen2.5-VL 复用 qwen2_vl 模板
+cutoff_len: 1536                  # 680 视觉 + ~80 指令 + ~90 目标,1536 足够且省显存
+overwrite_cache: true
+preprocessing_num_workers: 4
+dataloader_num_workers: 0         # Windows 上多进程 dataloader 容易卡死
+
+### output
+output_dir: saves/qwen2.5vl-7b-week5-lora
+logging_steps: 5
+# 总步数只有 69,原来写 100 等于全程不落盘,中途一断 20 分钟全白跑(第一次就是这么丢的)。
+# 改成 20 → step20/40/60 各存一次,任何中断都能 `resume_from_checkpoint` 续上。
+save_steps: 20
+save_total_limit: 2
+plot_loss: true
+overwrite_output_dir: true
+report_to: none
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8    # 等效 batch 8
+learning_rate: 1.0e-4
+num_train_epochs: 3.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+gradient_checkpointing: true
+seed: 42
+ddp_timeout: 180000000
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 25
