@@ -72,13 +72,17 @@ per question, argmax over the A/B/C/D option-token logits.
 
 from __future__ import annotations
 
+import os
 import argparse
 import json
 import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = ROOT / "Week8" / "deliverables" / "ceval"
+# ★ 与 step3_eval.py 同一约定：WEEK8_DELIV_DIR 可覆盖输出根目录，
+#   让 verify_all.sh 的冒烟检查写到临时区而不是正式交付物里。理由见 step3_eval.py。
+OUT_DIR = Path(os.environ.get("WEEK8_DELIV_DIR")
+               or (ROOT / "Week8" / "deliverables")) / "ceval"
 
 CHOICES = ["A", "B", "C", "D"]
 

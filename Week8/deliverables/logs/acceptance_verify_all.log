@@ -1,0 +1,568 @@
+=== Python 解释器可用 (exit=0) ===
+
+=== torch + CUDA 可用 (exit=0) ===
+
+=== llamafactory 可导入 (exit=0) ===
+
+=== 训练栈版本符合 requirements 锁定 (exit=0) ===
+五个关键包版本全部匹配
+=== 基座模型目录存在 (exit=0) ===
+
+=== bash -n run_pipeline.sh (exit=0) ===
+
+=== bash -n step2_train.sh (exit=0) ===
+
+=== bash -n step4_deploy.sh (exit=0) ===
+
+=== bash -n verify_all.sh (exit=0) ===
+
+=== py_compile auto_score.py (exit=0) ===
+
+=== py_compile build_tech_report.py (exit=0) ===
+
+=== py_compile ceval_local.py (exit=0) ===
+
+=== py_compile compare_distill.py (exit=0) ===
+
+=== py_compile distill_kd.py (exit=0) ===
+
+=== py_compile download_student.py (exit=0) ===
+
+=== py_compile make_arch_fig.py (exit=0) ===
+
+=== py_compile make_distill_fig.py (exit=0) ===
+
+=== py_compile make_report_figs.py (exit=0) ===
+
+=== py_compile merge_model.py (exit=0) ===
+
+=== py_compile step1_data_prep.py (exit=0) ===
+
+=== py_compile step3_eval.py (exit=0) ===
+
+=== pipeline.env 可被 sh(dash) 加载（POSIX 兼容） (exit=0) ===
+
+=== YAML 可解析: sft_best.yaml (exit=0) ===
+
+=== YAML 可解析: dpo_best.yaml (exit=0) ===
+
+=== YAML 可解析: merge_sft.yaml (exit=0) ===
+
+=== YAML 可解析: merge_dpo.yaml (exit=0) ===
+
+=== YAML 可解析: eval.yaml (exit=0) ===
+
+=== YAML 可解析: distill_kd.yaml (exit=0) ===
+
+=== YAML 可解析: student_sft_baseline.yaml (exit=0) ===
+
+=== B/C 两组配置只差 kd_alpha（对照组有效性） (exit=0) ===
+对照组有效：仅 kd_alpha 不同 (B=0.0, C=0.5)
+=== run_pipeline.sh --list (exit=0) ===
+段         脚本                        关键产物                              状态
+---------------------------------------------------------------------------------
+data       step1_data_prep.py          Week8/data/dataset_info.json          ✅
+                                       Week8/deliverables/data_stats.json    ✅
+train      step2_train.sh              models/...week8-sft-merged            —
+                                       models/...week8-dpo-merged            —
+eval       step3_eval.py               Week8/deliverables/eval_summary.csv   ✅
+deploy     step4_deploy.sh             （常驻服务，无落盘产物）  —
+
+各段健康状态可单独查：bash Week8/scripts/step4_deploy.sh --status
+=== run_pipeline.sh --dry-run（全链路） (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] Week8 全链路 Pipeline  run_id=20260825_154632
+[pipeline][15:46:32] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:46:32] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:46:32] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154632.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] 本次计划：
+[pipeline][15:46:32]   step1 数据准备   执行
+[pipeline][15:46:32]   step2 训练       执行（stage=all）
+[pipeline][15:46:32]   step3 评测       执行（bench=off）
+[pipeline][15:46:32]   step4 部署       跳过（需 --with-deploy）
+[pipeline][15:46:32]   模式：--dry-run（只打印命令）
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] ▶ 段 [data] 开始
+[pipeline][15:46:32]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step1_data_prep.py
+[pipeline][15:46:32]   (dry-run) 未执行
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] ▶ 段 [train] 开始
+[pipeline][15:46:32]   bash C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step2_train.sh --stage all --dry-run
+[pipeline][15:46:32]   (dry-run) 未执行
+[pipeline][15:46:32] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+[pipeline][15:46:32]   (dry-run) C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+[pipeline][15:46:32] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] 流水线结束。各段结果：
+[pipeline][15:46:32]   data:dry
+[pipeline][15:46:32]   train:dry
+[pipeline][15:46:32]   eval:dry
+[pipeline][15:46:32]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:32] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:46:32] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:46:32] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:46:32] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154632.log
+=== run_pipeline.sh --skip-train --dry-run (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] Week8 全链路 Pipeline  run_id=20260825_154633
+[pipeline][15:46:33] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:46:33] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:46:33] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 本次计划：
+[pipeline][15:46:33]   step1 数据准备   执行
+[pipeline][15:46:33]   step2 训练       跳过
+[pipeline][15:46:33]   step3 评测       执行（bench=off）
+[pipeline][15:46:33]   step4 部署       跳过（需 --with-deploy）
+[pipeline][15:46:33]   模式：--dry-run（只打印命令）
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] ▶ 段 [data] 开始
+[pipeline][15:46:33]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step1_data_prep.py
+[pipeline][15:46:33]   (dry-run) 未执行
+[pipeline][15:46:33] ⏭ 段 [train] 按参数跳过
+[pipeline][15:46:33] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+[pipeline][15:46:33]   (dry-run) C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+[pipeline][15:46:33] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 流水线结束。各段结果：
+[pipeline][15:46:33]   data:dry
+[pipeline][15:46:33]   train:skip
+[pipeline][15:46:33]   eval:dry
+[pipeline][15:46:33]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:46:33] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:46:33] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:46:33] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+=== run_pipeline.sh --only eval --dry-run (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] Week8 全链路 Pipeline  run_id=20260825_154633
+[pipeline][15:46:33] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:46:33] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:46:33] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 本次计划：
+[pipeline][15:46:33]   step1 数据准备   跳过
+[pipeline][15:46:33]   step2 训练       跳过
+[pipeline][15:46:33]   step3 评测       执行（bench=off）
+[pipeline][15:46:33]   step4 部署       跳过（需 --with-deploy）
+[pipeline][15:46:33]   模式：--dry-run（只打印命令）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] ⏭ 段 [data] 按参数跳过
+[pipeline][15:46:33] ⏭ 段 [train] 按参数跳过
+[pipeline][15:46:33] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+[pipeline][15:46:33]   (dry-run) C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+[pipeline][15:46:33] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 流水线结束。各段结果：
+[pipeline][15:46:33]   data:skip
+[pipeline][15:46:33]   train:skip
+[pipeline][15:46:33]   eval:dry
+[pipeline][15:46:33]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:46:33] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:46:33] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:46:33] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+=== run_pipeline.sh --from eval --dry-run (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:33] Week8 全链路 Pipeline  run_id=20260825_154633
+[pipeline][15:46:33] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:46:34] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:46:34] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 本次计划：
+[pipeline][15:46:34]   step1 数据准备   跳过
+[pipeline][15:46:34]   step2 训练       跳过
+[pipeline][15:46:34]   step3 评测       执行（bench=off）
+[pipeline][15:46:34]   step4 部署       执行（variant=awq）
+[pipeline][15:46:34]   模式：--dry-run（只打印命令）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] ⏭ 段 [data] 按参数跳过
+[pipeline][15:46:34] ⏭ 段 [train] 按参数跳过
+[pipeline][15:46:34] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+[pipeline][15:46:34]   (dry-run) C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] ▶ 段 [deploy] 开始
+[pipeline][15:46:34]   bash C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step4_deploy.sh --variant awq --dry-run
+[pipeline][15:46:34]   (dry-run) 未执行
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 流水线结束。各段结果：
+[pipeline][15:46:34]   data:skip
+[pipeline][15:46:34]   train:skip
+[pipeline][15:46:34]   eval:dry
+[pipeline][15:46:34]   deploy:dry
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:46:34] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:46:34] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:46:34] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154633.log
+=== run_pipeline.sh --quick --dry-run (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] Week8 全链路 Pipeline  run_id=20260825_154634
+[pipeline][15:46:34] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:46:34] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:46:34] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154634.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 本次计划：
+[pipeline][15:46:34]   step1 数据准备   执行
+[pipeline][15:46:34]   step2 训练       执行（stage=all）
+[pipeline][15:46:34]   step3 评测       执行（bench=off）
+[pipeline][15:46:34]   step4 部署       跳过（需 --with-deploy）
+[pipeline][15:46:34]   模式：--quick 冒烟（训练 2 步 / 评测 2 题，产物不可用于交付）
+[pipeline][15:46:34]   模式：--dry-run（只打印命令）
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] ▶ 段 [data] 开始
+[pipeline][15:46:34]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step1_data_prep.py
+[pipeline][15:46:34]   (dry-run) 未执行
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] ▶ 段 [train] 开始
+[pipeline][15:46:34]   bash C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step2_train.sh --stage all --quick --dry-run
+[pipeline][15:46:34]   (dry-run) 未执行
+[pipeline][15:46:34] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+[pipeline][15:46:34]   (dry-run) C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base_quick --quick
+[pipeline][15:46:34] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 流水线结束。各段结果：
+[pipeline][15:46:34]   data:dry
+[pipeline][15:46:34]   train:dry
+[pipeline][15:46:34]   eval:dry
+[pipeline][15:46:34]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][15:46:34] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:46:34] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:46:34] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:46:34] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154634.log
+=== 根目录薄壳 run_pipeline.sh --list (exit=0) ===
+段         脚本                        关键产物                              状态
+---------------------------------------------------------------------------------
+data       step1_data_prep.py          Week8/data/dataset_info.json          ✅
+                                       Week8/deliverables/data_stats.json    ✅
+train      step2_train.sh              models/...week8-sft-merged            —
+                                       models/...week8-dpo-merged            —
+eval       step3_eval.py               Week8/deliverables/eval_summary.csv   ✅
+deploy     step4_deploy.sh             （常驻服务，无落盘产物）  —
+
+各段健康状态可单独查：bash Week8/scripts/step4_deploy.sh --status
+=== step2_train.sh --dry-run (exit=0) ===
+[step2][15:46:35] REPO      = C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[step2][15:46:35] PYTHON    = C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[step2][15:46:35] stage=all  dry_run=1  quick=0  max_retries=3
+[step2][15:46:35] run_id    = 20260825_154635
+[step2][15:46:35] ===== 阶段 1/4：SFT（Week3 冠军超参 r=32/α=64/lr=1e-4/3ep）=====
+[step2][15:46:35] 基线：train_bs=1  accum=16  eval_bs=2  cutoff=2048  → 等效 batch=16
+[step2][15:46:35] [sft] 降配阶梯共 3 档（最多用前 3 档）：
+[step2][15:46:35]   档1: eval batch 2→1（不影响训练数学）
+[step2][15:46:35]          覆盖参数: per_device_eval_batch_size=1
+[step2][15:46:35]   档2: ★ cutoff_len→1024（已偏离原实验：每步 token 数减半、长样本被多截）
+[step2][15:46:35]          覆盖参数: per_device_train_batch_size=1 gradient_accumulation_steps=16 per_device_eval_batch_size=1 cutoff_len=1024
+[step2][15:46:35]   档3: ★ cutoff_len→512（已偏离原实验：每步 token 数减半、长样本被多截）
+[step2][15:46:35]          覆盖参数: per_device_train_batch_size=1 gradient_accumulation_steps=16 per_device_eval_batch_size=1 cutoff_len=512
+[step2][15:46:35] [sft] attempt=0  日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/sft_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe -m llamafactory.cli train C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/sft_best.yaml 
+[step2][15:46:35] [dry-run] 不执行。
+[step2][15:46:35] ===== 阶段 2/4：合并 SFT adapter → C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-week8-sft-merged =====
+[step2][15:46:35] [merge_sft] 日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/merge_sft_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/scripts/merge_model.py --config C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/merge_sft.yaml --force 
+[step2][15:46:35] [dry-run] 不执行。
+[step2][15:46:35] ===== 阶段 3/4：DPO（Week4 冠军超参 β=0.5/lr=5e-6/2ep）=====
+[step2][15:46:35] 基线：train_bs=1  accum=8  eval_bs=1  cutoff=768  → 等效 batch=8
+[step2][15:46:35] [dpo] 降配阶梯共 1 档（最多用前 3 档）：
+[step2][15:46:35]   档1: ★ cutoff_len→384（已偏离原实验：每步 token 数减半、长样本被多截）
+[step2][15:46:35]          覆盖参数: per_device_train_batch_size=1 gradient_accumulation_steps=8 per_device_eval_batch_size=1 cutoff_len=384
+[step2][15:46:35] [dpo] attempt=0  日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/dpo_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe -m llamafactory.cli train C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/dpo_best.yaml 
+[step2][15:46:35] [dry-run] 不执行。
+[step2][15:46:35] ===== 阶段 4/4：合并 DPO adapter → C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-week8-dpo-merged =====
+[step2][15:46:35] [merge_dpo] 日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/merge_dpo_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/scripts/merge_model.py --config C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/merge_dpo.yaml --force 
+[step2][15:46:35] [dry-run] 不执行。
+[step2][15:46:35] 全部完成。日志目录: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs
+[step2][15:46:35] 重试历史: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/retry_history.json
+=== step2_train.sh --stage sft --dry-run (exit=0) ===
+[step2][15:46:35] REPO      = C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[step2][15:46:35] PYTHON    = C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[step2][15:46:35] stage=sft  dry_run=1  quick=0  max_retries=3
+[step2][15:46:35] run_id    = 20260825_154635
+[step2][15:46:35] ===== 阶段 1/4：SFT（Week3 冠军超参 r=32/α=64/lr=1e-4/3ep）=====
+[step2][15:46:36] 基线：train_bs=1  accum=16  eval_bs=2  cutoff=2048  → 等效 batch=16
+[step2][15:46:36] [sft] 降配阶梯共 3 档（最多用前 3 档）：
+[step2][15:46:36]   档1: eval batch 2→1（不影响训练数学）
+[step2][15:46:36]          覆盖参数: per_device_eval_batch_size=1
+[step2][15:46:36]   档2: ★ cutoff_len→1024（已偏离原实验：每步 token 数减半、长样本被多截）
+[step2][15:46:36]          覆盖参数: per_device_train_batch_size=1 gradient_accumulation_steps=16 per_device_eval_batch_size=1 cutoff_len=1024
+[step2][15:46:36]   档3: ★ cutoff_len→512（已偏离原实验：每步 token 数减半、长样本被多截）
+[step2][15:46:36]          覆盖参数: per_device_train_batch_size=1 gradient_accumulation_steps=16 per_device_eval_batch_size=1 cutoff_len=512
+[step2][15:46:36] [sft] attempt=0  日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/sft_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe -m llamafactory.cli train C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/sft_best.yaml 
+[step2][15:46:36] [dry-run] 不执行。
+[step2][15:46:36] ===== 阶段 2/4：合并 SFT adapter → C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-week8-sft-merged =====
+[step2][15:46:36] [merge_sft] 日志=C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/merge_sft_20260825_154635.log
+[step2] 命令: C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/scripts/merge_model.py --config C:/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5/Week8/configs/merge_sft.yaml --force 
+[step2][15:46:36] [dry-run] 不执行。
+[step2][15:46:36] 全部完成。日志目录: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs
+[step2][15:46:36] 重试历史: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/retry_history.json
+=== step4_deploy.sh --dry-run (exit=0) ===
+[step4][15:46:36] side=windows  variant=awq  vllm_port=8000  ui_port=7860
+[step4][15:46:38] 在 WSL 中启动 vLLM（variant=awq, port=8000）
+  (dry-run) wsl.exe -e bash -lc <<单条命令>>，内容：
+            source ~/venvs/vllm/bin/activate && cd "/mnt/c/Users/Ruibo's Desktop/SenceTime_Weeks1-5" && nohup bash Week7/code/serve_vllm.sh awq 8000 > "/mnt/c/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/deploy_vllm_awq.log" 2>&1 & echo $!
+[step4][15:46:40] 启动 Gradio（port=7860）
+  (dry-run) nohup "C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe" "C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week7/code/app.py" --port 7860 > C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/deploy_gradio_7860.log 2>&1 &
+[step4][15:46:40] --dry-run 结束：以上是将要执行的命令，未真正启动任何进程。
+=== step4_deploy.sh --status（未起服务也应正常返回） (exit=0) ===
+[step4][15:46:40] side=windows  variant=awq  vllm_port=8000  ui_port=7860
+---------------------------------------------------------------
+  vLLM   http://127.0.0.1:8000/v1/models   HTTP=000  ❌
+  Gradio http://127.0.0.1:7860/              HTTP=000  ❌
+  日志：C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/deploy_vllm_awq.log
+        C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/deploy_gradio_7860.log
+---------------------------------------------------------------
+=== 拒绝非法 --stage（反向用例） (exit=0) ===
+
+=== 拒绝非法 --only（反向用例） (exit=0) ===
+
+=== 拒绝非法 --variant（反向用例） (exit=0) ===
+
+=== auto_score.py --validate（对 100 条人工打分回归） (exit=0) ===
+
+=== 模型级：自动 vs 人工（加权总分，权重与人工卡一致）===
+模型                             自动     人工      差   自动排名/人工排名
+qwen_base                    4.54   4.54   0.01   1 / 1
+qwen_r8_lr1e-4_ep5           4.20   4.34  -0.14   2 / 2
+qwen_r8_lr2e-4_ep3           4.10   4.19  -0.09   4 / 3
+qwen_r32_lr1e-4_ep3          4.13   4.05   0.08   3 / 4
+qwen_r8_lr1e-4_ep3           3.96   4.01  -0.05   5 / 5
+
+模型级 Spearman 秩相关 (n=5): rho = 0.9
+
+=== 维度级：全模型平均分（自动 / 人工 / 差）===
+维度              自动      人工       差     题级rho
+准确性           3.82    3.99   -0.17     0.877
+完整性           4.23    4.49   -0.26     0.259
+逻辑性           4.07    3.97    0.10     0.405
+安全性           4.65    4.38    0.27     0.846
+格式            4.74    4.56    0.18     0.537
+
+题级（100 个样本）加权总分 Spearman rho = 0.699
+题级平均绝对偏差 MAE = 0.376
+
+=== 偏差最大的 8 条（用于定位规则缺陷）===
+模型                      题               自动     人工      差
+qwen_r8_lr2e-4_ep3      reason-01     4.55   3.20   1.35
+qwen_r8_lr2e-4_ep3      code-03       2.92   4.15   1.23
+qwen_r8_lr2e-4_ep3      reason-05     2.90   1.85   1.05
+qwen_r8_lr1e-4_ep3      reason-05     2.90   1.85   1.05
+qwen_r32_lr1e-4_ep3     reason-05     2.90   1.85   1.05
+qwen_base               reason-05     3.98   2.95   1.03
+qwen_r8_lr1e-4_ep5      reason-01     3.13   2.10   1.03
+qwen_r8_lr1e-4_ep3      math-03       3.89   4.90   1.01
+=== 打分器对齐质量未退化（模型级 rho ≥ 0.85） (exit=0) ===
+模型级 rho = 0.9
+=== step3_eval.py 复用答卷打分（不生成） (exit=0) ===
+[step3][15:46:45] === verify_smoke ===
+[step3][15:46:45] [verify_smoke] 复用已有答卷 C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week3\deliverables\eval_answers\answers_qwen_base.json（20 题）
+[step3][15:46:45] [verify_smoke] 加权总分 4.543  准确性=4.275  完整性=4.8  逻辑性=4.225  安全性=4.79  格式=4.975
+[step3][15:46:45] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.md
+[step3][15:46:45] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.csv
+=== 基准评测后端探测能给出结论 (exit=0) ===
+ceval_local | opencompass 未安装；llamafactory 已安装但其 evaluation/ 数据目录不可用（本地 LF 版本上游已删除该目录）；改用自带评测器 ceval_local.py（ppl-5shot 口径，官方 ceval/ceval-exam val 划分）
+=== compare_distill.py 预检（四组模型是否齐备） (exit=0) ===
+==============================================================================
+[A_student_base] A · 学生基座 — Qwen2.5-0.5B-Instruct
+==============================================================================
+==============================================================================
+[B_student_sft] B · 纯 SFT 对照 — Qwen2.5-0.5B-week8-sft
+==============================================================================
+==============================================================================
+[C_student_kd] C · KD 蒸馏 — Qwen2.5-0.5B-week8-distill
+==============================================================================
+==============================================================================
+[D_teacher] D · 教师（3B） — Qwen2.5-3B-week4-dpo-merged
+==============================================================================
+
+[ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\蒸馏效果对比表.md
+[ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\distill_compare.json
+=== make_report_figs.py（第 6 章三张图） (exit=0) ===
+[fp16] 权重 5.79 GiB | KV 13.23 GiB | 并发 11.76x@32768 | PPL 5.231 | 119.8 / 1393.8 tok/s
+[ awq] 权重 1.95 GiB | KV 18.13 GiB | 并发 16.12x@32768 | PPL 5.639 | 226.5 / 2018.9 tok/s
+[gptq] 权重 1.94 GiB | KV 17.69 GiB | 并发 15.73x@32768 | PPL 5.416 | 209.5 / 1475.3 tok/s
+[ok] 3 张图已写入 C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\reports\figs
+=== make_arch_fig.py（第 7 章架构图） (exit=0) ===
+[ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\reports\figs\fig7_1_pipeline_arch.png
+=== make_distill_fig.py（蒸馏曲线） (exit=0) ===
+[ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\reports\figs\fig_distill_curves.png
+
+=== 关键数字 ===
+  B · 纯 SFT（α=0）
+    CE  首 1.8402 → 末 1.2925   PPL 首 6.298 → 末 3.642
+    grad_norm 43.9 ~ 188.5（max_grad_norm=1.0，裁剪全程饱和）
+  C · KD 蒸馏（α=0.5, T=2）
+    CE  首 1.8408 → 末 1.4044   PPL 首 6.301 → 末 4.073
+    KD  首 2.1802 → 末 1.2187
+    grad_norm 33.2 ~ 178.4（max_grad_norm=1.0，裁剪全程饱和）
+=== build_tech_report.py（八章拼装） (exit=0) ===
+=== 分章字数（中文字符 / 非空白字符）===
+  ch1_环境与架构.md                       3105 /   6608
+  ch2_数据工程.md                        3830 /   6276
+  ch3_SFT优化实验.md                     4358 /   8061
+  ch4_DPO偏好对齐.md                     5006 /   8664
+  ch5_多模态与Agent实践.md                 4129 /   7641
+  ch6_部署与量化.md                       3604 /   8401
+  ch7_全链路自动化.md                      3551 /   5862
+  ch8_总结与展望.md                       4083 /   7062
+  合计                                31666 /  58575
+  参考文献 21 条
+  ✅ 中文字符数 31666 ≥ 6000
+[ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\reports\技术报告_Qwen2.5-3B全链路实践.md
+=== 技术报告中文字符数 ≥ 6000 (exit=0) ===
+中文字符数 = 31666
+=== 报告引用的图片文件都存在 (exit=0) ===
+全部 13 张图片存在
+=== 存在: Week8/deliverables/data_stats.json (exit=0) ===
+
+=== 存在: Week8/deliverables/data_stats.md (exit=0) ===
+
+=== 存在: Week8/deliverables/eval_summary.csv (exit=0) ===
+
+=== 存在: Week8/deliverables/蒸馏效果对比表.md (exit=0) ===
+
+=== 存在: Week8/deliverables/logs/acceptance_run_data.log (exit=0) ===
+
+=== 存在: Week8/deliverables/logs/acceptance_run_eval.log (exit=0) ===
+
+=== 存在: Week8/logs/retry_history.json (exit=0) ===
+
+=== 存在: Week8/reports/技术报告_Qwen2.5-3B全链路实践.md (exit=0) ===
+
+=== 存在: Week8/reports/技术报告_Qwen2.5-3B全链路实践.docx (exit=0) ===
+
+=== 存在: Week8/docs/Pipeline使用说明.md (exit=0) ===
+
+=== 存在: Week8/docs/Day40_数据与训练自动化.md (exit=0) ===
+
+=== 存在: Week8/docs/Day41_评估与部署自动化.md (exit=0) ===
+
+=== 存在: Week8/docs/Day42_知识蒸馏.md (exit=0) ===
+
+=== 存在: Week8/docs/脚本速查.md (exit=0) ===
+
+=== 存在: Week8/README.md (exit=0) ===
+
+=== 存在: README.md (exit=0) ===
+
+=== 存在: requirements.txt (exit=0) ===
+
+=== 存在: environment.yml (exit=0) ===
+
+=== 存在: .gitattributes (exit=0) ===
+
+=== retry_history.json 是合法 JSON 数组 (exit=0) ===
+4 条重试记录
+=== eval_summary.csv 可被解析且非空 (exit=0) ===
+6 行
+=== README/文档里的相对链接无死链 (exit=0) ===
+检查了 7 份文档，无死链
+=== .gitignore 未误伤验收日志 (exit=0) ===
+
+=== 仓库中没有权重文件入库 (exit=0) ===
+无权重文件入库
+=== ceval_local.py 冒烟（2 学科 × 2 题） (exit=0) ===
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.16s/it]
+  [ 1/2] computer_network                             2/2   100.00
+  [ 2/2] operating_system                             2/2   100.00
+======================================================================
+  verify_smoke   口径 ppl-5shot   4 题   18.5s
+  Average          100.0
+  STEM             100.0
+  Social Sciences  None
+  Humanities       None
+  Other            None
+  → C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\ceval\verify_smoke.json
+=== step3_eval.py 真加载模型生成（2 题） (exit=0) ===
+[step3][15:47:14] === verify_gen_smoke ===
+[step3][15:47:15] 空闲显存 22.8 GiB
+[step3][15:47:17] 加载模型：C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\models\Qwen2.5-3B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.52s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.09s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.15s/it]
+[step3][15:47:20] 加载完成 2.9s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[step3][15:47:28]   1/2 math-01  8.68s  317tok
+[step3][15:47:36]   2/2 math-02  7.92s  297tok
+[step3][15:47:36] [verify_gen_smoke] 加权总分 4.89  准确性=5.0  完整性=5.0  逻辑性=4.45  安全性=5.0  格式=5.0
+[step3][15:47:36] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.md
+[step3][15:47:36] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.csv
+=== run_pipeline.sh --quick --skip-train（端到端） (exit=0) ===
+════════════════════════════════════════════════════════════════
+[pipeline][15:47:37] Week8 全链路 Pipeline  run_id=20260825_154737
+[pipeline][15:47:37] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][15:47:37] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][15:47:37] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154737.log
+════════════════════════════════════════════════════════════════
+[pipeline][15:47:37] 本次计划：
+[pipeline][15:47:37]   step1 数据准备   执行
+[pipeline][15:47:37]   step2 训练       跳过
+[pipeline][15:47:37]   step3 评测       执行（bench=off）
+[pipeline][15:47:37]   step4 部署       跳过（需 --with-deploy）
+[pipeline][15:47:37]   模式：--quick 冒烟（训练 2 步 / 评测 2 题，产物不可用于交付）
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+[pipeline][15:47:37] ▶ 段 [data] 开始
+[pipeline][15:47:37]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step1_data_prep.py
+[step1] 分词后端: HF:Qwen2.5-3B-Instruct
+
+=== SFT 清洗漏斗 ===
+  0_raw                4975
+  1_text_cleaned       4975
+  2_drop_empty         4975
+  3_length_handled     4973
+  4_deduped            4684
+  5_train              4216
+  5_val                468
+  截断 2　超长丢弃 2　去重丢弃 289
+=== DPO 漏斗 ===
+  0_raw                1221
+  1_cleaned            1221
+  2_deduped            1219
+  3_train              1097
+  3_val                122
+
+产物目录: C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\data
+统计报告: C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\data_stats.json / .md
+总耗时: 15.44s
+[pipeline][15:47:53] ✓ 段 [data] 完成（16s）
+[pipeline][15:47:53] ⏭ 段 [train] 按参数跳过
+[pipeline][15:47:53] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+════════════════════════════════════════════════════════════════
+[pipeline][15:47:53] ▶ 段 [eval] 开始
+[pipeline][15:47:53]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base_quick --quick
+[step3][15:47:53] === base_quick ===
+[step3][15:47:53] 空闲显存 22.8 GiB
+[step3][15:47:55] 加载模型：C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\models\Qwen2.5-3B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.55s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:02<00:00,  1.17s/it]
+[step3][15:47:58] 加载完成 3.0s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[step3][15:48:07]   1/2 math-01  9.29s  317tok
+[step3][15:48:15]   2/2 math-02  7.6s  297tok
+[step3][15:48:15] [base_quick] 加权总分 4.89  准确性=5.0  完整性=5.0  逻辑性=4.45  安全性=5.0  格式=5.0
+[step3][15:48:15] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.md
+[step3][15:48:15] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\logs\verify_scratch\eval_summary.csv
+[pipeline][15:48:15] ✓ 段 [eval] 完成（22s）
+[pipeline][15:48:15] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][15:48:15] 流水线结束。各段结果：
+[pipeline][15:48:15]   data:ok(16s)
+[pipeline][15:48:15]   train:skip
+[pipeline][15:48:15]   eval:ok(22s)
+[pipeline][15:48:15]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][15:48:16] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][15:48:16] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][15:48:16] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][15:48:16] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_154737.log

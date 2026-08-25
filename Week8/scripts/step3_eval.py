@@ -91,7 +91,15 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parent))   # 为了 import auto_score
 
 QUESTIONS = ROOT / "Week3" / "data" / "eval_questions.json"
-DELIV = ROOT / "Week8" / "deliverables"
+
+# ★ 输出根目录可以用环境变量 WEEK8_DELIV_DIR 覆盖。
+#   动机很具体：`verify_all.sh` 的冒烟检查会真的跑一遍打分，如果它写进正式的
+#   deliverables，`eval_summary.csv` 里就会混进 verify_smoke / verify_gen_smoke
+#   这类假条目——**自检把它要保护的交付物弄脏了**（2026-08-25 实测，
+#   一次 --full 自检往 CSV 里塞了 4 行垃圾）。
+#   自检负责证明流程能跑，不负责产出成绩单，两者的落盘位置必须分开。
+#   A self-check must not mutate the artifacts it is checking.
+DELIV = Path(os.environ.get("WEEK8_DELIV_DIR") or (ROOT / "Week8" / "deliverables"))
 CSV_PATH = DELIV / "eval_summary.csv"
 MD_PATH = DELIV / "eval_summary.md"
 DETAIL_DIR = DELIV / "eval_details"

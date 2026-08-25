@@ -1,121 +1,29 @@
 {
-  "generated_at": "2026-08-25T15:03:16",
+  "generated_at": "2026-08-25T15:49:25",
   "arms": {
     "A_student_base": {
       "tag": "A_student_base",
       "label": "A · 学生基座",
       "desc": "Qwen2.5-0.5B-Instruct，未做任何训练",
-      "model": "models/Qwen2.5-0.5B-Instruct",
-      "ceval": {
-        "Average": 53.71,
-        "STEM": 46.51,
-        "Social Sciences": 63.27,
-        "Humanities": 57.98,
-        "Other": 52.08,
-        "caliber": "ppl-5shot",
-        "n_questions": 1346,
-        "seconds": 634.8
-      },
-      "auto5": {
-        "accuracy": 2.533,
-        "completeness": 4.0,
-        "logic": 4.065,
-        "safety": 4.345,
-        "format": 4.725,
-        "total": 3.697
-      },
-      "speed": {
-        "gen_seconds": 97.8,
-        "new_tokens": 5458,
-        "tok_per_s": 55.8
-      }
+      "model": "models/Qwen2.5-0.5B-Instruct"
     },
     "B_student_sft": {
       "tag": "B_student_sft",
       "label": "B · 纯 SFT 对照",
       "desc": "alpha=0，同数据同超参同种子，教师不参与",
-      "model": "models/Qwen2.5-0.5B-week8-sft",
-      "ceval": {
-        "Average": 53.19,
-        "STEM": 46.05,
-        "Social Sciences": 62.91,
-        "Humanities": 57.98,
-        "Other": 51.04,
-        "caliber": "ppl-5shot",
-        "n_questions": 1346,
-        "seconds": 359.4
-      },
-      "auto5": {
-        "accuracy": 2.258,
-        "completeness": 3.925,
-        "logic": 3.485,
-        "safety": 4.145,
-        "format": 4.66,
-        "total": 3.444
-      },
-      "speed": {
-        "gen_seconds": 69.9,
-        "new_tokens": 3359,
-        "tok_per_s": 48.1
-      }
+      "model": "models/Qwen2.5-0.5B-week8-sft"
     },
     "C_student_kd": {
       "tag": "C_student_kd",
       "label": "C · KD 蒸馏",
       "desc": "alpha=0.5，T=2.0，教师在线前向",
-      "model": "models/Qwen2.5-0.5B-week8-distill",
-      "ceval": {
-        "Average": 52.9,
-        "STEM": 46.74,
-        "Social Sciences": 60.73,
-        "Humanities": 56.81,
-        "Other": 51.56,
-        "caliber": "ppl-5shot",
-        "n_questions": 1346,
-        "seconds": 315.6
-      },
-      "auto5": {
-        "accuracy": 2.35,
-        "completeness": 3.708,
-        "logic": 3.565,
-        "safety": 4.24,
-        "format": 4.55,
-        "total": 3.436
-      },
-      "speed": {
-        "gen_seconds": 66.0,
-        "new_tokens": 3544,
-        "tok_per_s": 53.7
-      }
+      "model": "models/Qwen2.5-0.5B-week8-distill"
     },
     "D_teacher": {
       "tag": "D_teacher",
       "label": "D · 教师（3B）",
       "desc": "第 4 周 DPO 模型，作为天花板参照",
-      "model": "models/Qwen2.5-3B-week4-dpo-merged",
-      "ceval": {
-        "Average": 73.77,
-        "STEM": 66.28,
-        "Social Sciences": 85.09,
-        "Humanities": 75.1,
-        "Other": 73.18,
-        "caliber": "ppl-5shot",
-        "n_questions": 1346,
-        "seconds": 378.3
-      },
-      "auto5": {
-        "accuracy": 3.883,
-        "completeness": 4.308,
-        "logic": 4.01,
-        "safety": 4.645,
-        "format": 4.635,
-        "total": 4.204
-      },
-      "speed": {
-        "gen_seconds": 103.3,
-        "new_tokens": 4057,
-        "tok_per_s": 39.3
-      }
+      "model": "models/Qwen2.5-3B-week4-dpo-merged"
     }
   }
 }

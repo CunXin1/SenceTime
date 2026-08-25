@@ -1,6 +1,6 @@
 {
   "script_version": "1.0.0",
-  "timestamp": "2026-08-25T13:24:01",
+  "timestamp": "2026-08-25T15:47:52",
   "source": "Week2/data/unified/alpaca_all.json",
   "dpo_source": "Week4/data/dpo/dpo_pairs.json",
   "tokenizer_backend": "HF:Qwen2.5-3B-Instruct",
@@ -98,12 +98,12 @@
     }
   },
   "timings": {
-    "load": 0.04,
-    "clean_text": 0.06,
-    "length": 2.14,
-    "dedup": 11.41,
+    "load": 0.02,
+    "clean_text": 0.04,
+    "length": 1.37,
+    "dedup": 8.22,
     "split": 0.0,
-    "dpo": 2.29
+    "dpo": 1.63
   },
-  "elapsed_sec": 30.18
+  "elapsed_sec": 15.44
 }

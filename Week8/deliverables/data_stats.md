@@ -2,11 +2,11 @@
 
 > 本文件由 `Week8/scripts/step1_data_prep.py` 自动生成，勿手改。
 
-- 生成时间：2026-08-25T13:24:01　脚本版本：`step1_data_prep.py v1.0.0`
+- 生成时间：2026-08-25T15:47:52　脚本版本：`step1_data_prep.py v1.0.0`
 - 原始数据：`Week2/data/unified/alpaca_all.json`
 - 分词后端：`HF:Qwen2.5-3B-Instruct`　cutoff：2048 token
 - 划分：train:val = 90%:10%，seed=42
-- 总耗时：30.18 秒
+- 总耗时：15.44 秒
 
 ## 一、SFT 数据清洗漏斗
 
@@ -56,12 +56,12 @@
 
 | 阶段 | 秒 |
 |---|---|
-| load | 0.04 |
-| clean_text | 0.06 |
-| length | 2.14 |
-| dedup | 11.41 |
+| load | 0.02 |
+| clean_text | 0.04 |
+| length | 1.37 |
+| dedup | 8.22 |
 | split | 0.0 |
-| dpo | 2.29 |
+| dpo | 1.63 |
 
 ## 六、产物
 

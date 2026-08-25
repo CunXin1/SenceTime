@@ -71,3 +71,4 @@ saves/**/checkpoint-*/
 # 留在仓库根只会让人不知道该用哪个。
 .serve.sh
 .waitready.sh
+Week8/logs/verify_scratch/

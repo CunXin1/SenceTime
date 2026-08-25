@@ -141,7 +141,35 @@ bash Week8/scripts/step4_deploy.sh --stop
 ```
 
 每个脚本都支持 `--help`；主控还支持 `--dry-run`（只打印将要执行的命令）。
-完整说明见 **`Week8/docs/Pipeline使用说明.md`**。
+
+### 3.1 先自检：确认这套东西在你的机器上能跑
+
+```bash
+bash Week8/scripts/verify_all.sh          # 快检：不占 GPU，约 1 分钟
+bash Week8/scripts/verify_all.sh --full   # 全检：加 GPU 冒烟，约 10 分钟
+bash Week8/scripts/verify_all.sh --list   # 只列出会检查哪些项
+```
+
+**82 项检查，每一项都真的执行**——文件存在和文件能跑是两回事。覆盖环境版本锁、
+脚本语法、YAML 可解析、蒸馏对照组有效性、主控全部参数组合的 dry-run、
+三条反向用例（非法参数必须失败）、打分器对齐质量不退化、报告字数与图片完整性、
+交付物齐备、仓库无权重文件入库，以及三项 GPU 冒烟。
+
+这是新环境上**第一条该跑的命令**：它失败时给出的是具体哪一项、退出码多少、
+输出的最后几行，比让 `run_pipeline.sh` 跑到一半再崩要好定位得多。
+
+> 自检产物写到 `Week8/logs/verify_scratch/`，**不碰正式交付物**。
+
+### 3.2 完整文档
+
+| 文档 | 内容 |
+|---|---|
+| **[`Week8/README.md`](Week8/README.md)** | Week8 总览：架构、四个关键判断、蒸馏结论、实跑证据 |
+| **[`Week8/docs/Pipeline使用说明.md`](Week8/docs/Pipeline使用说明.md)** | 主控参数、四段行为、设计取舍、常见问题 |
+| **[`Week8/docs/脚本速查.md`](Week8/docs/脚本速查.md)** | 14 个脚本逐个的用途 / 参数 / 输入输出 / 踩过的坑 |
+| [`Week8/docs/Day40_数据与训练自动化.md`](Week8/docs/Day40_数据与训练自动化.md) | 清洗漏斗、去重算法、OOM 五档阶梯、注入式测试 |
+| [`Week8/docs/Day41_评估与部署自动化.md`](Week8/docs/Day41_评估与部署自动化.md) | 四级回退、打分器建模、跨 WSL 部署 |
+| [`Week8/docs/Day42_知识蒸馏.md`](Week8/docs/Day42_知识蒸馏.md) | 软标签/温度原理、T² 推导、四组对照与显著性 |
 
 ---
 
