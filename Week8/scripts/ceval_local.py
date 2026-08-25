@@ -197,6 +197,15 @@ def run_ceval(model_path: str | Path, tag: str, n_shot: int = 5,
 
         n = len(val) if not limit else min(limit, len(val))
         hit = 0
+        # ★ 逐题对错也记下来（不只是聚合的 correct 计数）。
+        #   理由：比较两个模型时，**配对检验**（McNemar）比"两个独立比例的 z 检验"
+        #   强得多——同一批题目上，只有"一个对另一个错"的那些题携带信息，
+        #   两个都对/都错的题应当被抵消掉。而配对检验需要逐题记录。
+        #   第一版只存了 correct 总数，导致 Day42 分析里只能退回到保守的
+        #   非配对近似（见 ceval_significance.py 的说明）。
+        #   Per-question hits enable a paired McNemar test; aggregate counts
+        #   only permit the much weaker unpaired approximation.
+        hits: list[int] = []
         for i in range(n):
             ex = val[i]
             prompt = prefix + _fmt_question(ex, with_answer=False)
@@ -204,11 +213,16 @@ def run_ceval(model_path: str | Path, tag: str, n_shot: int = 5,
             with torch.no_grad():
                 logits = model(**ids).logits[0, -1]          # 最后一个位置
             pred = CHOICES[int(torch.argmax(logits[opt_ids]))]
-            hit += int(pred == str(ex["answer"]).strip().upper())
+            ok = int(pred == str(ex["answer"]).strip().upper())
+            hits.append(ok)
+            hit += ok
 
         cat = SUBJECT_CATEGORY[sub]
         per_subject[sub] = {"category": cat, "n": n, "correct": hit,
-                            "acc": round(100.0 * hit / n, 2) if n else 0.0}
+                            "acc": round(100.0 * hit / n, 2) if n else 0.0,
+                            # 紧凑存成 "0101..." 字符串：1346 题也只有 1.3KB，
+                            # 存成 list[int] 的话 JSON 会膨胀到十几 KB 且极难读。
+                            "hits": "".join(str(x) for x in hits)}
         cat_hit[cat] += hit; cat_tot[cat] += n
         all_hit += hit; all_tot += n
         if verbose:

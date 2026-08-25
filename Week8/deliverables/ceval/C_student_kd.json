@@ -1,0 +1,329 @@
+{
+  "tag": "C_student_kd",
+  "model": "C:\\Users\\Ruibo's Desktop\\SenceTime_Weeks1-5\\models\\Qwen2.5-0.5B-week8-distill",
+  "caliber": "ppl-5shot",
+  "split": "val",
+  "n_subjects": 52,
+  "n_questions": 1346,
+  "limit_per_subject": null,
+  "Average": 52.9,
+  "STEM": 46.74,
+  "Social Sciences": 60.73,
+  "Humanities": 56.81,
+  "Other": 51.56,
+  "seconds": 315.6,
+  "per_subject": {
+    "accountant": {
+      "category": "Other",
+      "n": 49,
+      "correct": 22,
+      "acc": 44.9
+    },
+    "advanced_mathematics": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 6,
+      "acc": 31.58
+    },
+    "art_studies": {
+      "category": "Humanities",
+      "n": 33,
+      "correct": 16,
+      "acc": 48.48
+    },
+    "basic_medicine": {
+      "category": "Other",
+      "n": 19,
+      "correct": 10,
+      "acc": 52.63
+    },
+    "business_administration": {
+      "category": "Social Sciences",
+      "n": 33,
+      "correct": 16,
+      "acc": 48.48
+    },
+    "chinese_language_and_literature": {
+      "category": "Humanities",
+      "n": 23,
+      "correct": 9,
+      "acc": 39.13
+    },
+    "civil_servant": {
+      "category": "Other",
+      "n": 47,
+      "correct": 20,
+      "acc": 42.55
+    },
+    "clinical_medicine": {
+      "category": "Other",
+      "n": 22,
+      "correct": 11,
+      "acc": 50.0
+    },
+    "college_chemistry": {
+      "category": "STEM",
+      "n": 24,
+      "correct": 9,
+      "acc": 37.5
+    },
+    "college_economics": {
+      "category": "Social Sciences",
+      "n": 55,
+      "correct": 26,
+      "acc": 47.27
+    },
+    "college_physics": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 8,
+      "acc": 42.11
+    },
+    "college_programming": {
+      "category": "STEM",
+      "n": 37,
+      "correct": 14,
+      "acc": 37.84
+    },
+    "computer_architecture": {
+      "category": "STEM",
+      "n": 21,
+      "correct": 9,
+      "acc": 42.86
+    },
+    "computer_network": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 10,
+      "acc": 52.63
+    },
+    "discrete_mathematics": {
+      "category": "STEM",
+      "n": 16,
+      "correct": 6,
+      "acc": 37.5
+    },
+    "education_science": {
+      "category": "Social Sciences",
+      "n": 29,
+      "correct": 17,
+      "acc": 58.62
+    },
+    "electrical_engineer": {
+      "category": "STEM",
+      "n": 37,
+      "correct": 14,
+      "acc": 37.84
+    },
+    "environmental_impact_assessment_engineer": {
+      "category": "Other",
+      "n": 31,
+      "correct": 16,
+      "acc": 51.61
+    },
+    "fire_engineer": {
+      "category": "Other",
+      "n": 31,
+      "correct": 16,
+      "acc": 51.61
+    },
+    "high_school_biology": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 8,
+      "acc": 42.11
+    },
+    "high_school_chemistry": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 9,
+      "acc": 47.37
+    },
+    "high_school_chinese": {
+      "category": "Humanities",
+      "n": 19,
+      "correct": 6,
+      "acc": 31.58
+    },
+    "high_school_geography": {
+      "category": "Social Sciences",
+      "n": 19,
+      "correct": 8,
+      "acc": 42.11
+    },
+    "high_school_history": {
+      "category": "Humanities",
+      "n": 20,
+      "correct": 16,
+      "acc": 80.0
+    },
+    "high_school_mathematics": {
+      "category": "STEM",
+      "n": 18,
+      "correct": 5,
+      "acc": 27.78
+    },
+    "high_school_physics": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 12,
+      "acc": 63.16
+    },
+    "high_school_politics": {
+      "category": "Social Sciences",
+      "n": 19,
+      "correct": 13,
+      "acc": 68.42
+    },
+    "ideological_and_moral_cultivation": {
+      "category": "Humanities",
+      "n": 19,
+      "correct": 16,
+      "acc": 84.21
+    },
+    "law": {
+      "category": "Humanities",
+      "n": 24,
+      "correct": 8,
+      "acc": 33.33
+    },
+    "legal_professional": {
+      "category": "Humanities",
+      "n": 23,
+      "correct": 10,
+      "acc": 43.48
+    },
+    "logic": {
+      "category": "Humanities",
+      "n": 22,
+      "correct": 9,
+      "acc": 40.91
+    },
+    "mao_zedong_thought": {
+      "category": "Social Sciences",
+      "n": 24,
+      "correct": 22,
+      "acc": 91.67
+    },
+    "marxism": {
+      "category": "Social Sciences",
+      "n": 19,
+      "correct": 12,
+      "acc": 63.16
+    },
+    "metrology_engineer": {
+      "category": "STEM",
+      "n": 24,
+      "correct": 13,
+      "acc": 54.17
+    },
+    "middle_school_biology": {
+      "category": "STEM",
+      "n": 21,
+      "correct": 12,
+      "acc": 57.14
+    },
+    "middle_school_chemistry": {
+      "category": "STEM",
+      "n": 20,
+      "correct": 17,
+      "acc": 85.0
+    },
+    "middle_school_geography": {
+      "category": "Social Sciences",
+      "n": 12,
+      "correct": 9,
+      "acc": 75.0
+    },
+    "middle_school_history": {
+      "category": "Humanities",
+      "n": 22,
+      "correct": 16,
+      "acc": 72.73
+    },
+    "middle_school_mathematics": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 8,
+      "acc": 42.11
+    },
+    "middle_school_physics": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 10,
+      "acc": 52.63
+    },
+    "middle_school_politics": {
+      "category": "Social Sciences",
+      "n": 21,
+      "correct": 14,
+      "acc": 66.67
+    },
+    "modern_chinese_history": {
+      "category": "Humanities",
+      "n": 23,
+      "correct": 18,
+      "acc": 78.26
+    },
+    "operating_system": {
+      "category": "STEM",
+      "n": 19,
+      "correct": 9,
+      "acc": 47.37
+    },
+    "physician": {
+      "category": "Other",
+      "n": 49,
+      "correct": 29,
+      "acc": 59.18
+    },
+    "plant_protection": {
+      "category": "Other",
+      "n": 22,
+      "correct": 13,
+      "acc": 59.09
+    },
+    "probability_and_statistics": {
+      "category": "STEM",
+      "n": 18,
+      "correct": 9,
+      "acc": 50.0
+    },
+    "professional_tour_guide": {
+      "category": "Humanities",
+      "n": 29,
+      "correct": 22,
+      "acc": 75.86
+    },
+    "sports_science": {
+      "category": "Other",
+      "n": 19,
+      "correct": 12,
+      "acc": 63.16
+    },
+    "tax_accountant": {
+      "category": "Other",
+      "n": 49,
+      "correct": 21,
+      "acc": 42.86
+    },
+    "teacher_qualification": {
+      "category": "Social Sciences",
+      "n": 44,
+      "correct": 30,
+      "acc": 68.18
+    },
+    "urban_and_rural_planner": {
+      "category": "Other",
+      "n": 46,
+      "correct": 28,
+      "acc": 60.87
+    },
+    "veterinary_medicine": {
+      "category": "STEM",
+      "n": 23,
+      "correct": 13,
+      "acc": 56.52
+    }
+  }
+}
