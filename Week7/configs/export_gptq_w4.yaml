@@ -1,0 +1,63 @@
+# ============================================================================
+#  Week7 Day35：用 LLaMA-Factory 把 Week4 的 DPO 交付模型导出为 GPTQ 4-bit。
+#  Week7 Day35: export the Week4 DPO model to GPTQ 4-bit via LLaMA-Factory.
+#
+#  运行 / Run（★ 必须在 WSL 的 quant 环境里，不能在 Windows）:
+#    source ~/venvs/quant/bin/activate
+#    cd /mnt/c/Users/Ruibo\'s\ Desktop/SenceTime_Weeks1-5
+#    python -m llamafactory.cli export Week7/configs/export_gptq_w4.yaml \
+#      2>&1 | tee Week7/deliverables/logs/export_gptq.log
+#
+#  ★ 为什么这里只有 GPTQ、没有 AWQ 的 yaml
+#    任务书 34.2 写的 `--quantization_method awq` 在 LF 里做不到。查过本地
+#    LF 0.9.6.dev0 的源码：
+#      · hparams/model_args.py:279 的 quantization_method 是**加载**已量化模型用的
+#        （bnb / gptq / awq / hqq ...），它决定"怎么读别人量化好的权重"；
+#        model/model_utils/quantization.py:123 那条 AWQ 分支只做了
+#        check_version("autoawq")，是加载路径，不是导出路径。
+#      · 真正的**导出**入口是 export_quantization_bit，而 quantization.py:132-164
+#        这一整段写死了 GPTQConfig + GPTQModel —— 只有 GPTQ 一条路。
+#    所以本周分工：GPTQ 交给 LF（本文件），AWQ 交给 llm-compressor
+#    （Week7/code/quantize_awq.py）。详见 Week7/README.md 第一节。
+# ============================================================================
+
+### ---------------- 输入模型 / input model ----------------
+# Week4 Day20 的最终交付模型（β=0.5 的 DPO adapter 已合并进 Week3 最优 SFT）。
+# 量化的输入必须是**已合并的完整模型**：LF 在 adapter + export_quantization_bit
+# 同时出现时会直接报错（train/tuner.py:165），因为 GPTQ 要在合并后的权重上做。
+model_name_or_path: models/Qwen2.5-3B-week4-dpo-merged
+template: qwen
+trust_remote_code: true
+
+### ---------------- 量化设置 / quantization ----------------
+export_quantization_bit: 4                      # 4-bit，2/3/4/8 可选
+export_quantization_dataset: Week7/data/calib.json
+# ★ nsamples/maxlen 的取舍：
+#   GPTQ 的误差补偿依赖校准样本估计的 Hessian。样本太少 Hessian 估计噪声大、
+#   补偿方向不准；太多则显存和时间线性上涨（3B 模型 128×1024 在 4090 上约 10-20 分钟）。
+#   128 是 GPTQ 原论文和绝大多数开源量化模型的惯例值，先按惯例走，Day35 若质量不达标
+#   再上调到 256 做对照。
+#   128 samples is the GPTQ paper's convention; raise to 256 if Day35 quality regresses.
+export_quantization_nsamples: 128
+# ★ maxlen 必须与 build_calib_data.py 的 --maxlen 一致（默认 1024）。
+#   calib.json 里每条都保证 >1024 token，LF 才不会在取样时抛
+#   "Cannot find satisfying example"。
+export_quantization_maxlen: 1024
+
+### ---------------- 输出 / output ----------------
+export_dir: models/Qwen2.5-3B-week4-dpo-gptq-w4
+export_size: 5
+export_legacy_format: false
+# ★ 关于 export_device（追过源码，结论是「不用设，但要知道为什么」）
+#   export_device 的默认值就是 cpu，而 parser.py:562 在 export_dir 存在且
+#   export_device=="cpu" 时会把 model_args.device_map 设成 {"":cpu}。
+#   看起来 GPTQ 会被迫在 CPU 上跑（那要几小时），但实际不会——调用顺序救了它：
+#     patcher.py:384  configure_quantization(...)  → 走 GPTQ 分支，
+#                     quantization.py:161 先把 init_kwargs["device_map"]="auto"
+#     patcher.py:429  if "device_map" not in init_kwargs and model_args.device_map:
+#                     → 此时键已存在，那句 CPU 的 device_map 被跳过
+#   所以 GPTQ 的逐层 Hessian 误差补偿确实在 GPU 上算。**不要**手动写
+#   export_device: auto 去"修"它——那反而会让非量化路径也走 auto，
+#   与 Week4 merge_best_dpo.yaml 用 cpu 合并的口径不一致。
+#   Default export_device=cpu is overridden for GPTQ because configure_quantization
+#   sets device_map="auto" first (patcher.py:384 runs before :429). Leave as is.

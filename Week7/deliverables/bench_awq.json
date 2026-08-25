@@ -1,0 +1,12 @@
+{
+ "variant": "awq",
+ "ts": "2026-08-21 03:01:37",
+ "weight_gb": 1.95,
+ "ppl_median": 5.638654912985642,
+ "ppl_mean": 6.683353133405202,
+ "ppl_n": 32,
+ "tps_batch1": 226.54,
+ "tps_concurrent": 2018.92,
+ "concurrency": 16,
+ "max_tokens": 256
+}

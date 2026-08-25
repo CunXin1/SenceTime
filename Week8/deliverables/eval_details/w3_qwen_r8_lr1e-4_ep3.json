@@ -1,0 +1,425 @@
+{
+  "per_question": [
+    {
+      "question_id": "math-01",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 224,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=5 step=0 eq=8",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-02",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.78,
+      "gen_len": 111,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 4 个不同数值",
+        "logic_signals": "conn=4 step=0 eq=3",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-03",
+      "accuracy": 5.0,
+      "completeness": 2.0,
+      "logic": 3.2,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 3.89,
+      "gen_len": 119,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "0.0",
+        "comp_requires": "0.5",
+        "logic_contradiction": "结论句中出现 3 个不同数值",
+        "logic_signals": "conn=2 step=0 eq=2",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-04",
+      "accuracy": 1.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 3.37,
+      "gen_len": 164,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=3 step=0 eq=4",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-05",
+      "accuracy": 5.0,
+      "completeness": 3.667,
+      "logic": 4.2,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.507,
+      "gen_len": 168,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "0.33",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 4 个不同数值",
+        "logic_signals": "conn=1 step=5 eq=0",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-06",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 4.5,
+      "total": 4.73,
+      "gen_len": 330,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 4 个不同数值",
+        "logic_signals": "conn=5 step=0 eq=10",
+        "format_notes": [
+          "长回答无任何分段/列表结构"
+        ]
+      }
+    },
+    {
+      "question_id": "math-07",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 177,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=4 step=0 eq=4",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-01",
+      "accuracy": 0.0,
+      "completeness": 2.0,
+      "logic": 3.2,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 2.18,
+      "gen_len": 94,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/1",
+        "acc_anti": [
+          "(甲|丙)\\s*说的?是\\s*(真话|实话)"
+        ],
+        "comp_support": "0.5",
+        "comp_requires": "0.0",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=3 step=0 eq=0",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-02",
+      "accuracy": 0.0,
+      "completeness": 5.0,
+      "logic": 3.2,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 2.93,
+      "gen_len": 84,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/1",
+        "acc_anti": [
+          "(兄弟|弟弟|哥哥|姐妹|叔叔|堂兄|表兄|父亲|自己|同一个人)"
+        ],
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=2 step=2 eq=0",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-03",
+      "accuracy": 5.0,
+      "completeness": 3.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.44,
+      "gen_len": 115,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "0.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=3 step=0 eq=5",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-04",
+      "accuracy": 3.5,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.49,
+      "gen_len": 209,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "acc_anti": [
+          "星期(一|二|三|四|六|日|天)|周(一|二|三|四|六|日|末)"
+        ],
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=5 step=0 eq=3",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-05",
+      "accuracy": 1.5,
+      "completeness": 3.5,
+      "logic": 3.7,
+      "safety": 3.9,
+      "format": 2.5,
+      "total": 2.9,
+      "gen_len": 613,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/2",
+        "acc_anti": [
+          "(?m)^\\s*(1[0-9]|[2-9][0-9])\\s*[.)、．]"
+        ],
+        "comp_support": "0.5",
+        "comp_requires": "1.0",
+        "logic_repeat": true,
+        "logic_signals": "conn=0 step=50 eq=0",
+        "safety_hallucination": "结论部分正确",
+        "format_notes": [
+          "烂尾/被截断",
+          "复读"
+        ]
+      }
+    },
+    {
+      "question_id": "reason-06",
+      "accuracy": 0.0,
+      "completeness": 3.0,
+      "logic": 2.4,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 2.27,
+      "gen_len": 137,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/1",
+        "acc_anti": [
+          "\\d{2,}\\s*分钟"
+        ],
+        "comp_support": "1.0",
+        "comp_requires": "0.0",
+        "logic_contradiction": "结论句中出现 5 个不同数值",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=2 step=0 eq=1",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-07",
+      "accuracy": 5.0,
+      "completeness": 4.0,
+      "logic": 5.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.75,
+      "gen_len": 87,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "0.5",
+        "logic_signals": "conn=3 step=3 eq=0",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-01",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 561,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=2 step=0 eq=4",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-02",
+      "accuracy": 5.0,
+      "completeness": 4.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 4.5,
+      "total": 4.64,
+      "gen_len": 845,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "0.5",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=6 step=0 eq=8",
+        "format_notes": [
+          "长回答无任何分段/列表结构"
+        ]
+      }
+    },
+    {
+      "question_id": "code-03",
+      "accuracy": 3.0,
+      "completeness": 2.0,
+      "logic": 3.7,
+      "safety": 4.3,
+      "format": 4.5,
+      "total": 3.235,
+      "gen_len": 396,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/2",
+        "comp_support": "0.5",
+        "comp_requires": "0.0",
+        "logic_signals": "conn=0 step=0 eq=2",
+        "safety_hallucination": "结论部分正确",
+        "format_notes": [
+          "长回答无任何分段/列表结构"
+        ]
+      }
+    },
+    {
+      "question_id": "code-04",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.8,
+      "gen_len": 297,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=3 step=0 eq=0",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-05",
+      "accuracy": 1.0,
+      "completeness": 3.0,
+      "logic": 3.4,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 2.77,
+      "gen_len": 381,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/2",
+        "comp_support": "0.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 3 个不同数值",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=2 step=5 eq=0",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-06",
+      "accuracy": 2.333,
+      "completeness": 5.0,
+      "logic": 3.7,
+      "safety": 4.3,
+      "format": 4.4,
+      "total": 3.775,
+      "gen_len": 725,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/3",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=1 step=0 eq=6",
+        "safety_hallucination": "结论部分正确",
+        "format_notes": [
+          "代码缩进异常（1 空格，贴出来跑不了）"
+        ]
+      }
+    }
+  ],
+  "dims": {
+    "accuracy": 3.367,
+    "completeness": 4.008,
+    "logic": 3.98,
+    "safety": 4.525,
+    "format": 4.77,
+    "total": 3.964
+  },
+  "by_category": {
+    "code": 4.027,
+    "math": 4.451,
+    "reasoning": 3.423
+  },
+  "n_keyed": 20,
+  "n_questions": 20
+}

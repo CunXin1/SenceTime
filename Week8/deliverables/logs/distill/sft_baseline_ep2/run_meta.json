@@ -1,0 +1,33 @@
+{
+  "run_name": "sft_baseline_ep2",
+  "config_file": "Week8\\configs\\student_sft_baseline.yaml",
+  "smoke": false,
+  "kd_alpha": 0.0,
+  "kd_temperature": 2.0,
+  "student_model": "C:\\Users\\Ruibo's Desktop\\SenceTime_Weeks1-5\\models\\Qwen2.5-0.5B-Instruct",
+  "teacher_model": null,
+  "data": {
+    "n_samples": 4649,
+    "n_raw": 4684,
+    "n_truncated": 124,
+    "n_tokens": 1128163,
+    "n_loss_tokens": 637245,
+    "loss_token_ratio": 0.5649
+  },
+  "student_params_M": 494.0,
+  "train_seconds": 1417.8,
+  "train_minutes": 23.63,
+  "peak_vram_mib": 21532,
+  "global_steps": 582,
+  "final_train_loss": 11.4042,
+  "hparams": {
+    "num_train_epochs": 2,
+    "per_device_train_batch_size": 2,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 1e-05,
+    "cutoff_len": 768,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.03,
+    "optim": "adamw_torch_fused"
+  }
+}

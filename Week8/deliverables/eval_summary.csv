@@ -1,0 +1,7 @@
+﻿tag,model_path,timestamp,bench_backend,ceval_avg,ceval_stem,ceval_social,ceval_humanities,ceval_other,cmmlu_avg,bench_note,accuracy,completeness,logic,safety,format,total,n_questions,n_keyed,gen_seconds,tok_per_s
+w3_qwen_base,Week3\deliverables\eval_answers\answers_qwen_base.json,2026-08-25T13:17:53,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,4.275,4.8,4.225,4.79,4.975,4.543,20,20,137.6,39.6
+w3_qwen_r32_lr1e-4_ep3,Week3\deliverables\eval_answers\answers_qwen_r32_lr1e-4_ep3.json,2026-08-25T13:17:54,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,3.708,4.283,4.045,4.575,4.56,4.135,20,20,185.9,21.9
+w3_qwen_r8_lr1e-4_ep3,Week3\deliverables\eval_answers\answers_qwen_r8_lr1e-4_ep3.json,2026-08-25T13:17:54,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,3.367,4.008,3.98,4.525,4.77,3.964,20,20,174.7,20.7
+w3_qwen_r8_lr1e-4_ep5,Week3\deliverables\eval_answers\answers_qwen_r8_lr1e-4_ep5.json,2026-08-25T13:17:54,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,3.925,4.083,4.065,4.685,4.805,4.195,20,20,153.7,22.4
+w3_qwen_r8_lr2e-4_ep3,Week3\deliverables\eval_answers\answers_qwen_r8_lr2e-4_ep3.json,2026-08-25T13:17:54,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,3.817,3.958,4.02,4.69,4.605,4.103,20,20,173.1,22.3
+base,C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\models\Qwen2.5-3B-Instruct,2026-08-25T13:32:59,skipped,⏳,⏳,⏳,⏳,⏳,⏳,--bench 未开启（默认只跑自定义题集，理由见脚本文件头）,4.275,4.8,4.225,4.79,4.975,4.543,20,20,492.6,11.1

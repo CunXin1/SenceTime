@@ -1,0 +1,55 @@
+════════════════════════════════════════════════════════════════
+[pipeline][13:23:30] Week8 全链路 Pipeline  run_id=20260825_132330
+[pipeline][13:23:30] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][13:23:30] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][13:23:30] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_132330.log
+════════════════════════════════════════════════════════════════
+[pipeline][13:23:30] 本次计划：
+[pipeline][13:23:30]   step1 数据准备   执行
+[pipeline][13:23:30]   step2 训练       跳过
+[pipeline][13:23:30]   step3 评测       执行（bench=off）
+[pipeline][13:23:30]   step4 部署       跳过（需 --with-deploy）
+════════════════════════════════════════════════════════════════
+════════════════════════════════════════════════════════════════
+[pipeline][13:23:30] ▶ 段 [data] 开始
+[pipeline][13:23:30]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step1_data_prep.py
+[step1] 分词后端: HF:Qwen2.5-3B-Instruct
+
+=== SFT 清洗漏斗 ===
+  0_raw                4975
+  1_text_cleaned       4975
+  2_drop_empty         4975
+  3_length_handled     4973
+  4_deduped            4684
+  5_train              4216
+  5_val                468
+  截断 2　超长丢弃 2　去重丢弃 289
+=== DPO 漏斗 ===
+  0_raw                1221
+  1_cleaned            1221
+  2_deduped            1219
+  3_train              1097
+  3_val                122
+
+产物目录: C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\data
+统计报告: C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\data_stats.json / .md
+总耗时: 30.18s
+[pipeline][13:24:02] ✓ 段 [data] 完成（32s）
+[pipeline][13:24:02] ⏭ 段 [train] 按参数跳过
+[pipeline][13:24:02] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:02] ▶ 段 [eval] 开始
+[pipeline][13:24:02]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+usage: step3_eval.py [-h] [--model MODEL] [--tag TAG] [--models [MODELS ...]]
+                     [--reuse-answers REUSE_ANSWERS] [--bench]
+                     [--n-shot N_SHOT] [--bench-batch-size BENCH_BATCH_SIZE]
+                     [--quick] [--min-free-gb MIN_FREE_GB] [--fresh]
+step3_eval.py: error: unrecognized arguments: Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct
+[pipeline][13:24:02] ✗ 段 [eval] 失败（exit=2，耗时 0s）
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:02] 流水线在 [eval] 中断。排查顺序：
+[pipeline][13:24:02]   1) 上面这一段自己的报错（往上翻，别只看最后一行）
+[pipeline][13:24:02]   2) 该段的日志：C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/
+[pipeline][13:24:02]   3) 全流程日志：C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_132330.log
+[pipeline][13:24:02]   4) README.md 的「常见问题」——前 7 周踩过的坑基本都在那
+[pipeline][13:24:02] 修好之后可以从这一段续跑： --from eval

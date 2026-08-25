@@ -1,0 +1,103 @@
+# ============================================================================
+#  sft_best.yaml — Week8 Day40 / 任务书 40.2
+#  自动化流水线的 SFT 阶段配置。**派生自** Week3 的冠军实验
+#  Week3/configs/exp/qwen_r32_lr1e-4_ep3.yaml（final eval loss 1.2630，四组里最低）。
+#  Derived from Week3's winning run; hyper-parameters are copied verbatim.
+#
+#  运行 / Run（不要直接跑，让 step2_train.sh 带 OOM 重试地跑）:
+#    bash Week8/scripts/step2_train.sh --stage sft
+#  手动跑的话（★ Windows 必须 python -m，llamafactory-cli.exe 会段错误）:
+#    .venv/Scripts/python.exe -m llamafactory.cli train Week8/configs/sft_best.yaml
+#
+#  ---------------------------------------------------------------------------
+#  相对 Week3 冠军配置一共只改了 4 处，逐条说明为什么改；
+#  **所有超参（r/α/lr/epochs/batch/cutoff/seed）一个字没动** —— 第 3 周花了整周
+#  做的三组消融实验，结论就是这套数，本周的任务是"自动化地重放它"而不是重调。
+#  Only 4 things changed vs Week3; every hyper-parameter is untouched.
+#    (1) dataset      week2_sft_alpaca -> week8_sft_train
+#    (2) dataset_dir  Week2/data/clean -> Week8/data
+#    (3) val_size 删除，改用 eval_dataset: week8_sft_val
+#    (4) output_dir   saves/week3/... -> saves/week8/qwen/sft_best
+#  ============================================================================
+
+### ---------------- model（基座模型 / base model）----------------
+# 与 Week3 相同的基座。SFT 从原始 Instruct 出发（不是从任何已微调模型）。
+model_name_or_path: models/Qwen2.5-3B-Instruct
+trust_remote_code: true
+
+### ---------------- method（微调方法 / finetuning method）----------------
+stage: sft
+do_train: true
+finetuning_type: lora
+# ↓↓↓ 以下 5 行原封不动来自 Week3 冠军组（r=32, α=2r=64）。
+#     α=2r 的比例必须跟着 r 一起定，否则等效缩放 α/r 变了，就不是同一个实验。
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target: all
+
+### ---------------- dataset（数据 / dataset）----------------
+# ★ 改动 (1)(2)：数据源换成 step1_data_prep.py 的产物。
+#   Week3 吃的是 Week2/data/clean/alpaca_clean.json（4684 条，未划分，由 LF 内部切 5%）；
+#   本周吃 Week8/data/train.json（4216 条，已由 step1 按 9:1 显式切好）。
+#   两者的清洗逻辑是**同一份代码**（step1 直接 import Week2/code/clean_pipeline.py），
+#   去重后同样是 4684 条 —— 这个数字对得上，说明数据口径没有漂移，
+#   第 3 周的超参最优性在本周仍然成立。
+dataset: week8_sft_train
+dataset_dir: Week8/data          # dataset_info.json 也在这个目录里，由 step1 生成
+# ★ 改动 (3)：用显式验证集，**并且必须同时删掉 val_size**。
+#   LLaMA-Factory 在 hparams/data_args.py:162 会硬性检查：
+#     if self.eval_dataset is not None and self.val_size > 1e-6:
+#         raise ValueError("Cannot specify `val_size` if `eval_dataset` is not None.")
+#   两者同时写 = 训练根本起不来。而只留 val_size 更糟：不报错，但 step1 切出来的
+#   val.json 一条都不会被用到，LF 会在 train 上再偷偷切 5%，实际训练样本又少一截。
+#   选显式验证集是因为它可审计：val.json 是落盘的实体文件，step3 能直接拿去评测，
+#   报告里也能给出它自己的长度/来源分布；LF 内部那一刀是黑盒，出问题没法复查。
+#   代价：验证集从 5% 变 10%（任务书 40.1 指定 9:1），训练样本相应少约 5%。
+eval_dataset: week8_sft_val
+# val_size: 0.05               # ← Week3 用的机制，本周**故意删除**，理由见上
+template: qwen                 # Qwen 走 ChatML；训练/合并/推理三处必须完全一致
+cutoff_len: 2048               # 与 step1 的 --max-tokens 保持一致，否则清洗白做
+packing: true                  # 序列打包提速（Week2 结论：步数 837→108）
+neat_packing: true             # 块对角注意力，拼接进同一序列的样本互相不可见
+overwrite_cache: true
+preprocessing_num_workers: 8
+# ★ Windows 必须 0：spawn 起 DataLoader worker 会触发 CUDA IPC 误报 OOM（Week2 结论）。
+#   这条如果改成非 0，step2 的 OOM 重试会被这个假 OOM 反复触发，一路降配到最低档
+#   还是失败 —— 是本流水线最容易被误诊的一个坑。
+dataloader_num_workers: 0
+
+### ---------------- reproducibility（可复现性）----------------
+# 与 Week3 / Week4 / step1 的划分种子全部对齐成 42：
+# 数据划分、shuffle、LoRA 初始化同一个种子，整条流水线才是可重放的。
+seed: 42
+
+### ---------------- output（输出 / output）----------------
+# ★ 改动 (4)：沿用 saves/weekN/{model}/{exp} 命名规范，只把 weekN 换成 week8。
+#   这个路径同时写在 pipeline.env 的 $OUT_SFT 和 merge_sft.yaml 里，改的话三处要一起改。
+output_dir: saves/week8/qwen/sft_best
+logging_steps: 5
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train（训练超参 / training hyperparameters，全部沿用 Week3）------
+# ★ 等效 batch = 1 × 16 = 16。step2_train.sh 的 OOM 重试会成对地改这两个数
+#   （batch 减半的同时 accum 加倍），保证乘积恒等于 16 —— 否则重试出来的模型
+#   就不是第 3 周那个实验了，"复用最优超参"这句话也就不成立。
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-4          # Week3 组B 冠军（对比过 5e-5 / 2e-4）
+num_train_epochs: 3.0          # Week3 组C 冠军（对比过 2 / 5；5 轮 eval loss 回升）
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true                     # 4090 (Ada) 原生 bf16
+ddp_timeout: 180000000
+
+### ---------------- eval（验证 / validation）----------------
+per_device_eval_batch_size: 2
+eval_strategy: steps
+# Week3 用 50 是为了在 ~108 步的训练里拿到 2~3 个 eval 点。本周训练集少了 10%，
+# 步数更少，继续用 50 仍能保证至少 2 个 eval 点，不改。
+eval_steps: 50

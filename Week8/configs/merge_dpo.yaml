@@ -1,0 +1,31 @@
+# ============================================================================
+#  merge_dpo.yaml — Week8 Day40 / 任务书 40.3
+#  把 DPO 阶段训出的 LoRA adapter 合并进 policy，产出流水线的最终交付模型。
+#  Merge the DPO adapter into the policy — the pipeline's final model.
+#
+#  运行 / Run（★ Windows 必须 python -m）:
+#    .venv/Scripts/python.exe -m llamafactory.cli export Week8/configs/merge_dpo.yaml
+#  流水线里由 merge_model.py 代跑:
+#    .venv/Scripts/python.exe Week8/scripts/merge_model.py --config Week8/configs/merge_dpo.yaml
+#
+#  派生自 Week4/configs/merge_best_dpo.yaml，只改 base / adapter / export_dir 三处路径。
+# ============================================================================
+
+### 被合并的 policy + adapter
+# ★ base 是**上一步合并出来的 SFT 模型**，不是原始 Instruct 基座。
+#   LoRA 的权重增量 BA 是相对训练时的那个 W 学出来的；把 DPO 的 adapter 加到
+#   原始基座上等于把增量加错了底，得到的权重毫无意义。
+#   合并链条必须是：Instruct --(SFT adapter)--> week8-sft-merged --(DPO adapter)--> 最终模型。
+model_name_or_path: models/Qwen2.5-3B-week8-sft-merged
+# = pipeline.env 的 $OUT_DPO = dpo_best.yaml 的 output_dir
+adapter_name_or_path: saves/week8/qwen/dpo_best
+template: qwen                     # 必须与训练一致
+finetuning_type: lora
+trust_remote_code: true
+
+### 导出 / export
+# = pipeline.env 的 $MERGED_DPO；step3 评测和 step4 部署都取这个目录
+export_dir: models/Qwen2.5-3B-week8-dpo-merged
+export_size: 5
+export_device: cpu                 # 同 merge_sft.yaml：合并是纯加法，不占显存
+export_legacy_format: false

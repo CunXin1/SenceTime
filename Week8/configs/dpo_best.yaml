@@ -1,0 +1,105 @@
+# ============================================================================
+#  dpo_best.yaml — Week8 Day40 / 任务书 40.2
+#  自动化流水线的 DPO 阶段配置。**派生自** Week4 的冠军实验
+#  Week4/configs/exp/qwen_dpo_beta0.5_lr5e-6.yaml
+#  （Day20 红线测试拒答率 100%，β=0.1 基线只有 85%、未过 90% 硬指标）。
+#  Derived from Week4's winning DPO run; hyper-parameters copied verbatim.
+#
+#  运行 / Run（让 step2_train.sh 带 OOM 重试地跑）:
+#    bash Week8/scripts/step2_train.sh --stage dpo
+#
+#  ---------------------------------------------------------------------------
+#  相对 Week4 冠军配置只改了 4 处，逐条说明；
+#  β / lr / epochs / cutoff / batch / seed 全部原样保留。
+#    (1) model_name_or_path  week3-best-merged -> week8-sft-merged（本流水线自产）
+#    (2) dataset / dataset_dir -> week8_dpo_train @ Week8/data
+#    (3) val_size 删除，改用 eval_dataset: week8_dpo_val
+#    (4) output_dir -> saves/week8/qwen/dpo_best
+#  ============================================================================
+
+### ---------------- model（policy 起点 / policy start）----------------
+# ★ 改动 (1)：policy 指向**本流水线上一步刚产出的**合并模型，而不是 Week4 用的
+#   models/Qwen2.5-3B-week3-best-merged。
+#   这是 step2_train.sh "SFT → 合并 → DPO → 合并" 这个顺序存在的全部意义：
+#   DPO 必须站在同一次流水线跑出来的 SFT 之上，否则本周的 DPO 是在给上一次的
+#   SFT 做对齐，两个阶段的数据版本对不上，端到端结论无从谈起。
+#   这个路径 = pipeline.env 的 $MERGED_SFT = merge_sft.yaml 的 export_dir，三处必须一致。
+model_name_or_path: models/Qwen2.5-3B-week8-sft-merged
+trust_remote_code: true
+
+### ---------------- ref_model（参考模型 / reference model）----------------
+# 沿用 Week4 的结论：finetuning_type=lora 且不显式指定 ref_model 时，
+# LLaMA-Factory 的 create_ref_model()（train/trainer_utils.py）会拿
+# "禁用 LoRA 旁路后的同一个 policy 模型"当参考 —— 而这里的 policy 恰好就是
+# 合并好的 SFT 模型，语义上正是我们想要的参考，还省下约 6GB 显存
+# （不必再把第二份完整模型读进显存）。24GB 卡上这 6GB 是 OOM 与否的分水岭。
+# 如需显式加载独立参考模型，取消下一行注释：
+# ref_model: models/Qwen2.5-3B-week8-sft-merged
+
+### ---------------- method（DPO 偏好对齐 / DPO）----------------
+stage: dpo
+do_train: true
+finetuning_type: lora
+pref_beta: 0.5                    # Week4 组A 冠军：β 大 = KL 约束紧，守住了 SFT 的拒答能力
+pref_loss: sigmoid                # 标准 DPO 损失
+pref_ftx: 0.0                     # 不混 SFT 辅助 loss，保持纯 DPO
+lora_rank: 32                     # 沿用 Week3 最优秩，与 SFT 阶段一致
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target: all
+
+### ---------------- dataset（偏好数据 / preference data）----------------
+# ★ 改动 (2)：换成 step1_data_prep.py 划分好的 Week8 偏好集。
+#   step1 对 conversations/chosen/rejected 跑了与 SFT 同一个 clean_text，
+#   丢掉了 chosen==rejected 的无信号对，并按 prompt 做了 SimHash 去重
+#   （同一 prompt 重复出现会让它在 loss 里被加权多次）。
+dataset: week8_dpo_train
+dataset_dir: Week8/data
+# ★ 改动 (3)：同 sft_best.yaml —— val_size 与 eval_dataset 不能并存
+#   （data_args.py:162 会 raise ValueError）。用显式验证集，划分口径与 SFT 完全一致
+#   （同一个 seed、同一个 9:1），step3 的两条曲线才可比。
+eval_dataset: week8_dpo_val
+# val_size: 0.05                  # ← Week4 用的机制，本周故意删除
+template: qwen                    # 必须与 policy 训练时一致
+# ★ cutoff_len 768（不是 SFT 的 2048）：DPO 单步要跑 policy+ref × chosen+rejected
+#   共 4 遍前向，序列越长显存和耗时翻倍增长。Week4 实测 cutoff=1024 时峰值显存
+#   逼近 24GB 上限（≈23.4GB）、单步 ~17s；768 同时压低显存风险与耗时。
+#   代价是 step1 报告里 dpo_train 的 p90 长度 716 token 刚好卡在 768 以内，
+#   但 max 到 2101，长尾会被 LF 截断 —— 与 Week4 同样的取舍，不改。
+cutoff_len: 768
+# ★ packing 必须关：序列打包是 SFT 专用，会破坏 chosen/rejected 的成对结构。
+packing: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0         # ★ Windows 必须 0（同 sft_best.yaml）
+
+### ---------------- reproducibility ----------------
+seed: 42
+
+### ---------------- output ----------------
+# ★ 改动 (4)：= pipeline.env 的 $OUT_DPO = merge_dpo.yaml 的 adapter_name_or_path
+output_dir: saves/week8/qwen/dpo_best
+logging_steps: 5
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train（全部沿用 Week4 冠军）----------------
+# ★ 等效 batch = 1 × 8 = 8。step2_train.sh 降配重试时同样成对改这两个数，
+#   保证乘积恒为 8。
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+# DPO 学习率比 SFT 低一个量级：policy 已是对齐良好的 SFT 模型，大 lr 会破坏已学能力。
+learning_rate: 5.0e-6
+num_train_epochs: 2.0             # 偏好数据 2 轮足够，多了易过拟合
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### ---------------- eval ----------------
+# DPO 主要看 rewards/* 曲线，eval loss 作辅助过拟合信号。
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 50

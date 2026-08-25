@@ -1,0 +1,33 @@
+# ============================================================================
+#  merge_sft.yaml — Week8 Day40 / 任务书 40.3
+#  把 SFT 阶段训出的 LoRA adapter 合并回基座，产出 DPO 阶段的 policy 起点。
+#  Merge the SFT LoRA adapter back into the base model; the result is the
+#  policy that the DPO stage starts from.
+#
+#  运行 / Run（★ Windows 必须走 python -m，llamafactory-cli.exe 段错误 —— Week2 Day10）:
+#    .venv/Scripts/python.exe -m llamafactory.cli export Week8/configs/merge_sft.yaml
+#  流水线里由 merge_model.py 代跑（它多做了 adapter 存在性和磁盘余量检查）:
+#    .venv/Scripts/python.exe Week8/scripts/merge_model.py --config Week8/configs/merge_sft.yaml
+#
+#  派生自 Week3/configs/merge_best_qwen.yaml，只改 adapter 与 export_dir 两处路径。
+# ============================================================================
+
+### 被合并的基座 + adapter / base + adapter
+model_name_or_path: models/Qwen2.5-3B-Instruct
+# = pipeline.env 的 $OUT_SFT = sft_best.yaml 的 output_dir
+adapter_name_or_path: saves/week8/qwen/sft_best
+# ★ 必须与训练时的 template 完全一致：模板决定了特殊 token 与角色标记，
+#   合并本身不改这些，但导出的 config/tokenizer 会按 template 落盘，
+#   对不上的话推理时模型会因为分不清轮次边界而胡言乱语。
+template: qwen
+finetuning_type: lora
+trust_remote_code: true
+
+### 导出 / export
+# = pipeline.env 的 $MERGED_SFT = dpo_best.yaml 的 model_name_or_path
+export_dir: models/Qwen2.5-3B-week8-sft-merged
+export_size: 5                     # 每个 safetensors 分片 ≤5GB
+# ★ CPU 合并：合并只是 W + BA 的一次加法，不需要 GPU；放 CPU 上可以和别的
+#   GPU 任务并行，也避免刚训完显存还没完全释放时又去抢一块 6GB。
+export_device: cpu
+export_legacy_format: false        # safetensors，不用 .bin

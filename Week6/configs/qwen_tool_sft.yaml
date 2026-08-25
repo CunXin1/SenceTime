@@ -1,0 +1,74 @@
+# ============================================================================
+#  Week6 Day31：工具调用 SFT —— 增强 ReAct 格式遵循与工具选择准确率
+#  Week6 Day31: tool-calling SFT to improve ReAct format compliance & tool choice
+#
+#  运行 / Run（仓库根目录，Windows 必须用 python -m，勿用 .exe——含撇号路径会段错误）:
+#    .venv\Scripts\python.exe -m llamafactory.cli train Week6/configs/qwen_tool_sft.yaml
+#
+#  ★ 训练用**主 .venv**（LLaMA-Factory 装在那里），Agent 推理才用 .venv-agent。
+#    分工的依据：训练是纯 LLaMA-Factory 流程，不需要 LangChain；而 LangChain 只在
+#    推理侧的 create_react_agent 用得到。两个环境的 transformers/peft/trl 同版本
+#    （4.56.2 / 0.18.1 / 0.24.0），产出的 adapter 在两边通用。
+# ============================================================================
+
+### ---------------- model（policy 起点）----------------
+# ★ 起点是 Week4 的 DPO 交付模型，不是原始基座——本周要在「已对齐」的模型上
+#   继续教工具调用，这样 Day32 才能观察「对齐 → 工具能力」的相互影响。
+model_name_or_path: models/Qwen2.5-3B-week4-dpo-merged
+trust_remote_code: true
+
+### ---------------- method ----------------
+stage: sft
+do_train: true
+finetuning_type: lora
+# ★ r=16（Week3 最优是 r=32，但那是 4684 条数据）。本周只有 146 条样本，
+#   秩过大在小数据上会迅速过拟合，把通用对话能力也一并覆盖掉。
+lora_rank: 16
+lora_alpha: 32                 # 保持 α=2r，与 Week3/Week4 的缩放约定一致
+lora_dropout: 0.05
+lora_target: all
+
+### ---------------- dataset ----------------
+dataset: week6_react_sft
+dataset_dir: Week6/data
+template: qwen
+# ★ cutoff_len 2048：实测单条样本（system+instruction+output）最长 2046 字符，
+#   1536 会把多步轨迹尾部的 Action Input 截断——而那恰恰是要学的目标。
+cutoff_len: 2048
+# ★ packing 必须关。两个原因：
+#   ① 与 Week4 DPO 同理，打包会把两条独立的 ReAct 轨迹拼成一条，格式被污染；
+#   ② 本周训练的核心信号是「Action Input 之后就是 EOS（写完就停）」，
+#     打包会把下一条样本接在 EOS 位置，这个信号直接被抹掉。
+packing: false
+overwrite_cache: true
+preprocessing_num_workers: 8
+dataloader_num_workers: 0      # ★ Windows 必须 0（Week2 结论：spawn+CUDA IPC 误报 OOM）
+
+### ---------------- reproducibility ----------------
+seed: 42                       # 与 Week1~5 全项目一致
+
+### ---------------- output ----------------
+output_dir: saves/week6/qwen_tool_sft
+logging_steps: 5
+save_steps: 200
+plot_loss: true
+overwrite_output_dir: true
+report_to: tensorboard
+
+### ---------------- train ----------------
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8    # 等效 batch 8
+learning_rate: 1.0e-4             # 与 Week3 最优组一致
+# ★ 8 轮（Week3 是 3 轮）。样本只有 146 条、等效 batch 8，一轮才 ~17 步；
+#   3 轮共 51 步根本学不会格式。8 轮 ~136 步，量级与 Week3 的 108 步相当。
+num_train_epochs: 8.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+bf16: true
+ddp_timeout: 180000000
+
+### ---------------- eval ----------------
+val_size: 0.1                     # 146 条里留 10% ≈ 15 条做过拟合观测
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 20                    # 总步数 ~136，20 步一评可得 6~7 个观测点

@@ -1,0 +1,36 @@
+# ============================================================================
+#  conda 环境定义 / Conda environment for this project
+#  用法 / Usage:
+#      conda env create -f environment.yml
+#      conda activate llm_exp
+#      pip install -e ./LLaMA-Factory --no-deps && pip install omegaconf fire tyro
+#
+#  ★ 为什么 pip 装 torch 而不是 conda 装
+#    conda 的 pytorch 频道给的 CUDA 运行时版本与本项目锁定的 cu124 轮子对不上，
+#    而 Week1~7 全部实验都是在 torch 2.6.0+cu124 上跑出来的。为了让别人重跑能对上
+#    交付文档里的数字，这里让 conda 只负责 Python 解释器与系统级依赖，
+#    深度学习栈一律交给 pip + 官方 CUDA index。
+#    Conda provides the interpreter only; the DL stack comes from the pinned
+#    CUDA 12.4 wheels so the reproduced numbers match the delivered reports.
+#
+#  ★ Python 必须是 3.12
+#    第 1 周起全项目就在 3.12 上；LLaMA-Factory 0.9.6.dev0 与 gradio 5.50 都验证过。
+#    3.10 也能跑，但 lock 文件里的 numpy 2.4.4 / matplotlib 3.11 的轮子组合未在 3.10 上验证。
+#
+#  ★ 只覆盖主环境
+#    多模态(.venv-vlm)、Agent(.venv-agent)、WSL 里的量化/服务环境各自独立，
+#    它们的依赖与主环境互斥（原因见 README「为什么有五个虚拟环境」），
+#    不要试图合并到这一个 environment.yml 里。
+# ============================================================================
+name: llm_exp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - git                    # 需要 clone LLaMA-Factory
+  - pip:
+      # CUDA 12.4 轮子必须走官方 index，否则 pip 默认装 CPU 版 torch
+      # （第 3 周的 OpenCompass 排障清单里踩过：评测极慢就是因为装成了 CPU torch）
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - -r requirements.txt

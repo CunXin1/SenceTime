@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "model": "dpo",
+    "adapter": "saves\\week6\\qwen_tool_sft",
+    "max_iterations": 6,
+    "time": "2026-08-12 05:21:11",
+    "llm_stats": {
+      "calls": 25,
+      "gen_tokens": 1093,
+      "seconds": 28.31177520000074
+    }
+  },
+  "summary": {
+    "n": 9,
+    "hits": 9,
+    "hit_limit": 0
+  },
+  "records": [
+    {
+      "id": "S1",
+      "task": "计算 123 * 456",
+      "expect": "56088",
+      "answer": "123 * 456 = 56088。",
+      "steps": [
+        {
+          "tool": "calculator",
+          "input": "123 * 456",
+          "observation": "56088"
+        }
+      ],
+      "n_steps": 1,
+      "tools_used": [
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 2.0
+    },
+    {
+      "id": "S2",
+      "task": "星尘X1智能音箱多少钱？",
+      "expect": "899",
+      "answer": "星尘 X1 智能音箱售价 899 元，运费 68 元。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "星尘X1智能音箱",
+          "observation": "【星尘 X1 智能音箱】星尘 X1 智能音箱：售价 899 元，运费 68 元，当前库存 42 件，品类为智能家居，保修 2 年。支持蓝牙 5.3 与 Wi-Fi 双模连接，内置 40W 全频扬声器与双低音单元，支持多房间组网播放。"
+        }
+      ],
+      "n_steps": 1,
+      "tools_used": [
+        "knowledge_search"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 1.9
+    },
+    {
+      "id": "S3",
+      "task": "计算 2 的 10 次方",
+      "expect": "1024",
+      "answer": "2 的 10 次方等于 1024。",
+      "steps": [
+        {
+          "tool": "calculator",
+          "input": "2 ** 10",
+          "observation": "1024"
+        }
+      ],
+      "n_steps": 1,
+      "tools_used": [
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 1.7
+    },
+    {
+      "id": "S4",
+      "task": "你们的退货政策是几天？",
+      "expect": "7",
+      "answer": "退换货政策：自签收之日起 7 天内支持无理由退货，商品需保持完好、配件齐全、不影响二次销售。7 至 15 天内出现非人为质量问题支持换货。定制类商品与已拆封的耳机类商品不支持无理由退货。退货运费在质量问题情形下由平台承担，其余情形由买家承担。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "退货",
+          "observation": "【退换货政策】退换货政策：自签收之日起 7 天内支持无理由退货，商品需保持完好、配件齐全、不影响二次销售。7 至 15 天内出现非人为质量问题支持换货。定制类商品与已拆封的耳机类商品不支持无理由退货。退货运费在质量问题情形下由平台承担，其余情形由买家承担。"
+        }
+      ],
+      "n_steps": 1,
+      "tools_used": [
+        "knowledge_search"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 3.2
+    },
+    {
+      "id": "S5",
+      "task": "检查这段Python代码语法是否正确：def add(a, b): return a + b",
+      "expect": "语法正确",
+      "answer": "语法正确（共 2 行）。",
+      "steps": [
+        {
+          "tool": "code_check",
+          "input": "def add(a, b):\\n    return a + b",
+          "observation": "语法正确（共 2 行）。结构：1 个函数、0 个类、0 个循环，最大嵌套深度 1。未发现危险导入或危险调用。注意：本检查为静态语法分析，代码未被执行，因此不能发现未定义变量、类型错误等运行时问题。"
+        }
+      ],
+      "n_steps": 1,
+      "tools_used": [
+        "code_check"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 1.7
+    },
+    {
+      "id": "M1",
+      "task": "请查询星尘X1智能音箱的价格，加上运费后计算总价，并告诉我是否超过预算1000元。",
+      "expect": "967",
+      "answer": "星尘 X1 智能音箱售价 899 元，运费 68 元，总价 967 元，没有超过预算 1000 元。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "星尘X1智能音箱",
+          "observation": "【星尘 X1 智能音箱】星尘 X1 智能音箱：售价 899 元，运费 68 元，当前库存 42 件，品类为智能家居，保修 2 年。支持蓝牙 5.3 与 Wi-Fi 双模连接，内置 40W 全频扬声器与双低音单元，支持多房间组网播放。"
+        },
+        {
+          "tool": "calculator",
+          "input": "899 + 68",
+          "observation": "967"
+        },
+        {
+          "tool": "calculator",
+          "input": "967 > 1000",
+          "observation": "false"
+        }
+      ],
+      "n_steps": 3,
+      "tools_used": [
+        "knowledge_search",
+        "calculator",
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 4.9
+    },
+    {
+      "id": "M2",
+      "task": "请查询追光S3显示器的价格，加上运费后计算总价，并告诉我是否超过预算1000元。",
+      "expect": "1419",
+      "answer": "追光 S3 显示器售价 1299 元，运费 120 元，总价 1419 元，超过预算 1000 元。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "追光S3显示器",
+          "observation": "【追光 S3 显示器】追光 S3 显示器：售价 1299 元，运费 120 元（大件物流），当前库存 15 件，品类为显示外设，保修 3 年。27 英寸 2K 分辨率，180Hz 刷新率，覆盖 99% sRGB 色域，支持 HDR400。"
+        },
+        {
+          "tool": "calculator",
+          "input": "1299 + 120",
+          "observation": "1419"
+        },
+        {
+          "tool": "calculator",
+          "input": "1419 > 1000",
+          "observation": "true"
+        }
+      ],
+      "n_steps": 3,
+      "tools_used": [
+        "knowledge_search",
+        "calculator",
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 5.0
+    },
+    {
+      "id": "M3",
+      "task": "磐石M2机械键盘和微澜A1加湿器各买一件，一共需要多少钱（含各自运费）？",
+      "expect": "927",
+      "answer": "磐石 M2 机械键盘含运费 713 元，微澜 A1 加湿器含运费 214 元，合计 927 元。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "磐石M2机械键盘",
+          "observation": "【磐石 M2 机械键盘】磐石 M2 机械键盘：售价 688 元，运费 25 元，当前库存 87 件，品类为输入外设，保修 2 年。87 键紧凑布局，热插拔轴座，支持三模连接与全键无冲。"
+        },
+        {
+          "tool": "knowledge_search",
+          "input": "微澜 A1 加湿器",
+          "observation": "【微澜 A1 加湿器】微澜 A1 加湿器：售价 199 元，运费 15 元，当前库存 210 件，品类为智能家居，保修 1 年。4L 容量，超声波雾化，支持恒湿模式与 App 远程控制。"
+        },
+        {
+          "tool": "calculator",
+          "input": "713 + 214",
+          "observation": "927"
+        }
+      ],
+      "n_steps": 3,
+      "tools_used": [
+        "knowledge_search",
+        "knowledge_search",
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 4.6
+    },
+    {
+      "id": "M4",
+      "task": "云雀Pro无线耳机的总价（含运费）是多少？如果我是银卡会员享95折，折后商品价加运费一共多少钱？",
+      "expect": "436",
+      "answer": "云雀 Pro 无线耳机售价 459 元，含运费；银卡会员享 95 折后折后价格为 436.05 元。",
+      "steps": [
+        {
+          "tool": "knowledge_search",
+          "input": "云雀Pro无线耳机",
+          "observation": "【云雀 Pro 无线耳机】云雀 Pro 无线耳机：售价 459 元，运费 0 元（本商品由平台承担运费），当前库存 130 件，品类为音频配件，保修 1 年。主动降噪深度 42dB，单次续航 8 小时，配合充电盒共 32 小时。"
+        },
+        {
+          "tool": "calculator",
+          "input": "459 * 0.95",
+          "observation": "436.05"
+        }
+      ],
+      "n_steps": 2,
+      "tools_used": [
+        "knowledge_search",
+        "calculator"
+      ],
+      "hit": true,
+      "hit_limit": false,
+      "seconds": 3.5
+    }
+  ]
+}

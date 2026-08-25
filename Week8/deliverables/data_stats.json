@@ -1,0 +1,109 @@
+{
+  "script_version": "1.0.0",
+  "timestamp": "2026-08-25T13:24:01",
+  "source": "Week2/data/unified/alpaca_all.json",
+  "dpo_source": "Week4/data/dpo/dpo_pairs.json",
+  "tokenizer_backend": "HF:Qwen2.5-3B-Instruct",
+  "max_tokens": 2048,
+  "val_ratio": 0.1,
+  "seed": 42,
+  "quick": 0,
+  "out_dir": "Week8/data",
+  "sft": {
+    "modified_by_clean_text": 593,
+    "truncated": 2,
+    "dropped_too_long": 2,
+    "dropped_dup": 289,
+    "source_raw": {
+      "alpaca_gpt4_zh": 2000,
+      "coig_pc": 1976,
+      "sharegpt_zh": 999
+    },
+    "source_train": {
+      "alpaca_gpt4_zh": 1786,
+      "coig_pc": 1545,
+      "sharegpt_zh": 885
+    },
+    "source_val": {
+      "alpaca_gpt4_zh": 213,
+      "coig_pc": 150,
+      "sharegpt_zh": 105
+    },
+    "funnel": {
+      "0_raw": 4975,
+      "1_text_cleaned": 4975,
+      "2_drop_empty": 4975,
+      "3_length_handled": 4973,
+      "4_deduped": 4684,
+      "5_train": 4216,
+      "5_val": 468
+    },
+    "len_train_token": {
+      "n": 4216,
+      "min": 7,
+      "median": 170.0,
+      "p90": 523.5,
+      "max": 2040,
+      "mean": 226.0
+    },
+    "len_train_char": {
+      "n": 4216,
+      "min": 7,
+      "median": 286.0,
+      "p90": 949.5,
+      "max": 4198,
+      "mean": 402.3
+    },
+    "len_val_token": {
+      "n": 468,
+      "min": 8,
+      "median": 170.0,
+      "p90": 445.2,
+      "max": 1110,
+      "mean": 210.5
+    },
+    "len_val_char": {
+      "n": 468,
+      "min": 14,
+      "median": 286.5,
+      "p90": 856.2,
+      "max": 1870,
+      "mean": 379.0
+    }
+  },
+  "dpo": {
+    "funnel": {
+      "0_raw": 1221,
+      "1_cleaned": 1221,
+      "2_deduped": 1219,
+      "3_train": 1097,
+      "3_val": 122
+    },
+    "dropped_dup": 2,
+    "len_train_token": {
+      "n": 1097,
+      "min": 11,
+      "median": 321,
+      "p90": 716.4,
+      "max": 2101,
+      "mean": 362.7
+    },
+    "len_val_token": {
+      "n": 122,
+      "min": 15,
+      "median": 239.5,
+      "p90": 684.4,
+      "max": 1141,
+      "mean": 322.3
+    }
+  },
+  "timings": {
+    "load": 0.04,
+    "clean_text": 0.06,
+    "length": 2.14,
+    "dedup": 11.41,
+    "split": 0.0,
+    "dpo": 2.29
+  },
+  "elapsed_sec": 30.18
+}

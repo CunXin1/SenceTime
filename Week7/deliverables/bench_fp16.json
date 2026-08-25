@@ -1,0 +1,12 @@
+{
+ "variant": "fp16",
+ "ts": "2026-08-21 03:00:03",
+ "weight_gb": 5.79,
+ "ppl_median": 5.230763013620765,
+ "ppl_mean": 6.213493313855526,
+ "ppl_n": 32,
+ "tps_batch1": 119.84,
+ "tps_concurrent": 1393.81,
+ "concurrency": 16,
+ "max_tokens": 256
+}

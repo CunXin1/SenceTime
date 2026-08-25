@@ -1,0 +1,83 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# Week8 Day42 · 知识蒸馏配置（C 组：KD 蒸馏）
+# Knowledge-distillation config — arm C (logit-level KD).
+#
+# 教师：Qwen2.5-3B-week4-dpo-merged（第 4 周 DPO 交付模型，fp16）
+# 学生：Qwen2.5-0.5B-Instruct
+# 损失：L = α · T² · KL(p_teacher^(T) ‖ p_student^(T)) + (1−α) · CE(z_student, y)
+#
+# 跑法：
+#   .venv/Scripts/python.exe Week8/scripts/distill_kd.py --config Week8/configs/distill_kd.yaml
+#
+# ★ 本文件与 student_sft_baseline.yaml 的唯一差异是 kd_alpha / output_dir / run_name。
+#   其余超参逐字相同 —— 这是 B/C 对照成立的前提：任何别的差异都会污染
+#   "收益到底来自蒸馏、还是来自又训了一遍" 这个结论。
+#   (B and C differ ONLY in kd_alpha. Everything else is byte-identical by design.)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+run_name: kd_a0.5_T2.0_ep2
+
+# ── 模型 ──────────────────────────────────────────────────────────────────────
+student_model: models/Qwen2.5-0.5B-Instruct
+teacher_model: models/Qwen2.5-3B-week4-dpo-merged
+output_dir:    models/Qwen2.5-0.5B-week8-distill
+
+# ── 数据 ──────────────────────────────────────────────────────────────────────
+# Week2 Day8 清洗去重后的 alpaca 中文指令数据（4684 条）。
+# ★ 刻意复用 Week2/Week3 的同一份 SFT 数据，而不是让教师重新生成一批回答：
+#   这样 B 组（纯 SFT）和 C 组（KD）见到的**输入分布完全一致**，
+#   C 组唯一多出来的信息就是教师的软标签。若换数据，对照立刻失效。
+dataset_path: Week2/data/clean/alpaca_clean.json
+
+# ★ cutoff_len 取 768 而不是 Week3 的 1024：
+#   logits 张量是 [B, L, 151936]，显存与 L 成正比，而教师+学生要同时各出一份。
+#   实测 alpaca_clean 的 99 分位长度远低于 768，截断率很低（见 run_meta.json 的
+#   data.n_truncated），用 768 换来的显存余量更值。
+cutoff_len: 768
+
+# ── KD 超参（42.1 的两个核心概念） ────────────────────────────────────────────
+# α：软标签(KD)与硬标签(CE)的权重。α=0 退化成纯 SFT（B 组）。
+# ★ 取 0.5 的理由：这是一个**不预设结论**的中间值。
+#   α→1 完全信教师（学生连数据里的真答案都不看了，教师的错误会被原样继承）；
+#   α→0 完全不信教师（就是 B 组）。0.5 让两个信号等权，实验结束后无论
+#   "KD 有用/没用"都能给出干净的解释，不会被"权重本来就调偏了"污染。
+kd_alpha: 0.5
+
+# T：温度系数。softmax(z/T)，T>1 软化分布、放大 dark knowledge。
+# ★ 取 2.0 的理由：Qwen2.5 指令模型的 top-1 概率常 >0.9，分布非常尖锐。
+#   T=1 时 KL 几乎只被 top-1 支配，等价于一个软化版 CE，蒸馏没意义；
+#   T 太大（≥5）会把 151936 维长尾里的数值噪声放大到主导损失。
+#   T=2 能把 top-5~top-50 的结构带进来，是文献里的常用起点。
+#   注意脚本里 KL 项乘了 T²（见 distill_kd.py 的 _kd_loss），用来抵消
+#   softmax 软化带来的 1/T² 梯度缩放，否则 α 的含义会随 T 漂移。
+kd_temperature: 2.0
+
+# ── 训练超参 ──────────────────────────────────────────────────────────────────
+# ★ 任务书明确"仅限 2 轮，验证可行性"，不做轮数搜索。
+num_train_epochs: 2
+
+# ★ 有效 batch = 2 × 8 = 16。Week3 最优 SFT 配置用的也是 16，保持一致，
+#   这样 B 组与 Week3 的 SFT 结果也大致可比。
+#   per_device 只敢给 2：教师和学生的 logits 各是 [B,768,151936]，
+#   B=4 时单份就接近 1GB，加上 fp32 softmax 中间量容易触顶。
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+
+# ★ 1e-5 而不是 Week3 的 1e-4：Week3 是 LoRA（只训 0.8% 的参数，需要大 lr 才推得动
+#   低秩增量），这里是**全参微调**。全参用 1e-4 会在 2 轮内把 0.5B 的指令能力冲垮
+#   （灾难性遗忘）。1e-5~2e-5 是 0.5B 级别全参 SFT 的常规区间。
+learning_rate: 1.0e-5
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+weight_decay: 0.0
+max_grad_norm: 1.0
+optim: adamw_torch_fused
+
+# ★ 开梯度检查点：用约 30% 的额外计算换掉大部分激活显存。
+#   教师常驻 6.2GB，学生全参优化器状态约 8GB，这 30% 时间买的是"不 OOM"。
+gradient_checkpointing: true
+
+# ── 杂项 ──────────────────────────────────────────────────────────────────────
+seed: 42
+logging_steps: 5
+log_dir: Week8/deliverables/logs/distill

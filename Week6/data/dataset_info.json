@@ -1,0 +1,11 @@
+{
+  "week6_react_sft": {
+    "file_name": "react_sft.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+  }
+}

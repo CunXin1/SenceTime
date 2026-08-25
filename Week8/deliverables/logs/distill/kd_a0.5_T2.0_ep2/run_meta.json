@@ -1,0 +1,33 @@
+{
+  "run_name": "kd_a0.5_T2.0_ep2",
+  "config_file": "Week8\\configs\\distill_kd.yaml",
+  "smoke": false,
+  "kd_alpha": 0.5,
+  "kd_temperature": 2.0,
+  "student_model": "C:\\Users\\Ruibo's Desktop\\SenceTime_Weeks1-5\\models\\Qwen2.5-0.5B-Instruct",
+  "teacher_model": "C:\\Users\\Ruibo's Desktop\\SenceTime_Weeks1-5\\models\\Qwen2.5-3B-week4-dpo-merged",
+  "data": {
+    "n_samples": 4649,
+    "n_raw": 4684,
+    "n_truncated": 124,
+    "n_tokens": 1128163,
+    "n_loss_tokens": 637245,
+    "loss_token_ratio": 0.5649
+  },
+  "student_params_M": 494.0,
+  "train_seconds": 1297.0,
+  "train_minutes": 21.62,
+  "peak_vram_mib": 24117,
+  "global_steps": 582,
+  "final_train_loss": 11.3915,
+  "hparams": {
+    "num_train_epochs": 2,
+    "per_device_train_batch_size": 2,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 1e-05,
+    "cutoff_len": 768,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.03,
+    "optim": "adamw_torch_fused"
+  }
+}

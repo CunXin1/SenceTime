@@ -1,0 +1,59 @@
+# ============================================================================
+#  主环境依赖锁定 / Pinned dependencies for the main environment (.venv)
+#  实测环境：Windows 11 + RTX 4090 (24GB) + Python 3.12.10
+#
+#  ★ 为什么全部钉死版本号
+#    第 1~4 周的实验结论（eval loss 1.2630、DPO 拒答率 100% 等）是可复现性的地基。
+#    transformers / peft / trl 任何一个漂移，重跑出来的数字就对不上交付文档，
+#    整条实验链的可信度随之崩掉。第 6 周换机重建时正是靠这份 lock 把 eval loss
+#    复现到小数点后三位（1.2630 vs 1.2629）。
+#    Every version is pinned: the Week1-4 numbers are the reproducibility baseline.
+#
+#  ★ LLaMA-Factory 必须 --no-deps 安装（见 README 的「安装」一节）
+#    下面 datasets / accelerate / peft / trl 四个版本正好卡在 LF 允许范围的**上界**，
+#    直接 `pip install -e ./LLaMA-Factory` 会把它们全部降级。
+#    LF must be installed with --no-deps or it downgrades four packages below.
+#
+#  ★ 本文件只覆盖主环境。多模态(.venv-vlm)、Agent(.venv-agent)、
+#    WSL 里的量化/服务环境各自独立，原因见 README「为什么有五个虚拟环境」。
+# ============================================================================
+
+# ---- 深度学习核心（CUDA 12.4 轮子，需加 --index-url，见 README）----
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124            # 必须与 torch 同版本，否则 _torchaudio.pyd 报 WinError 127
+
+# ---- 训练栈 ----
+transformers==4.56.2
+tokenizers==0.22.2
+accelerate==1.11.0
+peft==0.18.1
+trl==0.24.0                        # 不能升 1.x：删了 AutoModelForCausalLMWithValueHead，LF 模块加载期就 import 它
+datasets==4.0.0
+sentencepiece==0.2.1
+tensorboard==2.21.0
+
+# ---- 数据处理与绘图 ----
+numpy==2.4.4
+pandas==2.3.3
+pyarrow==18.1.0
+scipy==1.18.0
+matplotlib==3.11.0
+tiktoken==0.13.0                   # clean_pipeline.py 的 token 计数二级回退
+pillow==11.3.0
+
+# ---- 模型下载 ----
+modelscope==1.38.1
+
+# ---- 服务与前端（第 7 周）----
+gradio==5.50.0
+openai==3.3.1                      # 打 vLLM 的 OpenAI 兼容接口
+httpx==0.28.1                      # 必须能传 trust_env=False，见 Week7/code/app.py
+
+# ---- 文档产出 ----
+python-docx==1.2.0                 # md_to_docx.py：周报/技术报告转 .docx
+
+# ---- 单独安装，不在本文件里 ----
+# LLaMA-Factory 0.9.6.dev0 @ 76a0391：
+#   pip install -e ./LLaMA-Factory --no-deps
+#   pip install omegaconf fire tyro    # --no-deps 漏掉的三个，缺了直接 ImportError

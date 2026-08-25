@@ -1,0 +1,12 @@
+{
+ "variant": "gptq",
+ "ts": "2026-08-21 03:03:51",
+ "weight_gb": 1.94,
+ "ppl_median": 5.416292757809721,
+ "ppl_mean": 6.516369000278435,
+ "ppl_n": 32,
+ "tps_batch1": 209.5,
+ "tps_concurrent": 1475.34,
+ "concurrency": 16,
+ "max_tokens": 256
+}

@@ -1,0 +1,59 @@
+# ============================================================================
+#  student_sft_baseline.yaml — Week8 Day42 / B 组：纯 SFT 对照
+#  Control arm B: plain SFT on the 0.5B student, no teacher.
+#
+#  ★ 这个文件存在的唯一理由：让"蒸馏带来的收益"可归因
+#    只跑一个 KD 模型再和基座比，得到的差值里混着两样东西：
+#      ① 在这批数据上又训了 2 轮（纯 SFT 也能拿到的收益）
+#      ② 教师软标签带来的额外信息（真正属于"蒸馏"的收益）
+#    只有再跑一个**除了 alpha 以外完全相同**的纯 SFT 组，
+#    C − B 才是蒸馏的净效果。这是 42.3「分析蒸馏效果」能不能成立的前提。
+#    Without arm B, any gain is confounded with "two more epochs of SFT".
+#
+#  ★ 因此下面每一个超参都必须与 distill_kd.yaml **逐字相同**，除了：
+#      · run_name      —— 两组产物要能分开
+#      · output_dir    —— 同上
+#      · kd_alpha      —— 0.0（这就是唯一的自变量）
+#      · kd_temperature 保留但无效（alpha=0 时教师根本不加载）
+#    改这个文件时请同步改 distill_kd.yaml，否则对照组就废了。
+#    Every hyper-parameter MUST match distill_kd.yaml verbatim except alpha.
+#
+#  用法 / Usage（仓库根目录）:
+#    .venv/Scripts/python.exe Week8/scripts/distill_kd.py \
+#        --config Week8/configs/student_sft_baseline.yaml --smoke
+#    .venv/Scripts/python.exe Week8/scripts/distill_kd.py \
+#        --config Week8/configs/student_sft_baseline.yaml
+# ============================================================================
+
+run_name: sft_baseline_ep2
+
+# ---- 模型 ----
+student_model: models/Qwen2.5-0.5B-Instruct
+# ★ alpha=0 时 distill_kd.py 不会加载教师（main() 里 `if alpha > 0`），
+#   这里仍然填上是为了让两份配置逐行可 diff——空着反而看不出"只差 alpha"。
+teacher_model: models/Qwen2.5-3B-week4-dpo-merged
+output_dir:    models/Qwen2.5-0.5B-week8-sft
+
+# ---- 数据（必须与 KD 组同一份、同一顺序、同一截断）----
+dataset_path: Week2/data/clean/alpaca_clean.json
+cutoff_len: 768
+
+# ---- 蒸馏开关：这是 B 与 C 之间唯一的差异 ----
+kd_alpha: 0.0          # ← 0 = 纯 SFT，教师不参与
+kd_temperature: 2.0    # alpha=0 时不生效，保留仅为可 diff
+
+# ---- 训练超参（与 distill_kd.yaml 逐字相同）----
+num_train_epochs: 2                  # 42.2 明确"仅限 2 轮，验证可行性"
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8       # 等效 batch = 16
+learning_rate: 1.0e-5
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+weight_decay: 0.0
+max_grad_norm: 1.0
+optim: adamw_torch_fused
+gradient_checkpointing: true
+seed: 42                             # ★ 同种子：两组的数据顺序与初始化完全一致
+logging_steps: 5
+
+log_dir: Week8/deliverables/logs/distill

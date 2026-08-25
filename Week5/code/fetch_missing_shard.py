@@ -34,6 +34,9 @@ CHUNK = 8 << 20  # 8 MB
 REPO = {  # 本地目录名 -> HuggingFace repo id
     "Qwen2.5-VL-7B-Instruct": "Qwen/Qwen2.5-VL-7B-Instruct",
     "gemma-4-E4B-it": "google/gemma-4-E4B-it",
+    # Week6 复用：ModelScope 对 3B 的 shard 2 同样掉到 178 kB/s（ETA 2h38m），
+    # 与 Week5 shard 1 的情况一致，故走同一条 hf-mirror 补片路径。
+    "Qwen2.5-3B-Instruct": "Qwen/Qwen2.5-3B-Instruct",
 }
 
 
@@ -96,7 +99,7 @@ def _download_once(repo: str, name: str, dest: Path) -> None:
                     print(f"  {done / 1024 ** 3:5.2f}/{total / 1024 ** 3:.2f} GB "
                           f"({done / total:5.1%})  {rate / 1024 ** 2:5.1f} MB/s  "
                           f"ETA {(total - done) / rate / 60:4.1f} min", flush=True)
-                    last = time.time()
+                    last = time.perf_counter()
 
     if total and part.stat().st_size != total:
         raise RuntimeError(f"{name} 大小不符:落地 {part.stat().st_size} != 期望 {total}")
@@ -130,7 +133,9 @@ def main() -> None:
         t0 = time.perf_counter()
         download(REPO[args.model_dir], name, local / name)
         size = (local / name).stat().st_size / 1024 ** 3
-        dt = time.time() - t0
+        # 必须与 t0 用同一个时钟：t0 是 perf_counter()，这里若用 time.time()
+        # 会得到 epoch 差值（实测打印出「29774626.5 分钟」）。
+        dt = time.perf_counter() - t0
         print(f"[完成] {name}  {size:.2f} GB  {dt / 60:.1f} 分钟 "
               f"({size * 1024 / dt:.1f} MB/s)\n", flush=True)
 

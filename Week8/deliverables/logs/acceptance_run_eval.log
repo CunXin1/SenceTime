@@ -1,0 +1,61 @@
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:35] Week8 全链路 Pipeline  run_id=20260825_132435
+[pipeline][13:24:35] 仓库 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5
+[pipeline][13:24:35] 解释器: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe
+[pipeline][13:24:35] 日志 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_132435.log
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:35] 本次计划：
+[pipeline][13:24:35]   step1 数据准备   跳过
+[pipeline][13:24:35]   step2 训练       跳过
+[pipeline][13:24:35]   step3 评测       执行（bench=off）
+[pipeline][13:24:35]   step4 部署       跳过（需 --with-deploy）
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:35] ⏭ 段 [data] 按参数跳过
+[pipeline][13:24:35] ⏭ 段 [train] 按参数跳过
+[pipeline][13:24:35] ⚠ 训练产物不存在，改评基座 C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct（这是第 3/4 周的对照基线，不是错误）
+════════════════════════════════════════════════════════════════
+[pipeline][13:24:35] ▶ 段 [eval] 开始
+[pipeline][13:24:35]   C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/.venv/Scripts/python.exe C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/scripts/step3_eval.py --model C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/models/Qwen2.5-3B-Instruct --tag base
+[step3][13:24:35] === base ===
+[step3][13:24:35] 空闲显存 13.8 GiB
+[step3][13:24:38] 加载模型：C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\models\Qwen2.5-3B-Instruct
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:03<00:03,  3.85s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  2.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:06<00:00,  3.07s/it]
+[step3][13:24:46] 加载完成 7.8s
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[step3][13:25:19]   1/20 math-01  32.47s  317tok
+[step3][13:25:43]   2/20 math-02  24.65s  297tok
+[step3][13:26:04]   3/20 math-03  20.36s  255tok
+[step3][13:26:24]   4/20 math-04  20.26s  273tok
+[step3][13:26:37]   5/20 math-05  13.08s  218tok
+[step3][13:27:36]   6/20 math-06  58.73s  403tok
+[step3][13:27:54]   7/20 math-07  18.32s  225tok
+[step3][13:28:24]   8/20 reason-01  29.93s  346tok
+[step3][13:28:31]   9/20 reason-02  7.03s  89tok
+[step3][13:28:55]   10/20 reason-03  23.59s  271tok
+[step3][13:29:04]   11/20 reason-04  9.52s  161tok
+[step3][13:29:15]   12/20 reason-05  11.09s  135tok
+[step3][13:29:31]   13/20 reason-06  15.86s  178tok
+[step3][13:29:40]   14/20 reason-07  8.94s  122tok
+[step3][13:30:19]   15/20 code-01  38.97s  486tok
+[step3][13:30:48]   16/20 code-02  28.58s  366tok
+[step3][13:31:25]   17/20 code-03  37.69s  361tok
+[step3][13:31:58]   18/20 code-04  32.83s  329tok
+[step3][13:32:27]   19/20 code-05  28.56s  272tok
+[step3][13:32:59]   20/20 code-06  32.12s  342tok
+[step3][13:32:59] [base] 加权总分 4.543  准确性=4.275  完整性=4.8  逻辑性=4.225  安全性=4.79  格式=4.975
+[step3][13:32:59] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\eval_summary.md
+[step3][13:32:59] [ok] C:\Users\Ruibo's Desktop\SenceTime_Weeks1-5\Week8\deliverables\eval_summary.csv
+[pipeline][13:33:00] ✓ 段 [eval] 完成（505s）
+[pipeline][13:33:00] ⏭ 段 [deploy] 跳过（默认关，需 --with-deploy；理由见脚本 ★取舍三）
+════════════════════════════════════════════════════════════════
+[pipeline][13:33:00] 流水线结束。各段结果：
+[pipeline][13:33:00]   data:skip
+[pipeline][13:33:00]   train:skip
+[pipeline][13:33:00]   eval:ok(505s)
+[pipeline][13:33:00]   deploy:skip
+════════════════════════════════════════════════════════════════
+[pipeline][13:33:00] 数据统计报告 : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/data_stats.md
+[pipeline][13:33:00] 评估汇总表   : C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.csv
+[pipeline][13:33:00] 评估汇总(人读): C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/deliverables/eval_summary.md
+[pipeline][13:33:00] 全流程日志: C:/Users/Ruibo's Desktop/SenceTime_Weeks1-5/Week8/logs/pipeline_20260825_132435.log

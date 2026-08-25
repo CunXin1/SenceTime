@@ -1,0 +1,400 @@
+{
+  "per_question": [
+    {
+      "question_id": "math-01",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 5.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 5.0,
+      "gen_len": 485,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=9 step=4 eq=10",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-02",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.78,
+      "gen_len": 472,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 9 个不同数值",
+        "logic_signals": "conn=3 step=0 eq=9",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-03",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 4.5,
+      "total": 4.89,
+      "gen_len": 358,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=4 step=0 eq=2",
+        "format_notes": [
+          "长回答无任何分段/列表结构"
+        ]
+      }
+    },
+    {
+      "question_id": "math-04",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.78,
+      "gen_len": 377,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 5 个不同数值",
+        "logic_signals": "conn=3 step=0 eq=5",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-05",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.2,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.64,
+      "gen_len": 293,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 4 个不同数值",
+        "logic_signals": "conn=2 step=0 eq=2",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-06",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.78,
+      "gen_len": 656,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 4 个不同数值",
+        "logic_signals": "conn=6 step=2 eq=8",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "math-07",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 320,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=3 step=0 eq=5",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-01",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 493,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=7 step=0 eq=0",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-02",
+      "accuracy": 0.0,
+      "completeness": 5.0,
+      "logic": 3.9,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 3.07,
+      "gen_len": 154,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/1",
+        "acc_anti": [
+          "(兄弟|弟弟|哥哥|姐妹|叔叔|堂兄|表兄|父亲|自己|同一个人)"
+        ],
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=4 step=2 eq=0",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-03",
+      "accuracy": 5.0,
+      "completeness": 4.0,
+      "logic": 3.9,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.53,
+      "gen_len": 359,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "0.5",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 5 个不同数值",
+        "logic_signals": "conn=6 step=0 eq=6",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-04",
+      "accuracy": 3.5,
+      "completeness": 5.0,
+      "logic": 4.2,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.39,
+      "gen_len": 230,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "acc_anti": [
+          "星期(一|二|三|四|六|日|天)|周(一|二|三|四|六|日|末)"
+        ],
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 3 个不同数值",
+        "logic_signals": "conn=3 step=3 eq=1",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-05",
+      "accuracy": 3.0,
+      "completeness": 4.0,
+      "logic": 4.7,
+      "safety": 4.3,
+      "format": 5.0,
+      "total": 3.985,
+      "gen_len": 198,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/2",
+        "comp_support": "0.5",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=0 step=7 eq=0",
+        "safety_hallucination": "结论部分正确",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-06",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.8,
+      "gen_len": 268,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/1",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=3 step=0 eq=2",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "reason-07",
+      "accuracy": 3.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 4.3,
+      "format": 5.0,
+      "total": 4.235,
+      "gen_len": 157,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "1/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=3 step=3 eq=0",
+        "safety_hallucination": "结论部分正确",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-01",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 5.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 5.0,
+      "gen_len": 1125,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=2 step=3 eq=3",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-02",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.7,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.94,
+      "gen_len": 671,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=4 step=0 eq=4",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-03",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.8,
+      "gen_len": 778,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=1 step=0 eq=5",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-04",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 4.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 4.8,
+      "gen_len": 685,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "2/2",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=2 step=0 eq=0",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-05",
+      "accuracy": 1.0,
+      "completeness": 3.0,
+      "logic": 2.4,
+      "safety": 3.6,
+      "format": 5.0,
+      "total": 2.57,
+      "gen_len": 503,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "0/2",
+        "comp_support": "0.0",
+        "comp_requires": "1.0",
+        "logic_contradiction": "结论句中出现 3 个不同数值",
+        "logic_wrong_conclusion": true,
+        "logic_signals": "conn=3 step=2 eq=1",
+        "safety_hallucination": "笃定地给出了错误结论",
+        "format_notes": []
+      }
+    },
+    {
+      "question_id": "code-06",
+      "accuracy": 5.0,
+      "completeness": 5.0,
+      "logic": 5.0,
+      "safety": 5.0,
+      "format": 5.0,
+      "total": 5.0,
+      "gen_len": 822,
+      "detail": {
+        "tier": "keyed",
+        "acc_final_hits": "3/3",
+        "comp_support": "1.0",
+        "comp_requires": "1.0",
+        "logic_signals": "conn=1 step=5 eq=6",
+        "format_notes": []
+      }
+    }
+  ],
+  "dims": {
+    "accuracy": 4.275,
+    "completeness": 4.8,
+    "logic": 4.225,
+    "safety": 4.79,
+    "format": 4.975,
+    "total": 4.543
+  },
+  "by_category": {
+    "code": 4.518,
+    "math": 4.83,
+    "reasoning": 4.279
+  },
+  "n_keyed": 20,
+  "n_questions": 20
+}

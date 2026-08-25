@@ -1,0 +1,46 @@
+# ============================================================================
+#  行尾规范 / Line-ending policy
+#
+#  ★ 为什么必须有这个文件
+#    本仓库在 Windows 上开发，git 默认 core.autocrlf=true 会在 checkout 时
+#    把 LF 换成 CRLF。对 .md / .py 无所谓，但对 **shell 脚本是致命的**：
+#        #!/usr/bin/env bash\r
+#    内核会把 "bash\r" 整个当成解释器名去找，报
+#        /usr/bin/env: 'bash\r': No such file or directory
+#    而这条报错和脚本内容毫无关系，第一次见的人极难联想到行尾。
+#    本项目的 .sh 还要在 **WSL2 里**执行（step4_deploy.sh 把命令投递进 WSL
+#    起 vLLM），跨系统之后这个问题必然暴露。
+#    Shell scripts MUST keep LF: CRLF makes the shebang unusable, and these
+#    scripts also run inside WSL2.
+#
+#  ★ 为什么 .ps1 反过来要 CRLF
+#    Windows PowerShell 5.1 对 .ps1 的行尾比较挑剔，且这些脚本只在 Windows 上跑。
+#    （另见 Week6/code/rebuild_base_model.ps1：.ps1 还必须带 UTF-8 BOM，
+#      否则 PS 5.1 按 ANSI 读取，中文在解析期就静默出错。BOM 由文件内容保证，
+#      不是 .gitattributes 能管的，这里只管行尾。）
+# ============================================================================
+
+# 默认：由 git 自行判断文本/二进制，文本在仓库里一律存 LF
+* text=auto eol=lf
+
+# 必须 LF —— 理由见上
+*.sh        text eol=lf
+*.bash      text eol=lf
+
+# 必须 CRLF —— 只在 Windows 上执行
+*.ps1       text eol=crlf
+*.bat       text eol=crlf
+*.cmd       text eol=crlf
+
+# 二进制：不要做任何行尾转换，也不要尝试做 diff
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.pdf       binary
+*.docx      binary
+*.safetensors binary
+*.bin       binary
+*.pt        binary
+*.pth       binary
+*.sav       binary

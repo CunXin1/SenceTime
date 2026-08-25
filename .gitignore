@@ -35,6 +35,8 @@ Week4/data/hf_cache/
 
 # Week5 VLM 独立环境(Gemma-4 需要 transformers>=5.5,与主环境冲突,故隔离)
 .venv-vlm/
+# Week6 Agent 独立环境(LangChain 会牵动 transformers/tokenizers/pydantic,故隔离)
+.venv-agent/
 Week5/data/hf_cache/
 
 # 打包快照(与各 WeekN/ 目录内容重复,且 Week2.zip 超 GitHub 100MB 上限)
@@ -44,3 +46,28 @@ Week5/data/hf_cache/
 .cache/
 tmp/
 .DS_Store
+
+# 误入仓库的游戏存档（Steam ID 目录），与项目无关
+Week5/data/76561198404202124/
+
+# ---- Week8 全链路 Pipeline ----
+# 运行日志（每次跑 pipeline 都会新增，且含绝对路径，无复现价值）
+Week8/logs/*.log
+Week8/logs/*.pid
+Week8/deliverables/logs/*.log
+# ★ 但验收实跑的日志必须进版本库：它是验收标准 ❶「Pipeline 可无报错运行」
+#   唯一算数的证据。一份说"跑通了"的文档谁都能写，一份带时间戳和逐题耗时的
+#   真实日志不能。注意否定规则必须写在上面那条通配之后，git 取最后匹配的一条。
+!Week8/deliverables/logs/acceptance_*.log
+!Week8/deliverables/logs/vl_smoke.log
+# LLaMA-Factory eval / OpenCompass 的原始输出（体积大，分数以 deliverables 里的汇总表为准）
+Week8/deliverables/oc_raw/
+# 蒸馏训练的中间检查点（最终 adapter 已在上级目录，checkpoint 只用于断点续训）
+saves/**/checkpoint-*/
+
+# 第 7 周调试 vLLM 时临时写的两个小脚本（起服务 / 等就绪）。
+# 它们的功能已被 Week8/scripts/step4_deploy.sh 完整覆盖并做对了
+# （HTTP 健康检查而非固定 sleep、跨 WSL 边界、--noproxy、PID 管理），
+# 留在仓库根只会让人不知道该用哪个。
+.serve.sh
+.waitready.sh
